@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="DB_ACCModel4.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'DB_ACC.dbo.View_5' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="View_5">
+    <Key>
+      <PropertyRef Name="Expr1" />
+      <PropertyRef Name="Expr2" />
+    </Key>
+    <Property Name="Expr1" Type="int" Nullable="false" />
+    <Property Name="Expr2" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="PARENT_GUID" Type="uniqueidentifier" />
+    <Property Name="NUMBER" Type="int" />
+    <Property Name="CUST" Type="uniqueidentifier" />
+    <Property Name="NOTE" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityContainer Name="DB_ACCModel4StoreContainer">
+    <EntitySet Name="View_5" EntityType="Self.View_5" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [View_5].[Expr1] AS [Expr1], 
+    [View_5].[Expr2] AS [Expr2], 
+    [View_5].[PARENT_GUID] AS [PARENT_GUID], 
+    [View_5].[NUMBER] AS [NUMBER], 
+    [View_5].[CUST] AS [CUST], 
+    [View_5].[NOTE] AS [NOTE]
+    FROM [dbo].[View_5] AS [View_5]</DefiningQuery>
+    </EntitySet>
+  </EntityContainer>
+</Schema>

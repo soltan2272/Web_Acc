@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="DB_ACCModel6" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="View_7">
+    <Key>
+      <PropertyRef Name="GUID" />
+    </Key>
+    <Property Name="BARCODE_1" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="NAME" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="Expr1" Type="Double" />
+    <Property Name="GUID" Type="Guid" Nullable="false" />
+    <Property Name="Store" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Group_Name" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="TYPE_ITEME" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="AVG_PRICE" Type="Double" />
+    <Property Name="EndUser" Type="Double" />
+    <Property Name="UNIT2" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="QTY_UNIT2" Type="Double" />
+    <Property Name="Qty2" Type="Double" />
+    <Property Name="latin_name" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="Company" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="MIN_QTY" Type="Double" />
+  </EntityType>
+  <EntityContainer Name="DB_ACCEntities10" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="View_7" EntityType="Self.View_7" />
+  </EntityContainer>
+</Schema>

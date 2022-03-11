@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="DB_ACCModel10StoreContainer" CdmEntityContainer="DB_ACCEntities14">
+    <EntitySetMapping Name="Sales_Bydate">
+      <EntityTypeMapping TypeName="DB_ACCModel10.Sales_Bydate">
+        <MappingFragment StoreEntitySet="Sales_Bydate">
+          <ScalarProperty Name="Expr2" ColumnName="Expr2" />
+          <ScalarProperty Name="NET_Qty" ColumnName="NET_Qty" />
+          <ScalarProperty Name="total_cost" ColumnName="total_cost" />
+          <ScalarProperty Name="total_price" ColumnName="total_price" />
+          <ScalarProperty Name="Net_Profit" ColumnName="Net_Profit" />
+          <ScalarProperty Name="Expr3" ColumnName="Expr3" />
+          <ScalarProperty Name="Expr4" ColumnName="Expr4" />
+          <ScalarProperty Name="Expr5" ColumnName="Expr5" />
+          <ScalarProperty Name="Expr6" ColumnName="Expr6" />
+          <ScalarProperty Name="Expr7" ColumnName="Expr7" />
+          <ScalarProperty Name="Expr8" ColumnName="Expr8" />
+          <ScalarProperty Name="Expr9" ColumnName="Expr9" />
+          <ScalarProperty Name="Expr10" ColumnName="Expr10" />
+          <ScalarProperty Name="Expr11" ColumnName="Expr11" />
+          <ScalarProperty Name="Expr12" ColumnName="Expr12" />
+          <ScalarProperty Name="Header_Note" ColumnName="Header_Note" />
+          <ScalarProperty Name="Expr13" ColumnName="Expr13" />
+          <ScalarProperty Name="Expr14" ColumnName="Expr14" />
+          <ScalarProperty Name="Expr15" ColumnName="Expr15" />
+          <ScalarProperty Name="Expr16" ColumnName="Expr16" />
+          <ScalarProperty Name="Expr17" ColumnName="Expr17" />
+          <ScalarProperty Name="Expr18" ColumnName="Expr18" />
+          <ScalarProperty Name="Expr19" ColumnName="Expr19" />
+          <ScalarProperty Name="Expr20" ColumnName="Expr20" />
+          <ScalarProperty Name="Expr21" ColumnName="Expr21" />
+          <ScalarProperty Name="Expr22" ColumnName="Expr22" />
+          <ScalarProperty Name="Expr23" ColumnName="Expr23" />
+          <ScalarProperty Name="Expr24" ColumnName="Expr24" />
+          <ScalarProperty Name="Expr25" ColumnName="Expr25" />
+          <ScalarProperty Name="Total_Goods" ColumnName="Total_Goods" />
+          <ScalarProperty Name="Expr26" ColumnName="Expr26" />
+          <ScalarProperty Name="Expr27" ColumnName="Expr27" />
+          <ScalarProperty Name="Expr28" ColumnName="Expr28" />
+          <ScalarProperty Name="Expr29" ColumnName="Expr29" />
+          <ScalarProperty Name="EXEED" ColumnName="EXEED" />
+          <ScalarProperty Name="Expr30" ColumnName="Expr30" />
+          <ScalarProperty Name="Expr31" ColumnName="Expr31" />
+          <ScalarProperty Name="Expr32" ColumnName="Expr32" />
+          <ScalarProperty Name="Expr33" ColumnName="Expr33" />
+          <ScalarProperty Name="Expr34" ColumnName="Expr34" />
+          <ScalarProperty Name="Expr35" ColumnName="Expr35" />
+          <ScalarProperty Name="Expr36" ColumnName="Expr36" />
+          <ScalarProperty Name="Expr37" ColumnName="Expr37" />
+          <ScalarProperty Name="Expr38" ColumnName="Expr38" />
+          <ScalarProperty Name="PurchaseValue" ColumnName="PurchaseValue" />
+          <ScalarProperty Name="GUID" ColumnName="GUID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

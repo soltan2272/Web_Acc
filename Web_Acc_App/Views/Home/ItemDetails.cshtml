@@ -1,0 +1,166 @@
+﻿@using Web_Acc_App.Models
+@model List<Sales_Bydate>
+
+@{
+    ViewBag.Title = "ItemDetails";
+    Layout = "~/Views/shared/_MyLayoutPage.cshtml";
+}
+
+
+
+
+
+
+<br />
+<br />
+<span style="float:right">
+    البحث ب
+
+    <select id="type" onchange="change()">
+        <option value="date"> By Date </option>
+        <option value="shn"> By Shift Number</option>
+    </select>
+
+</span>
+<br />
+<br />
+<form style="float:right" method="post" action="@Url.Action("ItemDetails", "Home")">
+    <span id="byshiftnum" style="display:none">
+
+
+        اسم المجموعة
+        <select name="groupname">
+            <option value="null">الكل</option>
+            @foreach (string itm in (dynamic)(ViewData["UniqueGroups"]))
+            {
+                <option value="@itm">@itm</option>
+            }
+        </select>
+
+
+
+
+
+
+        رقم الشيفت
+        <select name="shiftnum">
+            <option value="0">الكل</option>
+            @foreach (int itm in (dynamic)(ViewData["UniqueShifts"]))
+            {
+                <option value="@itm">@itm</option>
+            }
+        </select>
+
+
+
+
+
+        <input type="submit" value="بحث" />
+    </span>
+</form>
+
+<form style="float:right" method="post" action="@Url.Action("ItemDetails", "Home")">
+
+    <span id="bydate">
+
+        اسم المجموعة
+        <select name="groupname">
+            <option value="null">الكل</option>
+            @foreach (string itm in (dynamic)(ViewData["UniqueGroups"]))
+            {
+                <option value="@itm">@itm</option>
+            }
+        </select>
+
+
+
+
+
+
+
+        من
+        <select name="to">
+            @foreach (DateTime itm in (dynamic)(ViewData["UniqueDates"]))
+            {
+                <option value="@itm">@itm</option>
+            }
+        </select>
+        الى
+        <select name="from">
+            @foreach (DateTime itm in (dynamic)(ViewData["UniqueDates"]))
+            {
+                <option value="@itm">@itm</option>
+            }
+        </select>
+
+
+
+
+        <input type="submit" value="بحث" />
+    </span>
+</form>
+
+
+
+
+
+<div class="container" >
+    <table class="table table-hover table-dark" id="dataTable" width="100%" cellspacing="0">
+        <thead>
+            <tr>
+                <th style="text-align:center">الاسم</th>
+                <th style="text-align:center">المجموعة</th>
+                <th style="text-align:center">الكمية </th>
+                <th style="text-align:center">اجمالى التكلفة</th>
+                <th style="text-align:center">قيمة البيع</th>
+                <th style="text-align:center">صافى الربح </th>
+                <th style="text-align:center">متوسط التكلفة</th>
+                <th style="text-align:center">خصم الصنف</th>
+                <th style="text-align:center"> نسبة الخصم</th>
+                <th style="text-align:center"> رصيد المخزن</th>
+                <th style="text-align:center">رقم الشيفت</th>
+                <th style="text-align:center">التاريخ</th>
+
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var itm in Model)
+            {
+                <tr>
+                    <td style="text-align:center">@itm.NAME</td>
+                    <td style="text-align:center">@itm.Group_Name</td>
+                    <td style="text-align:center">@itm.NET_Qty</td>
+                    <td style="text-align:center">@itm.total_cost</td>
+                    <td style="text-align:center">@itm.total_price</td>
+                    <td style="text-align:center">@itm.Net_Profit</td>
+                    <td style="text-align:center">@itm.AVG_PRICE</td>
+                    <td style="text-align:center">@itm.Item_Total_Discount</td>
+                    <td style="text-align:center">@itm.disc_rate</td>
+                    <td style="text-align:center">@itm.BALANCE</td>
+                    <td style="text-align:center">@itm.shift_no</td>
+                    <td style="text-align:center">@itm.DATE</td>
+
+                </tr>
+            }
+
+        </tbody>
+    </table>
+</div>
+
+
+    </main>
+
+<script>
+
+    function change() {
+
+        if (document.getElementById("type").value == "shn") {
+            document.getElementById("byshiftnum").style.display = "inline";
+            document.getElementById("bydate").style.display = "none";
+        }
+        else if (document.getElementById("type").value == "date") {
+            document.getElementById("byshiftnum").style.display = "none";
+            document.getElementById("bydate").style.display = "inline";
+        }
+    }
+</script>

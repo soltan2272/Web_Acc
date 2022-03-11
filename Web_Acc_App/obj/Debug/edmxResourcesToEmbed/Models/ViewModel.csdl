@@ -1,0 +1,1593 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="DB_ACCModel1" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="A4Print">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="GROUP_GUID" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="NUMBER" Type="Int32" />
+    <Property Name="PARENT_GUID" Type="Guid" />
+    <Property Name="CUST" Type="Guid" />
+    <Property Name="DATE" Type="DateTime" Precision="0" />
+    <Property Name="disc" Type="Double" />
+    <Property Name="EXTEA" Type="Double" />
+    <Property Name="p_disc" Type="Double" />
+    <Property Name="p_extra" Type="Double" />
+    <Property Name="Total" Type="Double" />
+    <Property Name="type_dis" Type="Double" />
+    <Property Name="disc_rate" Type="Double" />
+    <Property Name="type_pay" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="CUSTOMER_NAME" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="CUSTOMER_MOBILE1" Type="Int32" />
+    <Property Name="CUSTOMER_MOBILE2" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="CUSTOMER_COMPANY" Type="Double" />
+    <Property Name="CUSTOMER_PHON" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="CUSTOMER_EMAIL" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="CUSTOMER_STREET" Type="Double" />
+    <Property Name="time_bill" Type="DateTime" Precision="3" />
+    <Property Name="Cash" Type="Double" />
+    <Property Name="KNET" Type="Double" />
+    <Property Name="NAME" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="QTY" Type="Double" />
+    <Property Name="PRICE" Type="Double" />
+    <Property Name="NOTE" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Item_Discount" Type="Double" />
+    <Property Name="extra" Type="Double" />
+    <Property Name="unit" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="qty_unit" Type="Double" />
+    <Property Name="barcode" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="VAT" Type="Double" />
+    <Property Name="delivery_mobile" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="image" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <Property Name="Bill_Name" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="DELETE_NUM" Type="Int32" />
+    <Property Name="manual_number" Type="Int32" />
+    <Property Name="delivery_customer" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Branch" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Booking_Time" Type="DateTime" Precision="3" />
+    <Property Name="TRAN_POS_GUID" Type="Guid" />
+    <Property Name="Booking_Date" Type="DateTime" Precision="0" />
+    <Property Name="car_current_counter" Type="Int32" />
+    <Property Name="TRAN_POS_PAY" Type="Double" />
+    <Property Name="Header_Note" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="id" Type="Int32" Nullable="false" />
+    <Property Name="SN" Type="Int32" />
+    <Property Name="TAF" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" />
+    <Property Name="user_name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Waiter" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="Account_Balance">
+    <Key>
+      <PropertyRef Name="GUID" />
+    </Key>
+    <Property Name="Code" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Name="Account_Name" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Name="Debit" Type="Double" />
+    <Property Name="Credit" Type="Double" />
+    <Property Name="Balance" Type="Double" />
+    <Property Name="GUID" Type="Guid" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Account_Balance2">
+    <Key>
+      <PropertyRef Name="GUID" />
+    </Key>
+    <Property Name="Code" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Name="Account" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Name="Debit" Type="Double" />
+    <Property Name="Credit" Type="Double" />
+    <Property Name="Balance" Type="Double" />
+    <Property Name="GUID" Type="Guid" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Account_Statement">
+    <Key>
+      <PropertyRef Name="GUID_DAY1" />
+      <PropertyRef Name="GUID_DAY2" />
+    </Key>
+    <Property Name="GUID_DAY1" Type="Guid" Nullable="false" />
+    <Property Name="NUMBER_DAY1" Type="Int32" />
+    <Property Name="DATE_DAY1" Type="DateTime" Precision="0" />
+    <Property Name="NOTE_DAY1" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="TYPE_DAY1" Type="Guid" />
+    <Property Name="NOTE_DAY1_TYPE" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="GUID_JOB_DAY1" Type="Guid" />
+    <Property Name="NAME_JOBE_DAY1" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="GUID_CURRENCY_DAY1" Type="Guid" />
+    <Property Name="NAME_CURRENCY_DAY1" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="CURRENCY_VAL_DAY1" Type="Double" />
+    <Property Name="PAENT_GUID_DAY2" Type="Guid" />
+    <Property Name="ACCOUNT_GUID_DAY2" Type="Guid" />
+    <Property Name="Name_DAY2" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Name="DEBIT_DAY2" Type="Double" />
+    <Property Name="CREDIT_DAY2" Type="Double" />
+    <Property Name="NOTE_DAY2" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="GUID_DAY2" Type="Guid" Nullable="false" />
+    <Property Name="GUID_JOB_DAY2" Type="Guid" />
+    <Property Name="NAME_JOB_DAY2" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="GUID_CURRENCY_DAY2" Type="Guid" />
+    <Property Name="NAME_CURRENCY_DAY2" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="CURRENCY_VAL" Type="Double" />
+    <Property Name="Reference" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="Accounting_Balances">
+    <Key>
+      <PropertyRef Name="GUID" />
+    </Key>
+    <Property Name="رقم_الحساب" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Name="اسم_الحساب" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Name="مجموع_المدين" Type="Double" />
+    <Property Name="مجموع_الدائن" Type="Double" />
+    <Property Name="الرصيد" Type="Double" />
+    <Property Name="GUID" Type="Guid" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Bills_Profit">
+    <Key>
+      <PropertyRef Name="GUID" />
+    </Key>
+    <Property Name="NUMBER" Type="Int32" />
+    <Property Name="NOTE" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="DATE" Type="DateTime" Precision="0" />
+    <Property Name="disc" Type="Double" />
+    <Property Name="disc_rate" Type="Double" />
+    <Property Name="guid_user" Type="Guid" />
+    <Property Name="time_bill" Type="DateTime" Precision="3" />
+    <Property Name="Cash" Type="Double" />
+    <Property Name="KNET" Type="Double" />
+    <Property Name="delivery_customer" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="delivery_mobile" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Sales_Man" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Total_Cost" Type="Double" />
+    <Property Name="Total" Type="Double" />
+    <Property Name="Net_Profit" Type="Double" />
+    <Property Name="GUID" Type="Guid" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Customer_and_Spplier">
+    <Key>
+      <PropertyRef Name="GUID" />
+    </Key>
+    <Property Name="GUID" Type="Guid" Nullable="false" />
+    <Property Name="Name" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Name="ParentGUID" Type="Guid" />
+    <Property Name="Code" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Name="END_ACCOUNT" Type="Int32" />
+  </EntityType>
+  <EntityType Name="Customers_Balance">
+    <Key>
+      <PropertyRef Name="GUID" />
+    </Key>
+    <Property Name="Code" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Name="Account_Name" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Name="Debit" Type="Double" />
+    <Property Name="Credit" Type="Double" />
+    <Property Name="Balance" Type="Double" />
+    <Property Name="GUID" Type="Guid" Nullable="false" />
+    <Property Name="ParentGUID" Type="Guid" />
+  </EntityType>
+  <EntityType Name="Daily_Stock_Out">
+    <Key>
+      <PropertyRef Name="GUID" />
+    </Key>
+    <Property Name="DATE" Type="DateTime" Precision="0" />
+    <Property Name="NAME" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="QTY" Type="Double" />
+    <Property Name="PRICE" Type="Double" />
+    <Property Name="GUID" Type="Guid" Nullable="false" />
+    <Property Name="Expr1" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="AVG_PRICE" Type="Double" />
+  </EntityType>
+  <EntityType Name="inventory">
+    <Key>
+      <PropertyRef Name="GUID" />
+    </Key>
+    <Property Name="BARCODE_1" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="NAME" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="Expr1" Type="Double" />
+    <Property Name="GUID" Type="Guid" Nullable="false" />
+    <Property Name="Store" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Group_Name" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="TYPE_ITEME" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="AVG_PRICE" Type="Double" />
+    <Property Name="EndUser" Type="Double" />
+    <Property Name="UNIT2" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="QTY_UNIT2" Type="Double" />
+    <Property Name="Qty2" Type="Double" />
+    <Property Name="latin_name" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="Company" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="MIN_QTY" Type="Double" />
+  </EntityType>
+  <EntityType Name="Item_Balance">
+    <Key>
+      <PropertyRef Name="GUID" />
+    </Key>
+    <Property Name="BARCODE_1" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="NAME" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="Expr1" Type="Double" />
+    <Property Name="GUID" Type="Guid" Nullable="false" />
+    <Property Name="Expr2" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="Net_Items_Sales_ByDate">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="NAME" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="Total_Qty_Refund" Type="Double" />
+    <Property Name="Total_Qty_Sold" Type="Double" />
+    <Property Name="Purchase" Type="Double" />
+    <Property Name="R_Purchase" Type="Double" />
+    <Property Name="B_Inventory" Type="Double" />
+    <Property Name="NET_Qty" Type="Double" />
+    <Property Name="PRICE" Type="Double" />
+    <Property Name="Total" Type="Double" />
+    <Property Name="DATE" Type="DateTime" Precision="0" />
+    <Property Name="shift_no" Type="Int32" />
+    <Property Name="AVG_PRICE" Type="Double" />
+    <Property Name="disc" Type="Double" />
+    <Property Name="Item_Net_Price" Type="Double" />
+    <Property Name="net_value" Type="Double" />
+    <Property Name="Sales_Man" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Expr1" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="delivery_customer" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="delivery_mobile" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Expr2" Type="Double" />
+    <Property Name="Group_Name" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Total_Invoice" Type="Double" />
+    <Property Name="disc_rate" Type="Double" />
+    <Property Name="Item_Total_Discount" Type="Double" />
+    <Property Name="Subs_Paid" Type="Double" />
+    <Property Name="NUMBER" Type="Int32" />
+    <Property Name="car_plate_no" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="car_current_counter" Type="Int32" />
+    <Property Name="PARENT_GUID" Type="Guid" />
+    <Property Name="NOTE" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="city" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="block" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="street" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="building" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="floor" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="room" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="add_Details" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Driver" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="BALANCE" Type="Double" />
+    <Property Name="unit" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="TYPE_ITEME" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="MIN_QTY" Type="Double" />
+    <Property Name="id" Type="Int32" Nullable="false" />
+    <Property Name="Printer" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="latin_name" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="Branch" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="qty_unit" Type="Double" />
+    <Property Name="BARCODE_1" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="TypeBill" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="New_Sales_Invoice">
+    <Key>
+      <PropertyRef Name="User_ID" />
+      <PropertyRef Name="ID" />
+      <PropertyRef Name="GUID" />
+    </Key>
+    <Property Name="Invoice_No" Type="Int32" />
+    <Property Name="Header_Notes" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="DATE" Type="DateTime" Precision="0" />
+    <Property Name="Invoice_Discount" Type="Double" />
+    <Property Name="Total_Invoice" Type="Double" />
+    <Property Name="disc_rate" Type="Double" />
+    <Property Name="type_dis" Type="Double" />
+    <Property Name="User_Name" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="User_ID" Type="Int32" Nullable="false" />
+    <Property Name="time_bill" Type="DateTime" Precision="3" />
+    <Property Name="Cash" Type="Double" />
+    <Property Name="KNET" Type="Double" />
+    <Property Name="delivery_customer" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="delivery_mobile" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Govern" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="city" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="block" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="street" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="building" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="floor" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="room" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="add_Details" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Reset" Type="Double" />
+    <Property Name="Driver" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Driver_tele" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Status" Type="Boolean" />
+    <Property Name="QTY" Type="Double" />
+    <Property Name="PRICE" Type="Double" />
+    <Property Name="NOTE" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="disc" Type="Double" />
+    <Property Name="barcode" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="item_id" Type="Int32" />
+    <Property Name="NAME" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="Item_Note" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="Type_name" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Sales_Man" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="VAT" Type="Double" />
+    <Property Name="table_no" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="SN" Type="Int32" />
+    <Property Name="ORDER_TYPE" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="GUID" Type="Guid" Nullable="false" />
+    <Property Name="Subs_Paid" Type="Double" />
+    <Property Name="Subs_Balance" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Subs_End_Date" Type="DateTime" Precision="0" />
+    <Property Name="Booking_Date" Type="DateTime" Precision="0" />
+    <Property Name="Booking_Time" Type="DateTime" Precision="3" />
+    <Property Name="Expr2" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="VISA" Type="Double" />
+    <Property Name="MASTER" Type="Double" />
+    <Property Name="unit" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="latin_name" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="TRAN_POS_PAY" Type="Double" />
+    <Property Name="CUSTOMER_MOBILE1" Type="Int32" />
+    <Property Name="shift_no" Type="Int32" />
+    <Property Name="Gategory" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="CUSTOMER_PHON" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="CUSTOMER_STREET" Type="Double" />
+    <Property Name="CUSTOMER_EMAIL" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="CUSTOMER_COMPANY" Type="Double" />
+    <Property Name="CUSTOMER_MOBILE2" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Expr3" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="PARENT_GUID" Type="Guid" />
+    <Property Name="Printer" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="car_plate_no" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="car_current_counter" Type="Int32" />
+    <Property Name="image" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <Property Name="p_extra" Type="Double" />
+    <Property Name="Branch" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="Order_History_V">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="NAME" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="QTY" Type="Double" />
+    <Property Name="PRICE" Type="Double" />
+    <Property Name="barcode" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="table_no" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Waiter" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Time_Punch" Type="DateTime" Precision="3" />
+    <Property Name="Category" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="TOTAL" Type="Double" />
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="date" Type="DateTime" Precision="0" />
+    <Property Name="shift" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="isCanceled" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="isTransfer" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="ORder_Type">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="PARENT_GUID" Type="Guid" />
+    <Property Name="Total" Type="Double" />
+    <Property Name="NOTE" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="KNET" Type="Double" />
+    <Property Name="time_bill" Type="DateTime" Precision="3" />
+    <Property Name="NUMBER" Type="Int32" />
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Cash" Type="Double" />
+  </EntityType>
+  <EntityType Name="Paid_Orders">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="NUMBER" Type="Int32" />
+    <Property Name="time_bill" Type="DateTime" Precision="3" />
+    <Property Name="shift_no" Type="Int32" />
+    <Property Name="Sales_Man" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="PRICE" Type="Double" />
+    <Property Name="QTY" Type="Double" />
+    <Property Name="Category" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Item_Name" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="PARENT_GUID" Type="Guid" />
+    <Property Name="ID" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="pos_exp">
+    <Key>
+      <PropertyRef Name="الرقم" />
+    </Key>
+    <Property Name="الرقم" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="التاريخ" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="القيمة" Type="Double" />
+    <Property Name="ملاحظات" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="رقم_الوردية" Type="Int32" />
+    <Property Name="البائع" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="POS_Invoice_X">
+    <Key>
+      <PropertyRef Name="User_ID" />
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="Invoice_No" Type="Int32" />
+    <Property Name="Header_Notes" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="DATE" Type="DateTime" Precision="0" />
+    <Property Name="Invoice_Discount" Type="Double" />
+    <Property Name="Total_Invoice" Type="Double" />
+    <Property Name="disc_rate" Type="Double" />
+    <Property Name="type_dis" Type="Double" />
+    <Property Name="User_Name" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="User_ID" Type="Int32" Nullable="false" />
+    <Property Name="time_bill" Type="DateTime" Precision="3" />
+    <Property Name="Cash" Type="Double" />
+    <Property Name="KNET" Type="Double" />
+    <Property Name="delivery_customer" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="delivery_mobile" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Govern" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="city" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="block" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="street" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="building" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="floor" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="room" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="add_Details" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Reset" Type="Double" />
+    <Property Name="Driver" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Driver_tele" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Status" Type="Boolean" />
+    <Property Name="QTY" Type="Double" />
+    <Property Name="PRICE" Type="Double" />
+    <Property Name="NOTE" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="disc" Type="Double" />
+    <Property Name="barcode" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="item_id" Type="Int32" />
+    <Property Name="NAME" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="Item_Note" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="table_no" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Sales_Man" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="SN" Type="Int32" />
+    <Property Name="ORDER_TYPE" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Subs_Paid" Type="Double" />
+    <Property Name="Subs_Balance" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Subs_End_Date" Type="DateTime" Precision="0" />
+    <Property Name="Booking_Date" Type="DateTime" Precision="0" />
+    <Property Name="Booking_Time" Type="DateTime" Precision="3" />
+    <Property Name="Expr2" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="VISA" Type="Double" />
+    <Property Name="MASTER" Type="Double" />
+    <Property Name="unit" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="latin_name" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="VAT" Type="Double" />
+    <Property Name="TRAN_POS_PAY" Type="Double" />
+    <Property Name="CUSTOMER_MOBILE1" Type="Int32" />
+    <Property Name="shift_no" Type="Int32" />
+    <Property Name="CUSTOMER_EMAIL" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="CUSTOMER_COMPANY" Type="Double" />
+    <Property Name="CUSTOMER_MOBILE2" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="CUSTOMER_STREET" Type="Double" />
+    <Property Name="CUSTOMER_PHON" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="user_name_2" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="PARENT_GUID" Type="Guid" />
+    <Property Name="Printer" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Gategory" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="car_plate_no" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="car_current_counter" Type="Int32" />
+    <Property Name="image" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <Property Name="p_extra" Type="Double" />
+    <Property Name="Branch" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="POS_REFUND">
+    <Key>
+      <PropertyRef Name="user_id" />
+      <PropertyRef Name="Expr6" />
+      <PropertyRef Name="GUID" />
+    </Key>
+    <Property Name="invoice_no" Type="Int32" />
+    <Property Name="header_notes" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="DATE" Type="DateTime" Precision="0" />
+    <Property Name="invoice_discount" Type="Double" />
+    <Property Name="total" Type="Double" />
+    <Property Name="disc_rate" Type="Double" />
+    <Property Name="type_dis" Type="Double" />
+    <Property Name="user_name" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="user_id" Type="Int32" Nullable="false" />
+    <Property Name="time_bill" Type="DateTime" Precision="3" />
+    <Property Name="Cash" Type="Double" />
+    <Property Name="KNET" Type="Double" />
+    <Property Name="delivery_customer" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="delivery_mobile" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Govern" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="city" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="block" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="street" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="building" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="floor" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="room" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="add_Details" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Reset" Type="Double" />
+    <Property Name="Driver" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Driver_tele" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Status" Type="Boolean" />
+    <Property Name="QTY" Type="Double" />
+    <Property Name="PRICE" Type="Double" />
+    <Property Name="Expr2" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Expr4" Type="Double" />
+    <Property Name="barcode" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="item_id" Type="Int32" />
+    <Property Name="item_name" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="Expr6" Type="Int32" Nullable="false" />
+    <Property Name="Expr7" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="Expr1" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Sales_Man" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="VAT" Type="Double" />
+    <Property Name="table_no" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="SN" Type="Int32" />
+    <Property Name="ORDER_TYPE" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="GUID" Type="Guid" Nullable="false" />
+    <Property Name="Subs_Paid" Type="Double" />
+    <Property Name="Subs_Balance" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Subs_End_Date" Type="DateTime" Precision="0" />
+    <Property Name="Booking_Date" Type="DateTime" Precision="0" />
+    <Property Name="Booking_Time" Type="DateTime" Precision="3" />
+    <Property Name="Expr8" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="VISA" Type="Double" />
+    <Property Name="MASTER" Type="Double" />
+    <Property Name="unit" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="latin_name" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="TRAN_POS_PAY" Type="Double" />
+    <Property Name="CUSTOMER_MOBILE1" Type="Int32" />
+    <Property Name="shift_no" Type="Int32" />
+    <Property Name="Gategory" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="CUSTOMER_PHON" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="CUSTOMER_STREET" Type="Double" />
+    <Property Name="CUSTOMER_EMAIL" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="CUSTOMER_COMPANY" Type="Double" />
+    <Property Name="CUSTOMER_MOBILE2" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Expr3" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="previous">
+    <Key>
+      <PropertyRef Name="GUID_DAY1" />
+      <PropertyRef Name="GUID_DAY2" />
+    </Key>
+    <Property Name="GUID_DAY1" Type="Guid" Nullable="false" />
+    <Property Name="NUMBER_DAY1" Type="Int32" />
+    <Property Name="DATE_DAY1" Type="DateTime" Precision="0" />
+    <Property Name="NOTE_DAY1" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="TYPE_DAY1" Type="Guid" />
+    <Property Name="NOTE_DAY1_TYPE" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="GUID_JOB_DAY1" Type="Guid" />
+    <Property Name="NAME_JOBE_DAY1" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="GUID_CURRENCY_DAY1" Type="Guid" />
+    <Property Name="NAME_CURRENCY_DAY1" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="CURRENCY_VAL_DAY1" Type="Double" />
+    <Property Name="PAENT_GUID_DAY2" Type="Guid" />
+    <Property Name="ACCOUNT_GUID_DAY2" Type="Guid" />
+    <Property Name="Name_DAY2" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Name="DEBIT_DAY2" Type="Double" />
+    <Property Name="CREDIT_DAY2" Type="Double" />
+    <Property Name="NOTE_DAY2" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="GUID_DAY2" Type="Guid" Nullable="false" />
+    <Property Name="GUID_JOB_DAY2" Type="Guid" />
+    <Property Name="NAME_JOB_DAY2" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="GUID_CURRENCY_DAY2" Type="Guid" />
+    <Property Name="NAME_CURRENCY_DAY2" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="CURRENCY_VAL" Type="Double" />
+  </EntityType>
+  <EntityType Name="Previous_Balance">
+    <Key>
+      <PropertyRef Name="GUID_DAY1" />
+      <PropertyRef Name="GUID_DAY2" />
+    </Key>
+    <Property Name="GUID_DAY1" Type="Guid" Nullable="false" />
+    <Property Name="NUMBER_DAY1" Type="Int32" />
+    <Property Name="DATE_DAY1" Type="DateTime" Precision="0" />
+    <Property Name="NOTE_DAY1" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="TYPE_DAY1" Type="Guid" />
+    <Property Name="NOTE_DAY1_TYPE" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="GUID_JOB_DAY1" Type="Guid" />
+    <Property Name="NAME_JOBE_DAY1" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="GUID_CURRENCY_DAY1" Type="Guid" />
+    <Property Name="NAME_CURRENCY_DAY1" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="CURRENCY_VAL_DAY1" Type="Double" />
+    <Property Name="PAENT_GUID_DAY2" Type="Guid" />
+    <Property Name="ACCOUNT_GUID_DAY2" Type="Guid" />
+    <Property Name="Name_DAY2" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Name="DEBIT_DAY2" Type="Double" />
+    <Property Name="CREDIT_DAY2" Type="Double" />
+    <Property Name="NOTE_DAY2" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="GUID_DAY2" Type="Guid" Nullable="false" />
+    <Property Name="GUID_JOB_DAY2" Type="Guid" />
+    <Property Name="NAME_JOB_DAY2" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="GUID_CURRENCY_DAY2" Type="Guid" />
+    <Property Name="NAME_CURRENCY_DAY2" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="CURRENCY_VAL" Type="Double" />
+  </EntityType>
+  <EntityType Name="Print_Deleted_Item">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="Barcode" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="item" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="time" Type="DateTime" Precision="3" />
+    <Property Name="Table_no" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Shieft_ID" Type="Int32" />
+    <Property Name="user_" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Printer" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="id" Type="Int32" Nullable="false" />
+    <Property Name="Qty" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="Print_Order">
+    <Key>
+      <PropertyRef Name="ID" />
+      <PropertyRef Name="Expr3" />
+      <PropertyRef Name="GUID" />
+    </Key>
+    <Property Name="Invoice_No" Type="Int32" />
+    <Property Name="Header_Notes" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="DATE" Type="DateTime" Precision="0" />
+    <Property Name="Invoice_Discount" Type="Double" />
+    <Property Name="Total_Invoice" Type="Double" />
+    <Property Name="disc_rate" Type="Double" />
+    <Property Name="type_dis" Type="Double" />
+    <Property Name="time_bill" Type="DateTime" Precision="3" />
+    <Property Name="Cash" Type="Double" />
+    <Property Name="KNET" Type="Double" />
+    <Property Name="delivery_customer" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="delivery_mobile" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Govern" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="city" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="block" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="street" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="building" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="floor" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="room" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="add_Details" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Reset" Type="Double" />
+    <Property Name="Driver" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Driver_tele" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Status" Type="Boolean" />
+    <Property Name="QTY" Type="Double" />
+    <Property Name="PRICE" Type="Double" />
+    <Property Name="NOTE" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="disc" Type="Double" />
+    <Property Name="barcode" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="item_id" Type="Int32" />
+    <Property Name="NAME" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="Item_Note" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="Sales_Man" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="VAT" Type="Double" />
+    <Property Name="table_no" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="SN" Type="Int32" />
+    <Property Name="ORDER_TYPE" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Subs_Paid" Type="Double" />
+    <Property Name="Subs_Balance" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Subs_End_Date" Type="DateTime" Precision="0" />
+    <Property Name="Booking_Date" Type="DateTime" Precision="0" />
+    <Property Name="Booking_Time" Type="DateTime" Precision="3" />
+    <Property Name="Expr2" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="VISA" Type="Double" />
+    <Property Name="MASTER" Type="Double" />
+    <Property Name="unit" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="latin_name" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="TRAN_POS_PAY" Type="Double" />
+    <Property Name="Gategory" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Expr3" Type="Guid" Nullable="false" />
+    <Property Name="Printer" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="CUSTOMER_EMAIL" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="user_name_2" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Waiter" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Time_Punch" Type="DateTime" Precision="3" />
+    <Property Name="GUID" Type="Guid" Nullable="false" />
+    <Property Name="PARENT_GUID" Type="Guid" />
+    <Property Name="Expr1" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="Print_Shisa">
+    <Key>
+      <PropertyRef Name="User_ID" />
+      <PropertyRef Name="ID" />
+      <PropertyRef Name="GUID" />
+      <PropertyRef Name="Expr3" />
+    </Key>
+    <Property Name="Invoice_No" Type="Int32" />
+    <Property Name="Header_Notes" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="DATE" Type="DateTime" Precision="0" />
+    <Property Name="Invoice_Discount" Type="Double" />
+    <Property Name="Total_Invoice" Type="Double" />
+    <Property Name="disc_rate" Type="Double" />
+    <Property Name="type_dis" Type="Double" />
+    <Property Name="User_Name" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="User_ID" Type="Int32" Nullable="false" />
+    <Property Name="time_bill" Type="DateTime" Precision="3" />
+    <Property Name="Cash" Type="Double" />
+    <Property Name="KNET" Type="Double" />
+    <Property Name="delivery_customer" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="delivery_mobile" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Govern" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="city" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="block" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="street" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="building" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="floor" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="room" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="add_Details" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Reset" Type="Double" />
+    <Property Name="Driver" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Driver_tele" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Status" Type="Boolean" />
+    <Property Name="QTY" Type="Double" />
+    <Property Name="PRICE" Type="Double" />
+    <Property Name="NOTE" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="disc" Type="Double" />
+    <Property Name="barcode" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="item_id" Type="Int32" />
+    <Property Name="NAME" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="Item_Note" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="Expr1" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Sales_Man" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="VAT" Type="Double" />
+    <Property Name="table_no" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="SN" Type="Int32" />
+    <Property Name="ORDER_TYPE" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="GUID" Type="Guid" Nullable="false" />
+    <Property Name="Subs_Paid" Type="Double" />
+    <Property Name="Subs_Balance" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Subs_End_Date" Type="DateTime" Precision="0" />
+    <Property Name="Booking_Date" Type="DateTime" Precision="0" />
+    <Property Name="Booking_Time" Type="DateTime" Precision="3" />
+    <Property Name="Expr2" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="VISA" Type="Double" />
+    <Property Name="MASTER" Type="Double" />
+    <Property Name="unit" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="latin_name" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="TRAN_POS_PAY" Type="Double" />
+    <Property Name="Gategory" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Expr3" Type="Guid" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Print_Talbat_Invoice">
+    <Key>
+      <PropertyRef Name="bill_id" />
+      <PropertyRef Name="Bill_Guid" />
+      <PropertyRef Name="GUID" />
+      <PropertyRef Name="id" />
+      <PropertyRef Name="Item_id2" />
+    </Key>
+    <Property Name="bill_id" Type="Int32" Nullable="false" />
+    <Property Name="Bill_Guid" Type="Guid" Nullable="false" />
+    <Property Name="PARENT_GUID" Type="Guid" />
+    <Property Name="NUMBER" Type="Int32" />
+    <Property Name="CUST" Type="Guid" />
+    <Property Name="STORE_GUID" Type="Guid" />
+    <Property Name="NOTE" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="DATE" Type="DateTime" Precision="0" />
+    <Property Name="disc" Type="Double" />
+    <Property Name="EXTEA" Type="Double" />
+    <Property Name="p_disc" Type="Double" />
+    <Property Name="p_extra" Type="Double" />
+    <Property Name="Total" Type="Double" />
+    <Property Name="type_dis" Type="Double" />
+    <Property Name="disc_rate" Type="Double" />
+    <Property Name="type_pay" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="GUID_JOB" Type="Guid" />
+    <Property Name="GUID_CURRENCY" Type="Guid" />
+    <Property Name="CURRENCY_VAL" Type="Double" />
+    <Property Name="DELETE_NUM" Type="Int32" />
+    <Property Name="Date_Delete" Type="DateTime" Precision="3" />
+    <Property Name="guid_user" Type="Guid" />
+    <Property Name="CUSTOMER_NAME" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="CUSTOMER_MOBILE1" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="CUSTOMER_MOBILE2" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="CUSTOMER_COMPANY" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="CUSTOMER_STREET" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="CUSTOMER_PHON" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="CUSTOMER_EMAIL" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="PAY_1_PAY" Type="Double" />
+    <Property Name="PAY_1_GUID" Type="Guid" />
+    <Property Name="TRAN_POS_GUID" Type="Guid" />
+    <Property Name="TRAN_POS_PAY" Type="Double" />
+    <Property Name="employee_pos" Type="Guid" />
+    <Property Name="time_bill" Type="DateTime" Precision="3" />
+    <Property Name="VAT" Type="Double" />
+    <Property Name="Cash" Type="Double" />
+    <Property Name="KNET" Type="Double" />
+    <Property Name="delivery_customer" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="delivery_mobile" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Govern" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="city" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="block" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="street" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="building" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="floor" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="room" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="add_Details" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Reset" Type="Double" />
+    <Property Name="Driver" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Driver_tele" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Status" Type="Boolean" />
+    <Property Name="name" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="QTY" Type="Double" />
+    <Property Name="PRICE" Type="Double" />
+    <Property Name="Note2" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Dis__" Type="Double" />
+    <Property Name="extra" Type="Double" />
+    <Property Name="guid_store" Type="Guid" />
+    <Property Name="unit" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="qty_unit" Type="Double" />
+    <Property Name="recpt" Type="Int32" />
+    <Property Name="barcode" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="order_qty" Type="Double" />
+    <Property Name="order_n" Type="Int32" />
+    <Property Name="Vat__" Type="Double" />
+    <Property Name="item_id" Type="Int32" />
+    <Property Name="GUID" Type="Guid" Nullable="false" />
+    <Property Name="id" Type="Int32" Nullable="false" />
+    <Property Name="Item_id2" Type="Int32" Nullable="false" />
+    <Property Name="Item_NAme" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="Item_note" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="BALANCE" Type="Double" />
+    <Property Name="AVG_PRICE" Type="Double" />
+    <Property Name="UNIT1" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="QTY_UNIT1" Type="Double" />
+    <Property Name="BARCODE_1" Type="Double" />
+    <Property Name="UNIT2" Type="DateTime" Precision="3" />
+    <Property Name="QTY_UNIT2" Type="Double" />
+    <Property Name="BARCODE_2" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="UNIT3" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="QTY_UNIT3" Type="Double" />
+    <Property Name="BARCODE_3" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="latin_name" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="Company" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="Provenance" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="Quality" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="Color" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="Model" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="Dim" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="Pos" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="Origin" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="User_Guid" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="Currency_Guid" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="Whole" Type="Double" />
+    <Property Name="Half" Type="Double" />
+    <Property Name="Vendor" Type="Double" />
+    <Property Name="EndUser" Type="Double" />
+    <Property Name="Export" Type="Double" />
+    <Property Name="Retail" Type="Double" />
+    <Property Name="LastPrice" Type="Double" />
+    <Property Name="OrderLimit" Type="Double" />
+    <Property Name="MAX_QTY" Type="Double" />
+    <Property Name="MIN_QTY" Type="Double" />
+    <Property Name="Vat_" Type="Double" />
+    <Property Name="TYPE_ITEME" Type="Double" />
+  </EntityType>
+  <EntityType Name="Purchase_Invoice">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="NUMBER" Type="Int32" />
+    <Property Name="NOTE" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="DATE" Type="DateTime" Precision="0" />
+    <Property Name="disc" Type="Double" />
+    <Property Name="EXTEA" Type="Double" />
+    <Property Name="p_extra" Type="Double" />
+    <Property Name="total" Type="Double" />
+    <Property Name="p_disc" Type="Double" />
+    <Property Name="type_dis" Type="Double" />
+    <Property Name="disc_rate" Type="Double" />
+    <Property Name="type_pay" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="delivery_customer" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="delivery_mobile" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="knet" Type="Double" />
+    <Property Name="cash" Type="Double" />
+    <Property Name="VAT" Type="Double" />
+    <Property Name="time_bill" Type="DateTime" Precision="3" />
+    <Property Name="QTY" Type="Double" />
+    <Property Name="PRICE" Type="Double" />
+    <Property Name="Expr1" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Expr2" Type="Double" />
+    <Property Name="extra" Type="Double" />
+    <Property Name="guid_store" Type="Guid" />
+    <Property Name="unit" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="qty_unit" Type="Double" />
+    <Property Name="recpt" Type="Int32" />
+    <Property Name="barcode" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="order_n" Type="Int32" />
+    <Property Name="order_qty" Type="Double" />
+    <Property Name="Expr3" Type="Double" />
+    <Property Name="item_id" Type="Int32" />
+    <Property Name="name" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="id" Type="Int32" Nullable="false" />
+    <Property Name="Expr4" Type="Double" />
+    <Property Name="Expr5" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="PARENT_GUID" Type="Guid" />
+  </EntityType>
+  <EntityType Name="Receipt_and_Payment">
+    <Key>
+      <PropertyRef Name="GUID" />
+    </Key>
+    <Property Name="NUMBER_D" Type="Int32" />
+    <Property Name="CREDIT" Type="Double" />
+    <Property Name="DEBIT" Type="Double" />
+    <Property Name="Name" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Name="TYPE" Type="Guid" />
+    <Property Name="NUMBER" Type="Int32" />
+    <Property Name="NOTE" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="DATE" Type="DateTime" Precision="3" />
+    <Property Name="name_recip" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="mobile_recipt" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Type_name" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="GUID" Type="Guid" Nullable="false" />
+    <Property Name="number_document" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Line_Note" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Customer_name" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="amount" Type="Double" />
+    <Property Name="check_no" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Bank" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="CODE" Type="Int32" />
+  </EntityType>
+  <EntityType Name="Refund">
+    <Key>
+      <PropertyRef Name="User_ID" />
+      <PropertyRef Name="ID" />
+      <PropertyRef Name="GUID" />
+    </Key>
+    <Property Name="Invoice_No" Type="Int32" />
+    <Property Name="Header_Notes" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="DATE" Type="DateTime" Precision="0" />
+    <Property Name="Invoice_Discount" Type="Double" />
+    <Property Name="Total_Invoice" Type="Double" />
+    <Property Name="disc_rate" Type="Double" />
+    <Property Name="type_dis" Type="Double" />
+    <Property Name="User_Name" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="User_ID" Type="Int32" Nullable="false" />
+    <Property Name="time_bill" Type="DateTime" Precision="3" />
+    <Property Name="Cash" Type="Double" />
+    <Property Name="KNET" Type="Double" />
+    <Property Name="delivery_customer" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="delivery_mobile" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Govern" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="city" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="block" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="street" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="building" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="floor" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="room" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="add_Details" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Reset" Type="Double" />
+    <Property Name="Driver" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Driver_tele" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Status" Type="Boolean" />
+    <Property Name="QTY" Type="Double" />
+    <Property Name="PRICE" Type="Double" />
+    <Property Name="NOTE" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="disc" Type="Double" />
+    <Property Name="barcode" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="item_id" Type="Int32" />
+    <Property Name="NAME" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="Item_Note" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="Expr1" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Sales_Man" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="VAT" Type="Double" />
+    <Property Name="table_no" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="SN" Type="Int32" />
+    <Property Name="ORDER_TYPE" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="GUID" Type="Guid" Nullable="false" />
+    <Property Name="Subs_Paid" Type="Double" />
+    <Property Name="Subs_Balance" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Subs_End_Date" Type="DateTime" Precision="0" />
+    <Property Name="Booking_Date" Type="DateTime" Precision="0" />
+    <Property Name="Booking_Time" Type="DateTime" Precision="3" />
+    <Property Name="Expr2" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="VISA" Type="Double" />
+    <Property Name="MASTER" Type="Double" />
+    <Property Name="unit" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="latin_name" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="TRAN_POS_PAY" Type="Double" />
+    <Property Name="CUSTOMER_MOBILE1" Type="Int32" />
+    <Property Name="shift_no" Type="Int32" />
+    <Property Name="Gategory" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="CUSTOMER_PHON" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="CUSTOMER_STREET" Type="Double" />
+    <Property Name="CUSTOMER_EMAIL" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="CUSTOMER_COMPANY" Type="Double" />
+    <Property Name="CUSTOMER_MOBILE2" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Expr3" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="PARENT_GUID" Type="Guid" />
+  </EntityType>
+  <EntityType Name="Sales_Invoice">
+    <Key>
+      <PropertyRef Name="Expr1" />
+      <PropertyRef Name="Expr2" />
+      <PropertyRef Name="GUID" />
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="Expr1" Type="Int32" Nullable="false" />
+    <Property Name="Expr2" Type="Guid" Nullable="false" />
+    <Property Name="PARENT_GUID" Type="Guid" />
+    <Property Name="NUMBER" Type="Int32" />
+    <Property Name="CUST" Type="Guid" />
+    <Property Name="STORE_GUID" Type="Guid" />
+    <Property Name="NOTE" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="DATE" Type="DateTime" Precision="0" />
+    <Property Name="disc" Type="Double" />
+    <Property Name="EXTEA" Type="Double" />
+    <Property Name="p_disc" Type="Double" />
+    <Property Name="p_extra" Type="Double" />
+    <Property Name="total" Type="Double" />
+    <Property Name="type_dis" Type="Double" />
+    <Property Name="disc_rate" Type="Double" />
+    <Property Name="type_pay" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="GUID_JOB" Type="Guid" />
+    <Property Name="GUID_CURRENCY" Type="Guid" />
+    <Property Name="CURRENCY_VAL" Type="Double" />
+    <Property Name="DELETE_NUM" Type="Int32" />
+    <Property Name="Date_Delete" Type="DateTime" Precision="3" />
+    <Property Name="guid_user" Type="Guid" />
+    <Property Name="CUSTOMER_NAME" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="CUSTOMER_MOBILE1" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="CUSTOMER_MOBILE2" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="CUSTOMER_COMPANY" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="CUSTOMER_STREET" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="CUSTOMER_PHON" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="CUSTOMER_EMAIL" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="PAY_1_PAY" Type="Double" />
+    <Property Name="PAY_1_GUID" Type="Guid" />
+    <Property Name="TRAN_POS_GUID" Type="Guid" />
+    <Property Name="TRAN_POS_PAY" Type="Double" />
+    <Property Name="employee_pos" Type="Guid" />
+    <Property Name="time_bill" Type="DateTime" Precision="3" />
+    <Property Name="VAT" Type="Double" />
+    <Property Name="cash" Type="Double" />
+    <Property Name="knet" Type="Double" />
+    <Property Name="delivery_customer" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="delivery_mobile" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Govern" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="city" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="block" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="street" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="building" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="floor" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="room" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="add_Details" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Reset" Type="Double" />
+    <Property Name="Driver" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Driver_tele" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Status" Type="Boolean" />
+    <Property Name="name" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="QTY" Type="Double" />
+    <Property Name="PRICE" Type="Double" />
+    <Property Name="Expr3" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Expr4" Type="Double" />
+    <Property Name="extra" Type="Double" />
+    <Property Name="guid_store" Type="Guid" />
+    <Property Name="unit" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="qty_unit" Type="Double" />
+    <Property Name="recpt" Type="Int32" />
+    <Property Name="barcode" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="order_qty" Type="Double" />
+    <Property Name="order_n" Type="Int32" />
+    <Property Name="Expr5" Type="Double" />
+    <Property Name="item_id" Type="Int32" />
+    <Property Name="GUID" Type="Guid" Nullable="false" />
+    <Property Name="id" Type="Int32" Nullable="false" />
+    <Property Name="Expr6" Type="Int32" />
+    <Property Name="Expr7" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="Expr8" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="BALANCE" Type="Double" />
+    <Property Name="avg_price" Type="Double" />
+    <Property Name="UNIT1" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="QTY_UNIT1" Type="Double" />
+    <Property Name="BARCODE_1" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="UNIT2" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="QTY_UNIT2" Type="Double" />
+    <Property Name="BARCODE_2" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="UNIT3" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="QTY_UNIT3" Type="Double" />
+    <Property Name="BARCODE_3" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="latin_name" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="Company" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="Provenance" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="Quality" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="Color" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="Model" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="Dim" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="Pos" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="Origin" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="Expr9" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="Expr10" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="Whole" Type="Double" />
+    <Property Name="Half" Type="Double" />
+    <Property Name="Vendor" Type="Double" />
+    <Property Name="EndUser" Type="Double" />
+    <Property Name="Export" Type="Double" />
+    <Property Name="Retail" Type="Double" />
+    <Property Name="LastPrice" Type="Double" />
+    <Property Name="OrderLimit" Type="Double" />
+    <Property Name="MAX_QTY" Type="Double" />
+    <Property Name="MIN_QTY" Type="Double" />
+    <Property Name="Expr11" Type="Double" />
+    <Property Name="TYPE_ITEME" Type="Double" />
+  </EntityType>
+  <EntityType Name="sales_invoice_XX">
+    <Key>
+      <PropertyRef Name="Internal_id" />
+      <PropertyRef Name="iNVOICE_Guid" />
+      <PropertyRef Name="GUID" />
+      <PropertyRef Name="id" />
+      <PropertyRef Name="USER_ID" />
+    </Key>
+    <Property Name="Internal_id" Type="Int32" Nullable="false" />
+    <Property Name="iNVOICE_Guid" Type="Guid" Nullable="false" />
+    <Property Name="PARENT_GUID" Type="Guid" />
+    <Property Name="Invoice_ID" Type="Int32" />
+    <Property Name="CUST" Type="Guid" />
+    <Property Name="STORE_GUID" Type="Guid" />
+    <Property Name="NOTE" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="DATE" Type="DateTime" Precision="0" />
+    <Property Name="disc" Type="Double" />
+    <Property Name="EXTEA" Type="Double" />
+    <Property Name="p_disc" Type="Double" />
+    <Property Name="p_extra" Type="Double" />
+    <Property Name="total" Type="Double" />
+    <Property Name="type_dis" Type="Double" />
+    <Property Name="disc_rate" Type="Double" />
+    <Property Name="type_pay" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="GUID_JOB" Type="Guid" />
+    <Property Name="GUID_CURRENCY" Type="Guid" />
+    <Property Name="CURRENCY_VAL" Type="Double" />
+    <Property Name="DELETE_NUM" Type="Int32" />
+    <Property Name="Date_Delete" Type="DateTime" Precision="3" />
+    <Property Name="guid_user" Type="Guid" />
+    <Property Name="CUSTOMER_NAME" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="CUSTOMER_MOBILE1" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="CUSTOMER_MOBILE2" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="CUSTOMER_COMPANY" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="CUSTOMER_STREET" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="CUSTOMER_PHON" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="CUSTOMER_EMAIL" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="PAY_1_PAY" Type="Double" />
+    <Property Name="PAY_1_GUID" Type="Guid" />
+    <Property Name="TRAN_POS_GUID" Type="Guid" />
+    <Property Name="TRAN_POS_PAY" Type="Double" />
+    <Property Name="employee_pos" Type="Guid" />
+    <Property Name="time_bill" Type="DateTime" Precision="3" />
+    <Property Name="VAT" Type="Double" />
+    <Property Name="cash" Type="Double" />
+    <Property Name="knet" Type="Double" />
+    <Property Name="delivery_customer" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="delivery_mobile" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Govern" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="city" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="block" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="street" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="building" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="floor" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="room" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="add_Details" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Reset" Type="Double" />
+    <Property Name="Driver" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Driver_tele" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Status" Type="Boolean" />
+    <Property Name="name" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="QTY" Type="Double" />
+    <Property Name="PRICE" Type="Double" />
+    <Property Name="Notes_Line_Item" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Line_Disc" Type="Double" />
+    <Property Name="extra" Type="Double" />
+    <Property Name="guid_store" Type="Guid" />
+    <Property Name="unit" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="qty_unit" Type="Double" />
+    <Property Name="recpt" Type="Int32" />
+    <Property Name="barcode" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="order_qty" Type="Double" />
+    <Property Name="order_n" Type="Int32" />
+    <Property Name="VAT_Line" Type="Double" />
+    <Property Name="item_id" Type="Int32" />
+    <Property Name="GUID" Type="Guid" Nullable="false" />
+    <Property Name="id" Type="Int32" Nullable="false" />
+    <Property Name="Line_ID" Type="Int32" />
+    <Property Name="Item_Name" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="Item_Note" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="BALANCE" Type="Double" />
+    <Property Name="avg_price" Type="Double" />
+    <Property Name="UNIT1" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="QTY_UNIT1" Type="Double" />
+    <Property Name="BARCODE_1" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="UNIT2" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="QTY_UNIT2" Type="Double" />
+    <Property Name="BARCODE_2" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="UNIT3" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="QTY_UNIT3" Type="Double" />
+    <Property Name="BARCODE_3" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="latin_name" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="Company" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="Provenance" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="Quality" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="Color" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="Model" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="Dim" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="Pos" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="Origin" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="Expr9" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="Expr10" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="Whole" Type="Double" />
+    <Property Name="Half" Type="Double" />
+    <Property Name="Vendor" Type="Double" />
+    <Property Name="EndUser" Type="Double" />
+    <Property Name="Export" Type="Double" />
+    <Property Name="Retail" Type="Double" />
+    <Property Name="LastPrice" Type="Double" />
+    <Property Name="OrderLimit" Type="Double" />
+    <Property Name="MAX_QTY" Type="Double" />
+    <Property Name="MIN_QTY" Type="Double" />
+    <Property Name="Expr11" Type="Double" />
+    <Property Name="TYPE_ITEME" Type="Double" />
+    <Property Name="USER_ID" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Sales_Report">
+    <Key>
+      <PropertyRef Name="GUID" />
+    </Key>
+    <Property Name="NUMBER" Type="Int32" />
+    <Property Name="GUID" Type="Guid" Nullable="false" />
+    <Property Name="DATE" Type="DateTime" Precision="0" />
+    <Property Name="total" Type="Double" />
+    <Property Name="PARENT_GUID" Type="Guid" />
+  </EntityType>
+  <EntityType Name="Sales_report_all">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="NUMBER" Type="Int32" />
+    <Property Name="total" Type="Double" />
+    <Property Name="DATE" Type="DateTime" Precision="0" />
+    <Property Name="time_bill" Type="DateTime" Precision="3" />
+    <Property Name="cash" Type="Double" />
+    <Property Name="knet" Type="Double" />
+    <Property Name="delivery_customer" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="delivery_mobile" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Reset" Type="Double" />
+    <Property Name="Govern" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="city" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="block" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="street" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="building" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="floor" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="room" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="add_Details" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Driver" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Driver_tele" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="VAT" Type="Double" />
+    <Property Name="guid_user" Type="Guid" />
+    <Property Name="CURRENCY_VAL" Type="Double" />
+    <Property Name="GUID_CURRENCY" Type="Guid" />
+    <Property Name="GUID_JOB" Type="Guid" />
+    <Property Name="disc_rate" Type="Double" />
+    <Property Name="type_pay" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="type_dis" Type="Double" />
+    <Property Name="p_extra" Type="Double" />
+    <Property Name="p_disc" Type="Double" />
+    <Property Name="EXTEA" Type="Double" />
+    <Property Name="disc" Type="Double" />
+    <Property Name="STORE_GUID" Type="Guid" />
+    <Property Name="NOTE" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="CUST" Type="Guid" />
+    <Property Name="PARENT_GUID" Type="Guid" />
+    <Property Name="name" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="id" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Shieft_Report">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="user_name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="cash" Type="Double" />
+    <Property Name="visa" Type="Double" />
+    <Property Name="total" Type="Double" />
+    <Property Name="start_date" Type="DateTime" Precision="3" />
+    <Property Name="end_date" Type="DateTime" Precision="3" />
+    <Property Name="status" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="pos_expenses" Type="Double" />
+    <Property Name="salesman" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="R_total" Type="Double" />
+    <Property Name="R_Cash" Type="Double" />
+    <Property Name="R_Knet" Type="Double" />
+    <Property Name="N_Total" Type="Double" />
+    <Property Name="N_Cash" Type="Double" />
+    <Property Name="N_KNET" Type="Double" />
+    <Property Name="Number" Type="Int32" />
+    <Property Name="Master" Type="Double" />
+    <Property Name="Visa_Card" Type="Double" />
+    <Property Name="Open_Orders" Type="Double" />
+    <Property Name="Subs" Type="Double" />
+    <Property Name="jeebly" Type="Double" />
+    <Property Name="deliveroo" Type="Double" />
+    <Property Name="Open_Balance" Type="Double" />
+  </EntityType>
+  <EntityType Name="Show_Items">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="NAME" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="Group" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="AVG_PRICE" Type="Double" />
+    <Property Name="latin_name" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="Company" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="EndUser" Type="Double" />
+    <Property Name="LastPrice" Type="Double" />
+    <Property Name="TYPE_ITEME" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Is_Sales" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Status" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Sort" Type="Int32" />
+    <Property Name="BARCODE_1" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="ID" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="STAFF_SALES">
+    <Key>
+      <PropertyRef Name="User_ID" />
+      <PropertyRef Name="ID" />
+      <PropertyRef Name="GUID" />
+    </Key>
+    <Property Name="Invoice_No" Type="Int32" />
+    <Property Name="Header_Notes" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="DATE" Type="DateTime" Precision="0" />
+    <Property Name="Invoice_Discount" Type="Double" />
+    <Property Name="Total_Invoice" Type="Double" />
+    <Property Name="disc_rate" Type="Double" />
+    <Property Name="type_dis" Type="Double" />
+    <Property Name="User_Name" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="User_ID" Type="Int32" Nullable="false" />
+    <Property Name="time_bill" Type="DateTime" Precision="3" />
+    <Property Name="Cash" Type="Double" />
+    <Property Name="KNET" Type="Double" />
+    <Property Name="delivery_customer" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="delivery_mobile" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Govern" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="city" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="block" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="street" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="building" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="floor" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="room" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="add_Details" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Reset" Type="Double" />
+    <Property Name="Driver" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Driver_tele" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Status" Type="Boolean" />
+    <Property Name="QTY" Type="Double" />
+    <Property Name="PRICE" Type="Double" />
+    <Property Name="NOTE" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="disc" Type="Double" />
+    <Property Name="barcode" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="item_id" Type="Int32" />
+    <Property Name="NAME" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="Item_Note" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="Expr1" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Sales_Man" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="VAT" Type="Double" />
+    <Property Name="table_no" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="SN" Type="Int32" />
+    <Property Name="ORDER_TYPE" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="GUID" Type="Guid" Nullable="false" />
+    <Property Name="Subs_Paid" Type="Double" />
+    <Property Name="Subs_Balance" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Subs_End_Date" Type="DateTime" Precision="0" />
+    <Property Name="Booking_Date" Type="DateTime" Precision="0" />
+    <Property Name="Booking_Time" Type="DateTime" Precision="3" />
+    <Property Name="SALES_MAN_2" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="VISA" Type="Double" />
+    <Property Name="MASTER" Type="Double" />
+    <Property Name="unit" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="latin_name" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="TRAN_POS_PAY" Type="Double" />
+    <Property Name="CUSTOMER_MOBILE1" Type="Int32" />
+    <Property Name="shift_no" Type="Int32" />
+    <Property Name="Gategory" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="CUSTOMER_PHON" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="CUSTOMER_STREET" Type="Double" />
+    <Property Name="CUSTOMER_EMAIL" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="CUSTOMER_COMPANY" Type="Double" />
+    <Property Name="CUSTOMER_MOBILE2" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Expr3" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="PARENT_GUID" Type="Guid" />
+  </EntityType>
+  <EntityType Name="Subs_Report_New">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="CUSTOMER" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="TELE" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="TYPE" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="VALUE" Type="Double" />
+    <Property Name="DISCOUNT" Type="Int32" />
+    <Property Name="START" Type="DateTime" Precision="0" />
+    <Property Name="END" Type="DateTime" Precision="0" />
+    <Property Name="Cash" Type="Double" />
+    <Property Name="Knet" Type="Double" />
+    <Property Name="count" Type="Int32" />
+    <Property Name="Number" Type="Int32" />
+  </EntityType>
+  <EntityType Name="Suppliers_Balance">
+    <Key>
+      <PropertyRef Name="GUID" />
+    </Key>
+    <Property Name="Code" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Name="Name" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Name="Debit" Type="Double" />
+    <Property Name="Credit" Type="Double" />
+    <Property Name="Balance" Type="Double" />
+    <Property Name="GUID" Type="Guid" Nullable="false" />
+    <Property Name="ParentGUID" Type="Guid" />
+  </EntityType>
+  <EntityType Name="View_1">
+    <Key>
+      <PropertyRef Name="ID" />
+      <PropertyRef Name="GUID" />
+      <PropertyRef Name="INVOICE_GUID" />
+    </Key>
+    <Property Name="CUST" Type="Guid" />
+    <Property Name="Expr1" Type="Guid" />
+    <Property Name="STORE_GUID" Type="Guid" />
+    <Property Name="DATE" Type="DateTime" Precision="0" />
+    <Property Name="disc" Type="Double" />
+    <Property Name="EXTEA" Type="Double" />
+    <Property Name="total" Type="Double" />
+    <Property Name="p_extra" Type="Double" />
+    <Property Name="p_disc" Type="Double" />
+    <Property Name="type_dis" Type="Double" />
+    <Property Name="disc_rate" Type="Double" />
+    <Property Name="type_pay" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="GUID_JOB" Type="Guid" />
+    <Property Name="GUID_CURRENCY" Type="Guid" />
+    <Property Name="CURRENCY_VAL" Type="Double" />
+    <Property Name="DELETE_NUM" Type="Int32" />
+    <Property Name="Date_Delete" Type="DateTime" Precision="3" />
+    <Property Name="guid_user" Type="Guid" />
+    <Property Name="CUSTOMER_NAME" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="time_bill" Type="DateTime" Precision="3" />
+    <Property Name="GUID_ITEME" Type="Guid" />
+    <Property Name="QTY" Type="Double" />
+    <Property Name="PRICE" Type="Double" />
+    <Property Name="NOTE" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="DISC_" Type="Double" />
+    <Property Name="extra" Type="Double" />
+    <Property Name="guid_store" Type="Guid" />
+    <Property Name="unit" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="qty_unit" Type="Double" />
+    <Property Name="recpt" Type="Int32" />
+    <Property Name="INVOICE_NO" Type="Int32" />
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="GUID" Type="Guid" Nullable="false" />
+    <Property Name="NAME" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="INVOICE_GUID" Type="Guid" Nullable="false" />
+  </EntityType>
+  <EntityType Name="View_DAY1">
+    <Key>
+      <PropertyRef Name="GUID_DAY1" />
+    </Key>
+    <Property Name="GUID_DAY1" Type="Guid" Nullable="false" />
+    <Property Name="NUMBER_DAY1" Type="Int32" />
+    <Property Name="DATE_DAY1" Type="DateTime" Precision="0" />
+    <Property Name="NOTE_DAY1" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="TYPE_DAY1" Type="Guid" />
+    <Property Name="NOTE_DAY1_TYPE" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="GUID_JOB_DAY1" Type="Guid" />
+    <Property Name="NAME_JOBE_DAY1" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="GUID_CURRENCY_DAY1" Type="Guid" />
+    <Property Name="NAME_CURRENCY_DAY1" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="CURRENCY_VAL_DAY1" Type="Double" />
+    <Property Name="Reference" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="View_DAY2">
+    <Key>
+      <PropertyRef Name="id_DAY2" />
+      <PropertyRef Name="GUID_DAY2" />
+    </Key>
+    <Property Name="id_DAY2" Type="Int32" Nullable="false" />
+    <Property Name="PAENT_GUID_DAY2" Type="Guid" />
+    <Property Name="ACCOUNT_GUID_DAY2" Type="Guid" />
+    <Property Name="Name_DAY2" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Name="DEBIT_DAY2" Type="Double" />
+    <Property Name="CREDIT_DAY2" Type="Double" />
+    <Property Name="NOTE_DAY2" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="GUID_DAY2" Type="Guid" Nullable="false" />
+    <Property Name="GUID_JOB_DAY2" Type="Guid" />
+    <Property Name="NAME_JOB_DAY2" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="GUID_CURRENCY_DAY2" Type="Guid" />
+    <Property Name="NAME_CURRENCY_DAY2" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="CURRENCY_VAL" Type="Double" />
+  </EntityType>
+  <EntityType Name="View_prt_allday">
+    <Key>
+      <PropertyRef Name="GUID_DAY1" />
+      <PropertyRef Name="GUID_DAY2" />
+    </Key>
+    <Property Name="GUID_DAY1" Type="Guid" Nullable="false" />
+    <Property Name="NUMBER_DAY1" Type="Int32" />
+    <Property Name="DATE_DAY1" Type="DateTime" Precision="3" />
+    <Property Name="NOTE_DAY1" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="TYPE_DAY1" Type="Guid" />
+    <Property Name="NOTE_DAY1_TYPE" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="GUID_JOB_DAY1" Type="Guid" />
+    <Property Name="NAME_JOBE_DAY1" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="GUID_CURRENCY_DAY1" Type="Guid" />
+    <Property Name="NAME_CURRENCY_DAY1" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="CURRENCY_VAL_DAY1" Type="Double" />
+    <Property Name="PAENT_GUID_DAY2" Type="Guid" />
+    <Property Name="ACCOUNT_GUID_DAY2" Type="Guid" />
+    <Property Name="Name_DAY2" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Name="DEBIT_DAY2" Type="Double" />
+    <Property Name="CREDIT_DAY2" Type="Double" />
+    <Property Name="NOTE_DAY2" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="GUID_DAY2" Type="Guid" Nullable="false" />
+    <Property Name="GUID_JOB_DAY2" Type="Guid" />
+    <Property Name="NAME_JOB_DAY2" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="GUID_CURRENCY_DAY2" Type="Guid" />
+    <Property Name="NAME_CURRENCY_DAY2" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="View_shoe_iteme">
+    <Key>
+      <PropertyRef Name="Expr1" />
+      <PropertyRef Name="GUID" />
+    </Key>
+    <Property Name="Expr1" Type="Guid" Nullable="false" />
+    <Property Name="GUID" Type="Guid" Nullable="false" />
+    <Property Name="المجموعة" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="اسم_المادة" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="ملاحظات" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="الرصيد" Type="Double" />
+    <Property Name="avg_price" Type="Double" />
+    <Property Name="img" Type="Binary" MaxLength="Max" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="Waiters_Report">
+    <Key>
+      <PropertyRef Name="GUID" />
+    </Key>
+    <Property Name="GUID" Type="Guid" Nullable="false" />
+    <Property Name="NAME" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="PRICE" Type="Double" />
+    <Property Name="QTY" Type="Double" />
+    <Property Name="Time_Punch" Type="DateTime" Precision="3" />
+    <Property Name="Expr1" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Waiter" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityContainer Name="DB_ACCEntities2" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="A4Print" EntityType="Self.A4Print" />
+    <EntitySet Name="Account_Balance" EntityType="Self.Account_Balance" />
+    <EntitySet Name="Account_Balance2" EntityType="Self.Account_Balance2" />
+    <EntitySet Name="Account_Statement" EntityType="Self.Account_Statement" />
+    <EntitySet Name="Accounting_Balances" EntityType="Self.Accounting_Balances" />
+    <EntitySet Name="Bills_Profit" EntityType="Self.Bills_Profit" />
+    <EntitySet Name="Customer_and_Spplier" EntityType="Self.Customer_and_Spplier" />
+    <EntitySet Name="Customers_Balance" EntityType="Self.Customers_Balance" />
+    <EntitySet Name="Daily_Stock_Out" EntityType="Self.Daily_Stock_Out" />
+    <EntitySet Name="inventory" EntityType="Self.inventory" />
+    <EntitySet Name="Item_Balance" EntityType="Self.Item_Balance" />
+    <EntitySet Name="Net_Items_Sales_ByDate" EntityType="Self.Net_Items_Sales_ByDate" />
+    <EntitySet Name="New_Sales_Invoice" EntityType="Self.New_Sales_Invoice" />
+    <EntitySet Name="Order_History_V" EntityType="Self.Order_History_V" />
+    <EntitySet Name="ORder_Type" EntityType="Self.ORder_Type" />
+    <EntitySet Name="Paid_Orders" EntityType="Self.Paid_Orders" />
+    <EntitySet Name="pos_exp" EntityType="Self.pos_exp" />
+    <EntitySet Name="POS_Invoice_X" EntityType="Self.POS_Invoice_X" />
+    <EntitySet Name="POS_REFUND" EntityType="Self.POS_REFUND" />
+    <EntitySet Name="previous" EntityType="Self.previous" />
+    <EntitySet Name="Previous_Balance" EntityType="Self.Previous_Balance" />
+    <EntitySet Name="Print_Deleted_Item" EntityType="Self.Print_Deleted_Item" />
+    <EntitySet Name="Print_Order" EntityType="Self.Print_Order" />
+    <EntitySet Name="Print_Shisa" EntityType="Self.Print_Shisa" />
+    <EntitySet Name="Print_Talbat_Invoice" EntityType="Self.Print_Talbat_Invoice" />
+    <EntitySet Name="Purchase_Invoice" EntityType="Self.Purchase_Invoice" />
+    <EntitySet Name="Receipt_and_Payment" EntityType="Self.Receipt_and_Payment" />
+    <EntitySet Name="Refund" EntityType="Self.Refund" />
+    <EntitySet Name="Sales_Invoice" EntityType="Self.Sales_Invoice" />
+    <EntitySet Name="sales_invoice_XX" EntityType="Self.sales_invoice_XX" />
+    <EntitySet Name="Sales_Report" EntityType="Self.Sales_Report" />
+    <EntitySet Name="Sales_report_all" EntityType="Self.Sales_report_all" />
+    <EntitySet Name="Shieft_Report" EntityType="Self.Shieft_Report" />
+    <EntitySet Name="Show_Items" EntityType="Self.Show_Items" />
+    <EntitySet Name="STAFF_SALES" EntityType="Self.STAFF_SALES" />
+    <EntitySet Name="Subs_Report_New" EntityType="Self.Subs_Report_New" />
+    <EntitySet Name="Suppliers_Balance" EntityType="Self.Suppliers_Balance" />
+    <EntitySet Name="View_1" EntityType="Self.View_1" />
+    <EntitySet Name="View_DAY1" EntityType="Self.View_DAY1" />
+    <EntitySet Name="View_DAY2" EntityType="Self.View_DAY2" />
+    <EntitySet Name="View_prt_allday" EntityType="Self.View_prt_allday" />
+    <EntitySet Name="View_shoe_iteme" EntityType="Self.View_shoe_iteme" />
+    <EntitySet Name="Waiters_Report" EntityType="Self.Waiters_Report" />
+  </EntityContainer>
+</Schema>

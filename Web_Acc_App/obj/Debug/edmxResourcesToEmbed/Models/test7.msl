@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="DB_ACCModel6StoreContainer" CdmEntityContainer="DB_ACCEntities10">
+    <EntitySetMapping Name="View_7">
+      <EntityTypeMapping TypeName="DB_ACCModel6.View_7">
+        <MappingFragment StoreEntitySet="View_7">
+          <ScalarProperty Name="BARCODE_1" ColumnName="BARCODE_1" />
+          <ScalarProperty Name="NAME" ColumnName="NAME" />
+          <ScalarProperty Name="Expr1" ColumnName="Expr1" />
+          <ScalarProperty Name="GUID" ColumnName="GUID" />
+          <ScalarProperty Name="Store" ColumnName="Store" />
+          <ScalarProperty Name="Group_Name" ColumnName="Group_Name" />
+          <ScalarProperty Name="TYPE_ITEME" ColumnName="TYPE_ITEME" />
+          <ScalarProperty Name="AVG_PRICE" ColumnName="AVG_PRICE" />
+          <ScalarProperty Name="EndUser" ColumnName="EndUser" />
+          <ScalarProperty Name="UNIT2" ColumnName="UNIT2" />
+          <ScalarProperty Name="QTY_UNIT2" ColumnName="QTY_UNIT2" />
+          <ScalarProperty Name="Qty2" ColumnName="Qty2" />
+          <ScalarProperty Name="latin_name" ColumnName="latin_name" />
+          <ScalarProperty Name="Company" ColumnName="Company" />
+          <ScalarProperty Name="MIN_QTY" ColumnName="MIN_QTY" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

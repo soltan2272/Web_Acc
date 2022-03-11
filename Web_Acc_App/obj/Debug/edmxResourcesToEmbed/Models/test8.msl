@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="DB_ACCModel7StoreContainer" CdmEntityContainer="DB_ACCEntities11">
+    <EntitySetMapping Name="POS_Bills_Details">
+      <EntityTypeMapping TypeName="DB_ACCModel7.POS_Bills_Details">
+        <MappingFragment StoreEntitySet="POS_Bills_Details">
+          <ScalarProperty Name="NAME" ColumnName="NAME" />
+          <ScalarProperty Name="NUMBER" ColumnName="NUMBER" />
+          <ScalarProperty Name="NOTE" ColumnName="NOTE" />
+          <ScalarProperty Name="DATE" ColumnName="DATE" />
+          <ScalarProperty Name="time_bill" ColumnName="time_bill" />
+          <ScalarProperty Name="p_disc" ColumnName="p_disc" />
+          <ScalarProperty Name="disc" ColumnName="disc" />
+          <ScalarProperty Name="EXTEA" ColumnName="EXTEA" />
+          <ScalarProperty Name="Total" ColumnName="Total" />
+          <ScalarProperty Name="Cash" ColumnName="Cash" />
+          <ScalarProperty Name="KNET" ColumnName="KNET" />
+          <ScalarProperty Name="VISA" ColumnName="VISA" />
+          <ScalarProperty Name="MASTER" ColumnName="MASTER" />
+          <ScalarProperty Name="delivery_customer" ColumnName="delivery_customer" />
+          <ScalarProperty Name="delivery_mobile" ColumnName="delivery_mobile" />
+          <ScalarProperty Name="shift_no" ColumnName="shift_no" />
+          <ScalarProperty Name="table_no" ColumnName="table_no" />
+          <ScalarProperty Name="Branch" ColumnName="Branch" />
+          <ScalarProperty Name="GUID" ColumnName="GUID" />
+          <ScalarProperty Name="Expr1" ColumnName="Expr1" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="DB_ACCModel7" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="POS_Bills_Details">
+    <Key>
+      <PropertyRef Name="GUID" />
+      <PropertyRef Name="Expr1" />
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="NAME" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="NUMBER" Type="Int32" />
+    <Property Name="NOTE" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="DATE" Type="DateTime" Precision="0" />
+    <Property Name="time_bill" Type="DateTime" Precision="3" />
+    <Property Name="p_disc" Type="Double" />
+    <Property Name="disc" Type="Double" />
+    <Property Name="EXTEA" Type="Double" />
+    <Property Name="Total" Type="Double" />
+    <Property Name="Cash" Type="Double" />
+    <Property Name="KNET" Type="Double" />
+    <Property Name="VISA" Type="Double" />
+    <Property Name="MASTER" Type="Double" />
+    <Property Name="delivery_customer" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="delivery_mobile" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="shift_no" Type="Int32" />
+    <Property Name="table_no" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Branch" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="GUID" Type="Guid" Nullable="false" />
+    <Property Name="Expr1" Type="Guid" Nullable="false" />
+    <Property Name="ID" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityContainer Name="DB_ACCEntities11" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="POS_Bills_Details" EntityType="Self.POS_Bills_Details" />
+  </EntityContainer>
+</Schema>

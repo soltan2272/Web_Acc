@@ -1,0 +1,1560 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="DB_ACCModel1StoreContainer" CdmEntityContainer="DB_ACCEntities1">
+    <EntitySetMapping Name="A4Print">
+      <EntityTypeMapping TypeName="DB_ACCModel1.A4Print">
+        <MappingFragment StoreEntitySet="A4Print">
+          <ScalarProperty Name="GROUP_GUID" ColumnName="GROUP_GUID" />
+          <ScalarProperty Name="NUMBER" ColumnName="NUMBER" />
+          <ScalarProperty Name="PARENT_GUID" ColumnName="PARENT_GUID" />
+          <ScalarProperty Name="CUST" ColumnName="CUST" />
+          <ScalarProperty Name="DATE" ColumnName="DATE" />
+          <ScalarProperty Name="disc" ColumnName="disc" />
+          <ScalarProperty Name="EXTEA" ColumnName="EXTEA" />
+          <ScalarProperty Name="p_disc" ColumnName="p_disc" />
+          <ScalarProperty Name="p_extra" ColumnName="p_extra" />
+          <ScalarProperty Name="Total" ColumnName="Total" />
+          <ScalarProperty Name="type_dis" ColumnName="type_dis" />
+          <ScalarProperty Name="disc_rate" ColumnName="disc_rate" />
+          <ScalarProperty Name="type_pay" ColumnName="type_pay" />
+          <ScalarProperty Name="CUSTOMER_NAME" ColumnName="CUSTOMER_NAME" />
+          <ScalarProperty Name="CUSTOMER_MOBILE1" ColumnName="CUSTOMER_MOBILE1" />
+          <ScalarProperty Name="CUSTOMER_MOBILE2" ColumnName="CUSTOMER_MOBILE2" />
+          <ScalarProperty Name="CUSTOMER_COMPANY" ColumnName="CUSTOMER_COMPANY" />
+          <ScalarProperty Name="CUSTOMER_PHON" ColumnName="CUSTOMER_PHON" />
+          <ScalarProperty Name="CUSTOMER_EMAIL" ColumnName="CUSTOMER_EMAIL" />
+          <ScalarProperty Name="CUSTOMER_STREET" ColumnName="CUSTOMER_STREET" />
+          <ScalarProperty Name="time_bill" ColumnName="time_bill" />
+          <ScalarProperty Name="Cash" ColumnName="Cash" />
+          <ScalarProperty Name="KNET" ColumnName="KNET" />
+          <ScalarProperty Name="NAME" ColumnName="NAME" />
+          <ScalarProperty Name="QTY" ColumnName="QTY" />
+          <ScalarProperty Name="PRICE" ColumnName="PRICE" />
+          <ScalarProperty Name="NOTE" ColumnName="NOTE" />
+          <ScalarProperty Name="Item_Discount" ColumnName="Item_Discount" />
+          <ScalarProperty Name="extra" ColumnName="extra" />
+          <ScalarProperty Name="unit" ColumnName="unit" />
+          <ScalarProperty Name="qty_unit" ColumnName="qty_unit" />
+          <ScalarProperty Name="barcode" ColumnName="barcode" />
+          <ScalarProperty Name="VAT" ColumnName="VAT" />
+          <ScalarProperty Name="delivery_mobile" ColumnName="delivery_mobile" />
+          <ScalarProperty Name="image" ColumnName="image" />
+          <ScalarProperty Name="Bill_Name" ColumnName="Bill_Name" />
+          <ScalarProperty Name="DELETE_NUM" ColumnName="DELETE_NUM" />
+          <ScalarProperty Name="manual_number" ColumnName="manual_number" />
+          <ScalarProperty Name="delivery_customer" ColumnName="delivery_customer" />
+          <ScalarProperty Name="Branch" ColumnName="Branch" />
+          <ScalarProperty Name="Booking_Time" ColumnName="Booking_Time" />
+          <ScalarProperty Name="TRAN_POS_GUID" ColumnName="TRAN_POS_GUID" />
+          <ScalarProperty Name="Booking_Date" ColumnName="Booking_Date" />
+          <ScalarProperty Name="car_current_counter" ColumnName="car_current_counter" />
+          <ScalarProperty Name="TRAN_POS_PAY" ColumnName="TRAN_POS_PAY" />
+          <ScalarProperty Name="Header_Note" ColumnName="Header_Note" />
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="SN" ColumnName="SN" />
+          <ScalarProperty Name="TAF" ColumnName="TAF" />
+          <ScalarProperty Name="user_name" ColumnName="user_name" />
+          <ScalarProperty Name="Waiter" ColumnName="Waiter" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Account_Balance">
+      <EntityTypeMapping TypeName="DB_ACCModel1.Account_Balance">
+        <MappingFragment StoreEntitySet="Account_Balance">
+          <ScalarProperty Name="Code" ColumnName="Code" />
+          <ScalarProperty Name="Account_Name" ColumnName="Account_Name" />
+          <ScalarProperty Name="Debit" ColumnName="Debit" />
+          <ScalarProperty Name="Credit" ColumnName="Credit" />
+          <ScalarProperty Name="Balance" ColumnName="Balance" />
+          <ScalarProperty Name="GUID" ColumnName="GUID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Account_Balance2">
+      <EntityTypeMapping TypeName="DB_ACCModel1.Account_Balance2">
+        <MappingFragment StoreEntitySet="Account_Balance2">
+          <ScalarProperty Name="Code" ColumnName="Code" />
+          <ScalarProperty Name="Account" ColumnName="Account" />
+          <ScalarProperty Name="Debit" ColumnName="Debit" />
+          <ScalarProperty Name="Credit" ColumnName="Credit" />
+          <ScalarProperty Name="Balance" ColumnName="Balance" />
+          <ScalarProperty Name="GUID" ColumnName="GUID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Account_Statement">
+      <EntityTypeMapping TypeName="DB_ACCModel1.Account_Statement">
+        <MappingFragment StoreEntitySet="Account_Statement">
+          <ScalarProperty Name="GUID_DAY1" ColumnName="GUID_DAY1" />
+          <ScalarProperty Name="NUMBER_DAY1" ColumnName="NUMBER_DAY1" />
+          <ScalarProperty Name="DATE_DAY1" ColumnName="DATE_DAY1" />
+          <ScalarProperty Name="NOTE_DAY1" ColumnName="NOTE_DAY1" />
+          <ScalarProperty Name="TYPE_DAY1" ColumnName="TYPE_DAY1" />
+          <ScalarProperty Name="NOTE_DAY1_TYPE" ColumnName="NOTE_DAY1_TYPE" />
+          <ScalarProperty Name="GUID_JOB_DAY1" ColumnName="GUID_JOB_DAY1" />
+          <ScalarProperty Name="NAME_JOBE_DAY1" ColumnName="NAME_JOBE_DAY1" />
+          <ScalarProperty Name="GUID_CURRENCY_DAY1" ColumnName="GUID_CURRENCY_DAY1" />
+          <ScalarProperty Name="NAME_CURRENCY_DAY1" ColumnName="NAME_CURRENCY_DAY1" />
+          <ScalarProperty Name="CURRENCY_VAL_DAY1" ColumnName="CURRENCY_VAL_DAY1" />
+          <ScalarProperty Name="PAENT_GUID_DAY2" ColumnName="PAENT_GUID_DAY2" />
+          <ScalarProperty Name="ACCOUNT_GUID_DAY2" ColumnName="ACCOUNT_GUID_DAY2" />
+          <ScalarProperty Name="Name_DAY2" ColumnName="Name_DAY2" />
+          <ScalarProperty Name="DEBIT_DAY2" ColumnName="DEBIT_DAY2" />
+          <ScalarProperty Name="CREDIT_DAY2" ColumnName="CREDIT_DAY2" />
+          <ScalarProperty Name="NOTE_DAY2" ColumnName="NOTE_DAY2" />
+          <ScalarProperty Name="GUID_DAY2" ColumnName="GUID_DAY2" />
+          <ScalarProperty Name="GUID_JOB_DAY2" ColumnName="GUID_JOB_DAY2" />
+          <ScalarProperty Name="NAME_JOB_DAY2" ColumnName="NAME_JOB_DAY2" />
+          <ScalarProperty Name="GUID_CURRENCY_DAY2" ColumnName="GUID_CURRENCY_DAY2" />
+          <ScalarProperty Name="NAME_CURRENCY_DAY2" ColumnName="NAME_CURRENCY_DAY2" />
+          <ScalarProperty Name="CURRENCY_VAL" ColumnName="CURRENCY_VAL" />
+          <ScalarProperty Name="Reference" ColumnName="Reference" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Accounting_Balances">
+      <EntityTypeMapping TypeName="DB_ACCModel1.Accounting_Balances">
+        <MappingFragment StoreEntitySet="Accounting_Balances">
+          <ScalarProperty Name="رقم_الحساب" ColumnName="رقم الحساب" />
+          <ScalarProperty Name="اسم_الحساب" ColumnName="اسم الحساب" />
+          <ScalarProperty Name="مجموع_المدين" ColumnName="مجموع المدين" />
+          <ScalarProperty Name="مجموع_الدائن" ColumnName="مجموع الدائن" />
+          <ScalarProperty Name="الرصيد" ColumnName="الرصيد" />
+          <ScalarProperty Name="GUID" ColumnName="GUID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Bills_Profit">
+      <EntityTypeMapping TypeName="DB_ACCModel1.Bills_Profit">
+        <MappingFragment StoreEntitySet="Bills_Profit">
+          <ScalarProperty Name="NUMBER" ColumnName="NUMBER" />
+          <ScalarProperty Name="NOTE" ColumnName="NOTE" />
+          <ScalarProperty Name="DATE" ColumnName="DATE" />
+          <ScalarProperty Name="disc" ColumnName="disc" />
+          <ScalarProperty Name="disc_rate" ColumnName="disc_rate" />
+          <ScalarProperty Name="guid_user" ColumnName="guid_user" />
+          <ScalarProperty Name="time_bill" ColumnName="time_bill" />
+          <ScalarProperty Name="Cash" ColumnName="Cash" />
+          <ScalarProperty Name="KNET" ColumnName="KNET" />
+          <ScalarProperty Name="delivery_customer" ColumnName="delivery_customer" />
+          <ScalarProperty Name="delivery_mobile" ColumnName="delivery_mobile" />
+          <ScalarProperty Name="Sales_Man" ColumnName="Sales_Man" />
+          <ScalarProperty Name="Total_Cost" ColumnName="Total_Cost" />
+          <ScalarProperty Name="Total" ColumnName="Total" />
+          <ScalarProperty Name="Net_Profit" ColumnName="Net_Profit" />
+          <ScalarProperty Name="GUID" ColumnName="GUID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Customer_and_Spplier">
+      <EntityTypeMapping TypeName="DB_ACCModel1.Customer_and_Spplier">
+        <MappingFragment StoreEntitySet="Customer and Spplier">
+          <ScalarProperty Name="GUID" ColumnName="GUID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="ParentGUID" ColumnName="ParentGUID" />
+          <ScalarProperty Name="Code" ColumnName="Code" />
+          <ScalarProperty Name="END_ACCOUNT" ColumnName="END_ACCOUNT" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Customers_Balance">
+      <EntityTypeMapping TypeName="DB_ACCModel1.Customers_Balance">
+        <MappingFragment StoreEntitySet="Customers_Balance">
+          <ScalarProperty Name="Code" ColumnName="Code" />
+          <ScalarProperty Name="Account_Name" ColumnName="Account_Name" />
+          <ScalarProperty Name="Debit" ColumnName="Debit" />
+          <ScalarProperty Name="Credit" ColumnName="Credit" />
+          <ScalarProperty Name="Balance" ColumnName="Balance" />
+          <ScalarProperty Name="GUID" ColumnName="GUID" />
+          <ScalarProperty Name="ParentGUID" ColumnName="ParentGUID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Daily_Stock_Out">
+      <EntityTypeMapping TypeName="DB_ACCModel1.Daily_Stock_Out">
+        <MappingFragment StoreEntitySet="Daily_Stock_Out">
+          <ScalarProperty Name="DATE" ColumnName="DATE" />
+          <ScalarProperty Name="NAME" ColumnName="NAME" />
+          <ScalarProperty Name="QTY" ColumnName="QTY" />
+          <ScalarProperty Name="PRICE" ColumnName="PRICE" />
+          <ScalarProperty Name="GUID" ColumnName="GUID" />
+          <ScalarProperty Name="Expr1" ColumnName="Expr1" />
+          <ScalarProperty Name="AVG_PRICE" ColumnName="AVG_PRICE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="inventory">
+      <EntityTypeMapping TypeName="DB_ACCModel1.inventory">
+        <MappingFragment StoreEntitySet="inventory">
+          <ScalarProperty Name="BARCODE_1" ColumnName="BARCODE_1" />
+          <ScalarProperty Name="NAME" ColumnName="NAME" />
+          <ScalarProperty Name="Expr1" ColumnName="Expr1" />
+          <ScalarProperty Name="GUID" ColumnName="GUID" />
+          <ScalarProperty Name="Store" ColumnName="Store" />
+          <ScalarProperty Name="Group_Name" ColumnName="Group_Name" />
+          <ScalarProperty Name="TYPE_ITEME" ColumnName="TYPE_ITEME" />
+          <ScalarProperty Name="AVG_PRICE" ColumnName="AVG_PRICE" />
+          <ScalarProperty Name="EndUser" ColumnName="EndUser" />
+          <ScalarProperty Name="UNIT2" ColumnName="UNIT2" />
+          <ScalarProperty Name="QTY_UNIT2" ColumnName="QTY_UNIT2" />
+          <ScalarProperty Name="Qty2" ColumnName="Qty2" />
+          <ScalarProperty Name="latin_name" ColumnName="latin_name" />
+          <ScalarProperty Name="Company" ColumnName="Company" />
+          <ScalarProperty Name="MIN_QTY" ColumnName="MIN_QTY" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Item_Balance">
+      <EntityTypeMapping TypeName="DB_ACCModel1.Item_Balance">
+        <MappingFragment StoreEntitySet="Item_Balance">
+          <ScalarProperty Name="BARCODE_1" ColumnName="BARCODE_1" />
+          <ScalarProperty Name="NAME" ColumnName="NAME" />
+          <ScalarProperty Name="Expr1" ColumnName="Expr1" />
+          <ScalarProperty Name="GUID" ColumnName="GUID" />
+          <ScalarProperty Name="Expr2" ColumnName="Expr2" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Net_Items_Sales_ByDate">
+      <EntityTypeMapping TypeName="DB_ACCModel1.Net_Items_Sales_ByDate">
+        <MappingFragment StoreEntitySet="Net_Items_Sales_ByDate">
+          <ScalarProperty Name="NAME" ColumnName="NAME" />
+          <ScalarProperty Name="Total_Qty_Refund" ColumnName="Total_Qty_Refund" />
+          <ScalarProperty Name="Total_Qty_Sold" ColumnName="Total_Qty_Sold" />
+          <ScalarProperty Name="Purchase" ColumnName="Purchase" />
+          <ScalarProperty Name="R_Purchase" ColumnName="R_Purchase" />
+          <ScalarProperty Name="B_Inventory" ColumnName="B_Inventory" />
+          <ScalarProperty Name="NET_Qty" ColumnName="NET_Qty" />
+          <ScalarProperty Name="PRICE" ColumnName="PRICE" />
+          <ScalarProperty Name="Total" ColumnName="Total" />
+          <ScalarProperty Name="DATE" ColumnName="DATE" />
+          <ScalarProperty Name="shift_no" ColumnName="shift_no" />
+          <ScalarProperty Name="AVG_PRICE" ColumnName="AVG_PRICE" />
+          <ScalarProperty Name="disc" ColumnName="disc" />
+          <ScalarProperty Name="Item_Net_Price" ColumnName="Item_Net_Price" />
+          <ScalarProperty Name="net_value" ColumnName="net_value" />
+          <ScalarProperty Name="Sales_Man" ColumnName="Sales_Man" />
+          <ScalarProperty Name="Expr1" ColumnName="Expr1" />
+          <ScalarProperty Name="delivery_customer" ColumnName="delivery_customer" />
+          <ScalarProperty Name="delivery_mobile" ColumnName="delivery_mobile" />
+          <ScalarProperty Name="Expr2" ColumnName="Expr2" />
+          <ScalarProperty Name="Group_Name" ColumnName="Group_Name" />
+          <ScalarProperty Name="Total_Invoice" ColumnName="Total_Invoice" />
+          <ScalarProperty Name="disc_rate" ColumnName="disc_rate" />
+          <ScalarProperty Name="Item_Total_Discount" ColumnName="Item_Total_Discount" />
+          <ScalarProperty Name="Subs_Paid" ColumnName="Subs_Paid" />
+          <ScalarProperty Name="NUMBER" ColumnName="NUMBER" />
+          <ScalarProperty Name="car_plate_no" ColumnName="car_plate_no" />
+          <ScalarProperty Name="car_current_counter" ColumnName="car_current_counter" />
+          <ScalarProperty Name="PARENT_GUID" ColumnName="PARENT_GUID" />
+          <ScalarProperty Name="NOTE" ColumnName="NOTE" />
+          <ScalarProperty Name="city" ColumnName="city" />
+          <ScalarProperty Name="block" ColumnName="block" />
+          <ScalarProperty Name="street" ColumnName="street" />
+          <ScalarProperty Name="building" ColumnName="building" />
+          <ScalarProperty Name="floor" ColumnName="floor" />
+          <ScalarProperty Name="room" ColumnName="room" />
+          <ScalarProperty Name="add_Details" ColumnName="add_Details" />
+          <ScalarProperty Name="Driver" ColumnName="Driver" />
+          <ScalarProperty Name="BALANCE" ColumnName="BALANCE" />
+          <ScalarProperty Name="unit" ColumnName="unit" />
+          <ScalarProperty Name="TYPE_ITEME" ColumnName="TYPE_ITEME" />
+          <ScalarProperty Name="MIN_QTY" ColumnName="MIN_QTY" />
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="Printer" ColumnName="Printer" />
+          <ScalarProperty Name="latin_name" ColumnName="latin_name" />
+          <ScalarProperty Name="Branch" ColumnName="Branch" />
+          <ScalarProperty Name="qty_unit" ColumnName="qty_unit" />
+          <ScalarProperty Name="BARCODE_1" ColumnName="BARCODE_1" />
+          <ScalarProperty Name="TypeBill" ColumnName="TypeBill" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="New_Sales_Invoice">
+      <EntityTypeMapping TypeName="DB_ACCModel1.New_Sales_Invoice">
+        <MappingFragment StoreEntitySet="New_Sales_Invoice">
+          <ScalarProperty Name="Invoice_No" ColumnName="Invoice_No" />
+          <ScalarProperty Name="Header_Notes" ColumnName="Header_Notes" />
+          <ScalarProperty Name="DATE" ColumnName="DATE" />
+          <ScalarProperty Name="Invoice_Discount" ColumnName="Invoice_Discount" />
+          <ScalarProperty Name="Total_Invoice" ColumnName="Total_Invoice" />
+          <ScalarProperty Name="disc_rate" ColumnName="disc_rate" />
+          <ScalarProperty Name="type_dis" ColumnName="type_dis" />
+          <ScalarProperty Name="User_Name" ColumnName="User_Name" />
+          <ScalarProperty Name="User_ID" ColumnName="User_ID" />
+          <ScalarProperty Name="time_bill" ColumnName="time_bill" />
+          <ScalarProperty Name="Cash" ColumnName="Cash" />
+          <ScalarProperty Name="KNET" ColumnName="KNET" />
+          <ScalarProperty Name="delivery_customer" ColumnName="delivery_customer" />
+          <ScalarProperty Name="delivery_mobile" ColumnName="delivery_mobile" />
+          <ScalarProperty Name="Govern" ColumnName="Govern" />
+          <ScalarProperty Name="city" ColumnName="city" />
+          <ScalarProperty Name="block" ColumnName="block" />
+          <ScalarProperty Name="street" ColumnName="street" />
+          <ScalarProperty Name="building" ColumnName="building" />
+          <ScalarProperty Name="floor" ColumnName="floor" />
+          <ScalarProperty Name="room" ColumnName="room" />
+          <ScalarProperty Name="add_Details" ColumnName="add_Details" />
+          <ScalarProperty Name="Reset" ColumnName="Reset" />
+          <ScalarProperty Name="Driver" ColumnName="Driver" />
+          <ScalarProperty Name="Driver_tele" ColumnName="Driver_tele" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="QTY" ColumnName="QTY" />
+          <ScalarProperty Name="PRICE" ColumnName="PRICE" />
+          <ScalarProperty Name="NOTE" ColumnName="NOTE" />
+          <ScalarProperty Name="disc" ColumnName="disc" />
+          <ScalarProperty Name="barcode" ColumnName="barcode" />
+          <ScalarProperty Name="item_id" ColumnName="item_id" />
+          <ScalarProperty Name="NAME" ColumnName="NAME" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Item_Note" ColumnName="Item_Note" />
+          <ScalarProperty Name="Type_name" ColumnName="Type_name" />
+          <ScalarProperty Name="Sales_Man" ColumnName="Sales_Man" />
+          <ScalarProperty Name="VAT" ColumnName="VAT" />
+          <ScalarProperty Name="table_no" ColumnName="table_no" />
+          <ScalarProperty Name="SN" ColumnName="SN" />
+          <ScalarProperty Name="ORDER_TYPE" ColumnName="ORDER_TYPE" />
+          <ScalarProperty Name="GUID" ColumnName="GUID" />
+          <ScalarProperty Name="Subs_Paid" ColumnName="Subs_Paid" />
+          <ScalarProperty Name="Subs_Balance" ColumnName="Subs_Balance" />
+          <ScalarProperty Name="Subs_End_Date" ColumnName="Subs_End_Date" />
+          <ScalarProperty Name="Booking_Date" ColumnName="Booking_Date" />
+          <ScalarProperty Name="Booking_Time" ColumnName="Booking_Time" />
+          <ScalarProperty Name="Expr2" ColumnName="Expr2" />
+          <ScalarProperty Name="VISA" ColumnName="VISA" />
+          <ScalarProperty Name="MASTER" ColumnName="MASTER" />
+          <ScalarProperty Name="unit" ColumnName="unit" />
+          <ScalarProperty Name="latin_name" ColumnName="latin_name" />
+          <ScalarProperty Name="TRAN_POS_PAY" ColumnName="TRAN_POS_PAY" />
+          <ScalarProperty Name="CUSTOMER_MOBILE1" ColumnName="CUSTOMER_MOBILE1" />
+          <ScalarProperty Name="shift_no" ColumnName="shift_no" />
+          <ScalarProperty Name="Gategory" ColumnName="Gategory" />
+          <ScalarProperty Name="CUSTOMER_PHON" ColumnName="CUSTOMER_PHON" />
+          <ScalarProperty Name="CUSTOMER_STREET" ColumnName="CUSTOMER_STREET" />
+          <ScalarProperty Name="CUSTOMER_EMAIL" ColumnName="CUSTOMER_EMAIL" />
+          <ScalarProperty Name="CUSTOMER_COMPANY" ColumnName="CUSTOMER_COMPANY" />
+          <ScalarProperty Name="CUSTOMER_MOBILE2" ColumnName="CUSTOMER_MOBILE2" />
+          <ScalarProperty Name="Expr3" ColumnName="Expr3" />
+          <ScalarProperty Name="PARENT_GUID" ColumnName="PARENT_GUID" />
+          <ScalarProperty Name="Printer" ColumnName="Printer" />
+          <ScalarProperty Name="car_plate_no" ColumnName="car_plate_no" />
+          <ScalarProperty Name="car_current_counter" ColumnName="car_current_counter" />
+          <ScalarProperty Name="image" ColumnName="image" />
+          <ScalarProperty Name="p_extra" ColumnName="p_extra" />
+          <ScalarProperty Name="Branch" ColumnName="Branch" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Order_History_V">
+      <EntityTypeMapping TypeName="DB_ACCModel1.Order_History_V">
+        <MappingFragment StoreEntitySet="Order_History_V">
+          <ScalarProperty Name="NAME" ColumnName="NAME" />
+          <ScalarProperty Name="QTY" ColumnName="QTY" />
+          <ScalarProperty Name="PRICE" ColumnName="PRICE" />
+          <ScalarProperty Name="barcode" ColumnName="barcode" />
+          <ScalarProperty Name="table_no" ColumnName="table_no" />
+          <ScalarProperty Name="Waiter" ColumnName="Waiter" />
+          <ScalarProperty Name="Time_Punch" ColumnName="Time_Punch" />
+          <ScalarProperty Name="Category" ColumnName="Category" />
+          <ScalarProperty Name="TOTAL" ColumnName="TOTAL" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="date" ColumnName="date" />
+          <ScalarProperty Name="shift" ColumnName="shift" />
+          <ScalarProperty Name="isCanceled" ColumnName="isCanceled" />
+          <ScalarProperty Name="isTransfer" ColumnName="isTransfer" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ORder_Type">
+      <EntityTypeMapping TypeName="DB_ACCModel1.ORder_Type">
+        <MappingFragment StoreEntitySet="ORder_Type">
+          <ScalarProperty Name="PARENT_GUID" ColumnName="PARENT_GUID" />
+          <ScalarProperty Name="Total" ColumnName="Total" />
+          <ScalarProperty Name="NOTE" ColumnName="NOTE" />
+          <ScalarProperty Name="KNET" ColumnName="KNET" />
+          <ScalarProperty Name="time_bill" ColumnName="time_bill" />
+          <ScalarProperty Name="NUMBER" ColumnName="NUMBER" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Cash" ColumnName="Cash" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Paid_Orders">
+      <EntityTypeMapping TypeName="DB_ACCModel1.Paid_Orders">
+        <MappingFragment StoreEntitySet="Paid_Orders">
+          <ScalarProperty Name="NUMBER" ColumnName="NUMBER" />
+          <ScalarProperty Name="time_bill" ColumnName="time_bill" />
+          <ScalarProperty Name="shift_no" ColumnName="shift_no" />
+          <ScalarProperty Name="Sales_Man" ColumnName="Sales_Man" />
+          <ScalarProperty Name="PRICE" ColumnName="PRICE" />
+          <ScalarProperty Name="QTY" ColumnName="QTY" />
+          <ScalarProperty Name="Category" ColumnName="Category" />
+          <ScalarProperty Name="Item_Name" ColumnName="Item_Name" />
+          <ScalarProperty Name="PARENT_GUID" ColumnName="PARENT_GUID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="pos_exp">
+      <EntityTypeMapping TypeName="DB_ACCModel1.pos_exp">
+        <MappingFragment StoreEntitySet="pos_exp">
+          <ScalarProperty Name="الرقم" ColumnName="الرقم" />
+          <ScalarProperty Name="التاريخ" ColumnName="التاريخ" />
+          <ScalarProperty Name="القيمة" ColumnName="القيمة" />
+          <ScalarProperty Name="ملاحظات" ColumnName="ملاحظات" />
+          <ScalarProperty Name="رقم_الوردية" ColumnName="رقم الوردية" />
+          <ScalarProperty Name="البائع" ColumnName="البائع" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="POS_Invoice_X">
+      <EntityTypeMapping TypeName="DB_ACCModel1.POS_Invoice_X">
+        <MappingFragment StoreEntitySet="POS_Invoice_X">
+          <ScalarProperty Name="Invoice_No" ColumnName="Invoice_No" />
+          <ScalarProperty Name="Header_Notes" ColumnName="Header_Notes" />
+          <ScalarProperty Name="DATE" ColumnName="DATE" />
+          <ScalarProperty Name="Invoice_Discount" ColumnName="Invoice_Discount" />
+          <ScalarProperty Name="Total_Invoice" ColumnName="Total_Invoice" />
+          <ScalarProperty Name="disc_rate" ColumnName="disc_rate" />
+          <ScalarProperty Name="type_dis" ColumnName="type_dis" />
+          <ScalarProperty Name="User_Name" ColumnName="User_Name" />
+          <ScalarProperty Name="User_ID" ColumnName="User_ID" />
+          <ScalarProperty Name="time_bill" ColumnName="time_bill" />
+          <ScalarProperty Name="Cash" ColumnName="Cash" />
+          <ScalarProperty Name="KNET" ColumnName="KNET" />
+          <ScalarProperty Name="delivery_customer" ColumnName="delivery_customer" />
+          <ScalarProperty Name="delivery_mobile" ColumnName="delivery_mobile" />
+          <ScalarProperty Name="Govern" ColumnName="Govern" />
+          <ScalarProperty Name="city" ColumnName="city" />
+          <ScalarProperty Name="block" ColumnName="block" />
+          <ScalarProperty Name="street" ColumnName="street" />
+          <ScalarProperty Name="building" ColumnName="building" />
+          <ScalarProperty Name="floor" ColumnName="floor" />
+          <ScalarProperty Name="room" ColumnName="room" />
+          <ScalarProperty Name="add_Details" ColumnName="add_Details" />
+          <ScalarProperty Name="Reset" ColumnName="Reset" />
+          <ScalarProperty Name="Driver" ColumnName="Driver" />
+          <ScalarProperty Name="Driver_tele" ColumnName="Driver_tele" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="QTY" ColumnName="QTY" />
+          <ScalarProperty Name="PRICE" ColumnName="PRICE" />
+          <ScalarProperty Name="NOTE" ColumnName="NOTE" />
+          <ScalarProperty Name="disc" ColumnName="disc" />
+          <ScalarProperty Name="barcode" ColumnName="barcode" />
+          <ScalarProperty Name="item_id" ColumnName="item_id" />
+          <ScalarProperty Name="NAME" ColumnName="NAME" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Item_Note" ColumnName="Item_Note" />
+          <ScalarProperty Name="table_no" ColumnName="table_no" />
+          <ScalarProperty Name="Sales_Man" ColumnName="Sales_Man" />
+          <ScalarProperty Name="SN" ColumnName="SN" />
+          <ScalarProperty Name="ORDER_TYPE" ColumnName="ORDER_TYPE" />
+          <ScalarProperty Name="Subs_Paid" ColumnName="Subs_Paid" />
+          <ScalarProperty Name="Subs_Balance" ColumnName="Subs_Balance" />
+          <ScalarProperty Name="Subs_End_Date" ColumnName="Subs_End_Date" />
+          <ScalarProperty Name="Booking_Date" ColumnName="Booking_Date" />
+          <ScalarProperty Name="Booking_Time" ColumnName="Booking_Time" />
+          <ScalarProperty Name="Expr2" ColumnName="Expr2" />
+          <ScalarProperty Name="VISA" ColumnName="VISA" />
+          <ScalarProperty Name="MASTER" ColumnName="MASTER" />
+          <ScalarProperty Name="unit" ColumnName="unit" />
+          <ScalarProperty Name="latin_name" ColumnName="latin_name" />
+          <ScalarProperty Name="VAT" ColumnName="VAT" />
+          <ScalarProperty Name="TRAN_POS_PAY" ColumnName="TRAN_POS_PAY" />
+          <ScalarProperty Name="CUSTOMER_MOBILE1" ColumnName="CUSTOMER_MOBILE1" />
+          <ScalarProperty Name="shift_no" ColumnName="shift_no" />
+          <ScalarProperty Name="CUSTOMER_EMAIL" ColumnName="CUSTOMER_EMAIL" />
+          <ScalarProperty Name="CUSTOMER_COMPANY" ColumnName="CUSTOMER_COMPANY" />
+          <ScalarProperty Name="CUSTOMER_MOBILE2" ColumnName="CUSTOMER_MOBILE2" />
+          <ScalarProperty Name="CUSTOMER_STREET" ColumnName="CUSTOMER_STREET" />
+          <ScalarProperty Name="CUSTOMER_PHON" ColumnName="CUSTOMER_PHON" />
+          <ScalarProperty Name="user_name_2" ColumnName="user_name_2" />
+          <ScalarProperty Name="PARENT_GUID" ColumnName="PARENT_GUID" />
+          <ScalarProperty Name="Printer" ColumnName="Printer" />
+          <ScalarProperty Name="Gategory" ColumnName="Gategory" />
+          <ScalarProperty Name="car_plate_no" ColumnName="car_plate_no" />
+          <ScalarProperty Name="car_current_counter" ColumnName="car_current_counter" />
+          <ScalarProperty Name="image" ColumnName="image" />
+          <ScalarProperty Name="p_extra" ColumnName="p_extra" />
+          <ScalarProperty Name="Branch" ColumnName="Branch" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="POS_REFUND">
+      <EntityTypeMapping TypeName="DB_ACCModel1.POS_REFUND">
+        <MappingFragment StoreEntitySet="POS_REFUND">
+          <ScalarProperty Name="invoice_no" ColumnName="invoice_no" />
+          <ScalarProperty Name="header_notes" ColumnName="header_notes" />
+          <ScalarProperty Name="DATE" ColumnName="DATE" />
+          <ScalarProperty Name="invoice_discount" ColumnName="invoice_discount" />
+          <ScalarProperty Name="total" ColumnName="total" />
+          <ScalarProperty Name="disc_rate" ColumnName="disc_rate" />
+          <ScalarProperty Name="type_dis" ColumnName="type_dis" />
+          <ScalarProperty Name="user_name" ColumnName="user_name" />
+          <ScalarProperty Name="user_id" ColumnName="user_id" />
+          <ScalarProperty Name="time_bill" ColumnName="time_bill" />
+          <ScalarProperty Name="Cash" ColumnName="Cash" />
+          <ScalarProperty Name="KNET" ColumnName="KNET" />
+          <ScalarProperty Name="delivery_customer" ColumnName="delivery_customer" />
+          <ScalarProperty Name="delivery_mobile" ColumnName="delivery_mobile" />
+          <ScalarProperty Name="Govern" ColumnName="Govern" />
+          <ScalarProperty Name="city" ColumnName="city" />
+          <ScalarProperty Name="block" ColumnName="block" />
+          <ScalarProperty Name="street" ColumnName="street" />
+          <ScalarProperty Name="building" ColumnName="building" />
+          <ScalarProperty Name="floor" ColumnName="floor" />
+          <ScalarProperty Name="room" ColumnName="room" />
+          <ScalarProperty Name="add_Details" ColumnName="add_Details" />
+          <ScalarProperty Name="Reset" ColumnName="Reset" />
+          <ScalarProperty Name="Driver" ColumnName="Driver" />
+          <ScalarProperty Name="Driver_tele" ColumnName="Driver_tele" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="QTY" ColumnName="QTY" />
+          <ScalarProperty Name="PRICE" ColumnName="PRICE" />
+          <ScalarProperty Name="Expr2" ColumnName="Expr2" />
+          <ScalarProperty Name="Expr4" ColumnName="Expr4" />
+          <ScalarProperty Name="barcode" ColumnName="barcode" />
+          <ScalarProperty Name="item_id" ColumnName="item_id" />
+          <ScalarProperty Name="item_name" ColumnName="item_name" />
+          <ScalarProperty Name="Expr6" ColumnName="Expr6" />
+          <ScalarProperty Name="Expr7" ColumnName="Expr7" />
+          <ScalarProperty Name="Expr1" ColumnName="Expr1" />
+          <ScalarProperty Name="Sales_Man" ColumnName="Sales_Man" />
+          <ScalarProperty Name="VAT" ColumnName="VAT" />
+          <ScalarProperty Name="table_no" ColumnName="table_no" />
+          <ScalarProperty Name="SN" ColumnName="SN" />
+          <ScalarProperty Name="ORDER_TYPE" ColumnName="ORDER_TYPE" />
+          <ScalarProperty Name="GUID" ColumnName="GUID" />
+          <ScalarProperty Name="Subs_Paid" ColumnName="Subs_Paid" />
+          <ScalarProperty Name="Subs_Balance" ColumnName="Subs_Balance" />
+          <ScalarProperty Name="Subs_End_Date" ColumnName="Subs_End_Date" />
+          <ScalarProperty Name="Booking_Date" ColumnName="Booking_Date" />
+          <ScalarProperty Name="Booking_Time" ColumnName="Booking_Time" />
+          <ScalarProperty Name="Expr8" ColumnName="Expr8" />
+          <ScalarProperty Name="VISA" ColumnName="VISA" />
+          <ScalarProperty Name="MASTER" ColumnName="MASTER" />
+          <ScalarProperty Name="unit" ColumnName="unit" />
+          <ScalarProperty Name="latin_name" ColumnName="latin_name" />
+          <ScalarProperty Name="TRAN_POS_PAY" ColumnName="TRAN_POS_PAY" />
+          <ScalarProperty Name="CUSTOMER_MOBILE1" ColumnName="CUSTOMER_MOBILE1" />
+          <ScalarProperty Name="shift_no" ColumnName="shift_no" />
+          <ScalarProperty Name="Gategory" ColumnName="Gategory" />
+          <ScalarProperty Name="CUSTOMER_PHON" ColumnName="CUSTOMER_PHON" />
+          <ScalarProperty Name="CUSTOMER_STREET" ColumnName="CUSTOMER_STREET" />
+          <ScalarProperty Name="CUSTOMER_EMAIL" ColumnName="CUSTOMER_EMAIL" />
+          <ScalarProperty Name="CUSTOMER_COMPANY" ColumnName="CUSTOMER_COMPANY" />
+          <ScalarProperty Name="CUSTOMER_MOBILE2" ColumnName="CUSTOMER_MOBILE2" />
+          <ScalarProperty Name="Expr3" ColumnName="Expr3" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="previous">
+      <EntityTypeMapping TypeName="DB_ACCModel1.previous">
+        <MappingFragment StoreEntitySet="previous">
+          <ScalarProperty Name="GUID_DAY1" ColumnName="GUID_DAY1" />
+          <ScalarProperty Name="NUMBER_DAY1" ColumnName="NUMBER_DAY1" />
+          <ScalarProperty Name="DATE_DAY1" ColumnName="DATE_DAY1" />
+          <ScalarProperty Name="NOTE_DAY1" ColumnName="NOTE_DAY1" />
+          <ScalarProperty Name="TYPE_DAY1" ColumnName="TYPE_DAY1" />
+          <ScalarProperty Name="NOTE_DAY1_TYPE" ColumnName="NOTE_DAY1_TYPE" />
+          <ScalarProperty Name="GUID_JOB_DAY1" ColumnName="GUID_JOB_DAY1" />
+          <ScalarProperty Name="NAME_JOBE_DAY1" ColumnName="NAME_JOBE_DAY1" />
+          <ScalarProperty Name="GUID_CURRENCY_DAY1" ColumnName="GUID_CURRENCY_DAY1" />
+          <ScalarProperty Name="NAME_CURRENCY_DAY1" ColumnName="NAME_CURRENCY_DAY1" />
+          <ScalarProperty Name="CURRENCY_VAL_DAY1" ColumnName="CURRENCY_VAL_DAY1" />
+          <ScalarProperty Name="PAENT_GUID_DAY2" ColumnName="PAENT_GUID_DAY2" />
+          <ScalarProperty Name="ACCOUNT_GUID_DAY2" ColumnName="ACCOUNT_GUID_DAY2" />
+          <ScalarProperty Name="Name_DAY2" ColumnName="Name_DAY2" />
+          <ScalarProperty Name="DEBIT_DAY2" ColumnName="DEBIT_DAY2" />
+          <ScalarProperty Name="CREDIT_DAY2" ColumnName="CREDIT_DAY2" />
+          <ScalarProperty Name="NOTE_DAY2" ColumnName="NOTE_DAY2" />
+          <ScalarProperty Name="GUID_DAY2" ColumnName="GUID_DAY2" />
+          <ScalarProperty Name="GUID_JOB_DAY2" ColumnName="GUID_JOB_DAY2" />
+          <ScalarProperty Name="NAME_JOB_DAY2" ColumnName="NAME_JOB_DAY2" />
+          <ScalarProperty Name="GUID_CURRENCY_DAY2" ColumnName="GUID_CURRENCY_DAY2" />
+          <ScalarProperty Name="NAME_CURRENCY_DAY2" ColumnName="NAME_CURRENCY_DAY2" />
+          <ScalarProperty Name="CURRENCY_VAL" ColumnName="CURRENCY_VAL" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Previous_Balance">
+      <EntityTypeMapping TypeName="DB_ACCModel1.Previous_Balance">
+        <MappingFragment StoreEntitySet="Previous_Balance">
+          <ScalarProperty Name="GUID_DAY1" ColumnName="GUID_DAY1" />
+          <ScalarProperty Name="NUMBER_DAY1" ColumnName="NUMBER_DAY1" />
+          <ScalarProperty Name="DATE_DAY1" ColumnName="DATE_DAY1" />
+          <ScalarProperty Name="NOTE_DAY1" ColumnName="NOTE_DAY1" />
+          <ScalarProperty Name="TYPE_DAY1" ColumnName="TYPE_DAY1" />
+          <ScalarProperty Name="NOTE_DAY1_TYPE" ColumnName="NOTE_DAY1_TYPE" />
+          <ScalarProperty Name="GUID_JOB_DAY1" ColumnName="GUID_JOB_DAY1" />
+          <ScalarProperty Name="NAME_JOBE_DAY1" ColumnName="NAME_JOBE_DAY1" />
+          <ScalarProperty Name="GUID_CURRENCY_DAY1" ColumnName="GUID_CURRENCY_DAY1" />
+          <ScalarProperty Name="NAME_CURRENCY_DAY1" ColumnName="NAME_CURRENCY_DAY1" />
+          <ScalarProperty Name="CURRENCY_VAL_DAY1" ColumnName="CURRENCY_VAL_DAY1" />
+          <ScalarProperty Name="PAENT_GUID_DAY2" ColumnName="PAENT_GUID_DAY2" />
+          <ScalarProperty Name="ACCOUNT_GUID_DAY2" ColumnName="ACCOUNT_GUID_DAY2" />
+          <ScalarProperty Name="Name_DAY2" ColumnName="Name_DAY2" />
+          <ScalarProperty Name="DEBIT_DAY2" ColumnName="DEBIT_DAY2" />
+          <ScalarProperty Name="CREDIT_DAY2" ColumnName="CREDIT_DAY2" />
+          <ScalarProperty Name="NOTE_DAY2" ColumnName="NOTE_DAY2" />
+          <ScalarProperty Name="GUID_DAY2" ColumnName="GUID_DAY2" />
+          <ScalarProperty Name="GUID_JOB_DAY2" ColumnName="GUID_JOB_DAY2" />
+          <ScalarProperty Name="NAME_JOB_DAY2" ColumnName="NAME_JOB_DAY2" />
+          <ScalarProperty Name="GUID_CURRENCY_DAY2" ColumnName="GUID_CURRENCY_DAY2" />
+          <ScalarProperty Name="NAME_CURRENCY_DAY2" ColumnName="NAME_CURRENCY_DAY2" />
+          <ScalarProperty Name="CURRENCY_VAL" ColumnName="CURRENCY_VAL" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Print_Deleted_Item">
+      <EntityTypeMapping TypeName="DB_ACCModel1.Print_Deleted_Item">
+        <MappingFragment StoreEntitySet="Print_Deleted_Item">
+          <ScalarProperty Name="Barcode" ColumnName="Barcode" />
+          <ScalarProperty Name="item" ColumnName="item" />
+          <ScalarProperty Name="time" ColumnName="time" />
+          <ScalarProperty Name="Table_no" ColumnName="Table_no" />
+          <ScalarProperty Name="Shieft_ID" ColumnName="Shieft_ID" />
+          <ScalarProperty Name="user_" ColumnName="user_" />
+          <ScalarProperty Name="Printer" ColumnName="Printer" />
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="Qty" ColumnName="Qty" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Print_Order">
+      <EntityTypeMapping TypeName="DB_ACCModel1.Print_Order">
+        <MappingFragment StoreEntitySet="Print_Order">
+          <ScalarProperty Name="Invoice_No" ColumnName="Invoice_No" />
+          <ScalarProperty Name="Header_Notes" ColumnName="Header_Notes" />
+          <ScalarProperty Name="DATE" ColumnName="DATE" />
+          <ScalarProperty Name="Invoice_Discount" ColumnName="Invoice_Discount" />
+          <ScalarProperty Name="Total_Invoice" ColumnName="Total_Invoice" />
+          <ScalarProperty Name="disc_rate" ColumnName="disc_rate" />
+          <ScalarProperty Name="type_dis" ColumnName="type_dis" />
+          <ScalarProperty Name="time_bill" ColumnName="time_bill" />
+          <ScalarProperty Name="Cash" ColumnName="Cash" />
+          <ScalarProperty Name="KNET" ColumnName="KNET" />
+          <ScalarProperty Name="delivery_customer" ColumnName="delivery_customer" />
+          <ScalarProperty Name="delivery_mobile" ColumnName="delivery_mobile" />
+          <ScalarProperty Name="Govern" ColumnName="Govern" />
+          <ScalarProperty Name="city" ColumnName="city" />
+          <ScalarProperty Name="block" ColumnName="block" />
+          <ScalarProperty Name="street" ColumnName="street" />
+          <ScalarProperty Name="building" ColumnName="building" />
+          <ScalarProperty Name="floor" ColumnName="floor" />
+          <ScalarProperty Name="room" ColumnName="room" />
+          <ScalarProperty Name="add_Details" ColumnName="add_Details" />
+          <ScalarProperty Name="Reset" ColumnName="Reset" />
+          <ScalarProperty Name="Driver" ColumnName="Driver" />
+          <ScalarProperty Name="Driver_tele" ColumnName="Driver_tele" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="QTY" ColumnName="QTY" />
+          <ScalarProperty Name="PRICE" ColumnName="PRICE" />
+          <ScalarProperty Name="NOTE" ColumnName="NOTE" />
+          <ScalarProperty Name="disc" ColumnName="disc" />
+          <ScalarProperty Name="barcode" ColumnName="barcode" />
+          <ScalarProperty Name="item_id" ColumnName="item_id" />
+          <ScalarProperty Name="NAME" ColumnName="NAME" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Item_Note" ColumnName="Item_Note" />
+          <ScalarProperty Name="Sales_Man" ColumnName="Sales_Man" />
+          <ScalarProperty Name="VAT" ColumnName="VAT" />
+          <ScalarProperty Name="table_no" ColumnName="table_no" />
+          <ScalarProperty Name="SN" ColumnName="SN" />
+          <ScalarProperty Name="ORDER_TYPE" ColumnName="ORDER_TYPE" />
+          <ScalarProperty Name="Subs_Paid" ColumnName="Subs_Paid" />
+          <ScalarProperty Name="Subs_Balance" ColumnName="Subs_Balance" />
+          <ScalarProperty Name="Subs_End_Date" ColumnName="Subs_End_Date" />
+          <ScalarProperty Name="Booking_Date" ColumnName="Booking_Date" />
+          <ScalarProperty Name="Booking_Time" ColumnName="Booking_Time" />
+          <ScalarProperty Name="Expr2" ColumnName="Expr2" />
+          <ScalarProperty Name="VISA" ColumnName="VISA" />
+          <ScalarProperty Name="MASTER" ColumnName="MASTER" />
+          <ScalarProperty Name="unit" ColumnName="unit" />
+          <ScalarProperty Name="latin_name" ColumnName="latin_name" />
+          <ScalarProperty Name="TRAN_POS_PAY" ColumnName="TRAN_POS_PAY" />
+          <ScalarProperty Name="Gategory" ColumnName="Gategory" />
+          <ScalarProperty Name="Expr3" ColumnName="Expr3" />
+          <ScalarProperty Name="Printer" ColumnName="Printer" />
+          <ScalarProperty Name="CUSTOMER_EMAIL" ColumnName="CUSTOMER_EMAIL" />
+          <ScalarProperty Name="user_name_2" ColumnName="user_name_2" />
+          <ScalarProperty Name="Waiter" ColumnName="Waiter" />
+          <ScalarProperty Name="Time_Punch" ColumnName="Time_Punch" />
+          <ScalarProperty Name="GUID" ColumnName="GUID" />
+          <ScalarProperty Name="PARENT_GUID" ColumnName="PARENT_GUID" />
+          <ScalarProperty Name="Expr1" ColumnName="Expr1" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Print_Shisa">
+      <EntityTypeMapping TypeName="DB_ACCModel1.Print_Shisa">
+        <MappingFragment StoreEntitySet="Print_Shisa">
+          <ScalarProperty Name="Invoice_No" ColumnName="Invoice_No" />
+          <ScalarProperty Name="Header_Notes" ColumnName="Header_Notes" />
+          <ScalarProperty Name="DATE" ColumnName="DATE" />
+          <ScalarProperty Name="Invoice_Discount" ColumnName="Invoice_Discount" />
+          <ScalarProperty Name="Total_Invoice" ColumnName="Total_Invoice" />
+          <ScalarProperty Name="disc_rate" ColumnName="disc_rate" />
+          <ScalarProperty Name="type_dis" ColumnName="type_dis" />
+          <ScalarProperty Name="User_Name" ColumnName="User_Name" />
+          <ScalarProperty Name="User_ID" ColumnName="User_ID" />
+          <ScalarProperty Name="time_bill" ColumnName="time_bill" />
+          <ScalarProperty Name="Cash" ColumnName="Cash" />
+          <ScalarProperty Name="KNET" ColumnName="KNET" />
+          <ScalarProperty Name="delivery_customer" ColumnName="delivery_customer" />
+          <ScalarProperty Name="delivery_mobile" ColumnName="delivery_mobile" />
+          <ScalarProperty Name="Govern" ColumnName="Govern" />
+          <ScalarProperty Name="city" ColumnName="city" />
+          <ScalarProperty Name="block" ColumnName="block" />
+          <ScalarProperty Name="street" ColumnName="street" />
+          <ScalarProperty Name="building" ColumnName="building" />
+          <ScalarProperty Name="floor" ColumnName="floor" />
+          <ScalarProperty Name="room" ColumnName="room" />
+          <ScalarProperty Name="add_Details" ColumnName="add_Details" />
+          <ScalarProperty Name="Reset" ColumnName="Reset" />
+          <ScalarProperty Name="Driver" ColumnName="Driver" />
+          <ScalarProperty Name="Driver_tele" ColumnName="Driver_tele" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="QTY" ColumnName="QTY" />
+          <ScalarProperty Name="PRICE" ColumnName="PRICE" />
+          <ScalarProperty Name="NOTE" ColumnName="NOTE" />
+          <ScalarProperty Name="disc" ColumnName="disc" />
+          <ScalarProperty Name="barcode" ColumnName="barcode" />
+          <ScalarProperty Name="item_id" ColumnName="item_id" />
+          <ScalarProperty Name="NAME" ColumnName="NAME" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Item_Note" ColumnName="Item_Note" />
+          <ScalarProperty Name="Expr1" ColumnName="Expr1" />
+          <ScalarProperty Name="Sales_Man" ColumnName="Sales_Man" />
+          <ScalarProperty Name="VAT" ColumnName="VAT" />
+          <ScalarProperty Name="table_no" ColumnName="table_no" />
+          <ScalarProperty Name="SN" ColumnName="SN" />
+          <ScalarProperty Name="ORDER_TYPE" ColumnName="ORDER_TYPE" />
+          <ScalarProperty Name="GUID" ColumnName="GUID" />
+          <ScalarProperty Name="Subs_Paid" ColumnName="Subs_Paid" />
+          <ScalarProperty Name="Subs_Balance" ColumnName="Subs_Balance" />
+          <ScalarProperty Name="Subs_End_Date" ColumnName="Subs_End_Date" />
+          <ScalarProperty Name="Booking_Date" ColumnName="Booking_Date" />
+          <ScalarProperty Name="Booking_Time" ColumnName="Booking_Time" />
+          <ScalarProperty Name="Expr2" ColumnName="Expr2" />
+          <ScalarProperty Name="VISA" ColumnName="VISA" />
+          <ScalarProperty Name="MASTER" ColumnName="MASTER" />
+          <ScalarProperty Name="unit" ColumnName="unit" />
+          <ScalarProperty Name="latin_name" ColumnName="latin_name" />
+          <ScalarProperty Name="TRAN_POS_PAY" ColumnName="TRAN_POS_PAY" />
+          <ScalarProperty Name="Gategory" ColumnName="Gategory" />
+          <ScalarProperty Name="Expr3" ColumnName="Expr3" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Print_Talbat_Invoice">
+      <EntityTypeMapping TypeName="DB_ACCModel1.Print_Talbat_Invoice">
+        <MappingFragment StoreEntitySet="Print_Talbat_Invoice">
+          <ScalarProperty Name="bill_id" ColumnName="bill_id" />
+          <ScalarProperty Name="Bill_Guid" ColumnName="Bill_Guid" />
+          <ScalarProperty Name="PARENT_GUID" ColumnName="PARENT_GUID" />
+          <ScalarProperty Name="NUMBER" ColumnName="NUMBER" />
+          <ScalarProperty Name="CUST" ColumnName="CUST" />
+          <ScalarProperty Name="STORE_GUID" ColumnName="STORE_GUID" />
+          <ScalarProperty Name="NOTE" ColumnName="NOTE" />
+          <ScalarProperty Name="DATE" ColumnName="DATE" />
+          <ScalarProperty Name="disc" ColumnName="disc" />
+          <ScalarProperty Name="EXTEA" ColumnName="EXTEA" />
+          <ScalarProperty Name="p_disc" ColumnName="p_disc" />
+          <ScalarProperty Name="p_extra" ColumnName="p_extra" />
+          <ScalarProperty Name="Total" ColumnName="Total" />
+          <ScalarProperty Name="type_dis" ColumnName="type_dis" />
+          <ScalarProperty Name="disc_rate" ColumnName="disc_rate" />
+          <ScalarProperty Name="type_pay" ColumnName="type_pay" />
+          <ScalarProperty Name="GUID_JOB" ColumnName="GUID_JOB" />
+          <ScalarProperty Name="GUID_CURRENCY" ColumnName="GUID_CURRENCY" />
+          <ScalarProperty Name="CURRENCY_VAL" ColumnName="CURRENCY_VAL" />
+          <ScalarProperty Name="DELETE_NUM" ColumnName="DELETE_NUM" />
+          <ScalarProperty Name="Date_Delete" ColumnName="Date_Delete" />
+          <ScalarProperty Name="guid_user" ColumnName="guid_user" />
+          <ScalarProperty Name="CUSTOMER_NAME" ColumnName="CUSTOMER_NAME" />
+          <ScalarProperty Name="CUSTOMER_MOBILE1" ColumnName="CUSTOMER_MOBILE1" />
+          <ScalarProperty Name="CUSTOMER_MOBILE2" ColumnName="CUSTOMER_MOBILE2" />
+          <ScalarProperty Name="CUSTOMER_COMPANY" ColumnName="CUSTOMER_COMPANY" />
+          <ScalarProperty Name="CUSTOMER_STREET" ColumnName="CUSTOMER_STREET" />
+          <ScalarProperty Name="CUSTOMER_PHON" ColumnName="CUSTOMER_PHON" />
+          <ScalarProperty Name="CUSTOMER_EMAIL" ColumnName="CUSTOMER_EMAIL" />
+          <ScalarProperty Name="PAY_1_PAY" ColumnName="PAY_1_PAY" />
+          <ScalarProperty Name="PAY_1_GUID" ColumnName="PAY_1_GUID" />
+          <ScalarProperty Name="TRAN_POS_GUID" ColumnName="TRAN_POS_GUID" />
+          <ScalarProperty Name="TRAN_POS_PAY" ColumnName="TRAN_POS_PAY" />
+          <ScalarProperty Name="employee_pos" ColumnName="employee_pos" />
+          <ScalarProperty Name="time_bill" ColumnName="time_bill" />
+          <ScalarProperty Name="VAT" ColumnName="VAT" />
+          <ScalarProperty Name="Cash" ColumnName="Cash" />
+          <ScalarProperty Name="KNET" ColumnName="KNET" />
+          <ScalarProperty Name="delivery_customer" ColumnName="delivery_customer" />
+          <ScalarProperty Name="delivery_mobile" ColumnName="delivery_mobile" />
+          <ScalarProperty Name="Govern" ColumnName="Govern" />
+          <ScalarProperty Name="city" ColumnName="city" />
+          <ScalarProperty Name="block" ColumnName="block" />
+          <ScalarProperty Name="street" ColumnName="street" />
+          <ScalarProperty Name="building" ColumnName="building" />
+          <ScalarProperty Name="floor" ColumnName="floor" />
+          <ScalarProperty Name="room" ColumnName="room" />
+          <ScalarProperty Name="add_Details" ColumnName="add_Details" />
+          <ScalarProperty Name="Reset" ColumnName="Reset" />
+          <ScalarProperty Name="Driver" ColumnName="Driver" />
+          <ScalarProperty Name="Driver_tele" ColumnName="Driver_tele" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="QTY" ColumnName="QTY" />
+          <ScalarProperty Name="PRICE" ColumnName="PRICE" />
+          <ScalarProperty Name="Note2" ColumnName="Note2" />
+          <ScalarProperty Name="Dis__" ColumnName="Dis__" />
+          <ScalarProperty Name="extra" ColumnName="extra" />
+          <ScalarProperty Name="guid_store" ColumnName="guid_store" />
+          <ScalarProperty Name="unit" ColumnName="unit" />
+          <ScalarProperty Name="qty_unit" ColumnName="qty_unit" />
+          <ScalarProperty Name="recpt" ColumnName="recpt" />
+          <ScalarProperty Name="barcode" ColumnName="barcode" />
+          <ScalarProperty Name="order_qty" ColumnName="order_qty" />
+          <ScalarProperty Name="order_n" ColumnName="order_n" />
+          <ScalarProperty Name="Vat__" ColumnName="Vat__" />
+          <ScalarProperty Name="item_id" ColumnName="item_id" />
+          <ScalarProperty Name="GUID" ColumnName="GUID" />
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="Item_id2" ColumnName="Item_id2" />
+          <ScalarProperty Name="Item_NAme" ColumnName="Item_NAme" />
+          <ScalarProperty Name="Item_note" ColumnName="Item_note" />
+          <ScalarProperty Name="BALANCE" ColumnName="BALANCE" />
+          <ScalarProperty Name="AVG_PRICE" ColumnName="AVG_PRICE" />
+          <ScalarProperty Name="UNIT1" ColumnName="UNIT1" />
+          <ScalarProperty Name="QTY_UNIT1" ColumnName="QTY_UNIT1" />
+          <ScalarProperty Name="BARCODE_1" ColumnName="BARCODE_1" />
+          <ScalarProperty Name="UNIT2" ColumnName="UNIT2" />
+          <ScalarProperty Name="QTY_UNIT2" ColumnName="QTY_UNIT2" />
+          <ScalarProperty Name="BARCODE_2" ColumnName="BARCODE_2" />
+          <ScalarProperty Name="UNIT3" ColumnName="UNIT3" />
+          <ScalarProperty Name="QTY_UNIT3" ColumnName="QTY_UNIT3" />
+          <ScalarProperty Name="BARCODE_3" ColumnName="BARCODE_3" />
+          <ScalarProperty Name="latin_name" ColumnName="latin_name" />
+          <ScalarProperty Name="Company" ColumnName="Company" />
+          <ScalarProperty Name="Provenance" ColumnName="Provenance" />
+          <ScalarProperty Name="Quality" ColumnName="Quality" />
+          <ScalarProperty Name="Color" ColumnName="Color" />
+          <ScalarProperty Name="Model" ColumnName="Model" />
+          <ScalarProperty Name="Dim" ColumnName="Dim" />
+          <ScalarProperty Name="Pos" ColumnName="Pos" />
+          <ScalarProperty Name="Origin" ColumnName="Origin" />
+          <ScalarProperty Name="User_Guid" ColumnName="User_Guid" />
+          <ScalarProperty Name="Currency_Guid" ColumnName="Currency_Guid" />
+          <ScalarProperty Name="Whole" ColumnName="Whole" />
+          <ScalarProperty Name="Half" ColumnName="Half" />
+          <ScalarProperty Name="Vendor" ColumnName="Vendor" />
+          <ScalarProperty Name="EndUser" ColumnName="EndUser" />
+          <ScalarProperty Name="Export" ColumnName="Export" />
+          <ScalarProperty Name="Retail" ColumnName="Retail" />
+          <ScalarProperty Name="LastPrice" ColumnName="LastPrice" />
+          <ScalarProperty Name="OrderLimit" ColumnName="OrderLimit" />
+          <ScalarProperty Name="MAX_QTY" ColumnName="MAX_QTY" />
+          <ScalarProperty Name="MIN_QTY" ColumnName="MIN_QTY" />
+          <ScalarProperty Name="Vat_" ColumnName="Vat_" />
+          <ScalarProperty Name="TYPE_ITEME" ColumnName="TYPE_ITEME" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Purchase_Invoice">
+      <EntityTypeMapping TypeName="DB_ACCModel1.Purchase_Invoice">
+        <MappingFragment StoreEntitySet="Purchase_Invoice">
+          <ScalarProperty Name="NUMBER" ColumnName="NUMBER" />
+          <ScalarProperty Name="NOTE" ColumnName="NOTE" />
+          <ScalarProperty Name="DATE" ColumnName="DATE" />
+          <ScalarProperty Name="disc" ColumnName="disc" />
+          <ScalarProperty Name="EXTEA" ColumnName="EXTEA" />
+          <ScalarProperty Name="p_extra" ColumnName="p_extra" />
+          <ScalarProperty Name="total" ColumnName="total" />
+          <ScalarProperty Name="p_disc" ColumnName="p_disc" />
+          <ScalarProperty Name="type_dis" ColumnName="type_dis" />
+          <ScalarProperty Name="disc_rate" ColumnName="disc_rate" />
+          <ScalarProperty Name="type_pay" ColumnName="type_pay" />
+          <ScalarProperty Name="delivery_customer" ColumnName="delivery_customer" />
+          <ScalarProperty Name="delivery_mobile" ColumnName="delivery_mobile" />
+          <ScalarProperty Name="knet" ColumnName="knet" />
+          <ScalarProperty Name="cash" ColumnName="cash" />
+          <ScalarProperty Name="VAT" ColumnName="VAT" />
+          <ScalarProperty Name="time_bill" ColumnName="time_bill" />
+          <ScalarProperty Name="QTY" ColumnName="QTY" />
+          <ScalarProperty Name="PRICE" ColumnName="PRICE" />
+          <ScalarProperty Name="Expr1" ColumnName="Expr1" />
+          <ScalarProperty Name="Expr2" ColumnName="Expr2" />
+          <ScalarProperty Name="extra" ColumnName="extra" />
+          <ScalarProperty Name="guid_store" ColumnName="guid_store" />
+          <ScalarProperty Name="unit" ColumnName="unit" />
+          <ScalarProperty Name="qty_unit" ColumnName="qty_unit" />
+          <ScalarProperty Name="recpt" ColumnName="recpt" />
+          <ScalarProperty Name="barcode" ColumnName="barcode" />
+          <ScalarProperty Name="order_n" ColumnName="order_n" />
+          <ScalarProperty Name="order_qty" ColumnName="order_qty" />
+          <ScalarProperty Name="Expr3" ColumnName="Expr3" />
+          <ScalarProperty Name="item_id" ColumnName="item_id" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="Expr4" ColumnName="Expr4" />
+          <ScalarProperty Name="Expr5" ColumnName="Expr5" />
+          <ScalarProperty Name="PARENT_GUID" ColumnName="PARENT_GUID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Receipt_and_Payment">
+      <EntityTypeMapping TypeName="DB_ACCModel1.Receipt_and_Payment">
+        <MappingFragment StoreEntitySet="Receipt_and_Payment">
+          <ScalarProperty Name="NUMBER_D" ColumnName="NUMBER_D" />
+          <ScalarProperty Name="CREDIT" ColumnName="CREDIT" />
+          <ScalarProperty Name="DEBIT" ColumnName="DEBIT" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="TYPE" ColumnName="TYPE" />
+          <ScalarProperty Name="NUMBER" ColumnName="NUMBER" />
+          <ScalarProperty Name="NOTE" ColumnName="NOTE" />
+          <ScalarProperty Name="DATE" ColumnName="DATE" />
+          <ScalarProperty Name="name_recip" ColumnName="name_recip" />
+          <ScalarProperty Name="mobile_recipt" ColumnName="mobile_recipt" />
+          <ScalarProperty Name="Type_name" ColumnName="Type_name" />
+          <ScalarProperty Name="GUID" ColumnName="GUID" />
+          <ScalarProperty Name="number_document" ColumnName="number_document" />
+          <ScalarProperty Name="Line_Note" ColumnName="Line_Note" />
+          <ScalarProperty Name="Customer_name" ColumnName="Customer_name" />
+          <ScalarProperty Name="amount" ColumnName="amount" />
+          <ScalarProperty Name="check_no" ColumnName="check_no" />
+          <ScalarProperty Name="Bank" ColumnName="Bank" />
+          <ScalarProperty Name="CODE" ColumnName="CODE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Refund">
+      <EntityTypeMapping TypeName="DB_ACCModel1.Refund">
+        <MappingFragment StoreEntitySet="Refund">
+          <ScalarProperty Name="Invoice_No" ColumnName="Invoice_No" />
+          <ScalarProperty Name="Header_Notes" ColumnName="Header_Notes" />
+          <ScalarProperty Name="DATE" ColumnName="DATE" />
+          <ScalarProperty Name="Invoice_Discount" ColumnName="Invoice_Discount" />
+          <ScalarProperty Name="Total_Invoice" ColumnName="Total_Invoice" />
+          <ScalarProperty Name="disc_rate" ColumnName="disc_rate" />
+          <ScalarProperty Name="type_dis" ColumnName="type_dis" />
+          <ScalarProperty Name="User_Name" ColumnName="User_Name" />
+          <ScalarProperty Name="User_ID" ColumnName="User_ID" />
+          <ScalarProperty Name="time_bill" ColumnName="time_bill" />
+          <ScalarProperty Name="Cash" ColumnName="Cash" />
+          <ScalarProperty Name="KNET" ColumnName="KNET" />
+          <ScalarProperty Name="delivery_customer" ColumnName="delivery_customer" />
+          <ScalarProperty Name="delivery_mobile" ColumnName="delivery_mobile" />
+          <ScalarProperty Name="Govern" ColumnName="Govern" />
+          <ScalarProperty Name="city" ColumnName="city" />
+          <ScalarProperty Name="block" ColumnName="block" />
+          <ScalarProperty Name="street" ColumnName="street" />
+          <ScalarProperty Name="building" ColumnName="building" />
+          <ScalarProperty Name="floor" ColumnName="floor" />
+          <ScalarProperty Name="room" ColumnName="room" />
+          <ScalarProperty Name="add_Details" ColumnName="add_Details" />
+          <ScalarProperty Name="Reset" ColumnName="Reset" />
+          <ScalarProperty Name="Driver" ColumnName="Driver" />
+          <ScalarProperty Name="Driver_tele" ColumnName="Driver_tele" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="QTY" ColumnName="QTY" />
+          <ScalarProperty Name="PRICE" ColumnName="PRICE" />
+          <ScalarProperty Name="NOTE" ColumnName="NOTE" />
+          <ScalarProperty Name="disc" ColumnName="disc" />
+          <ScalarProperty Name="barcode" ColumnName="barcode" />
+          <ScalarProperty Name="item_id" ColumnName="item_id" />
+          <ScalarProperty Name="NAME" ColumnName="NAME" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Item_Note" ColumnName="Item_Note" />
+          <ScalarProperty Name="Expr1" ColumnName="Expr1" />
+          <ScalarProperty Name="Sales_Man" ColumnName="Sales_Man" />
+          <ScalarProperty Name="VAT" ColumnName="VAT" />
+          <ScalarProperty Name="table_no" ColumnName="table_no" />
+          <ScalarProperty Name="SN" ColumnName="SN" />
+          <ScalarProperty Name="ORDER_TYPE" ColumnName="ORDER_TYPE" />
+          <ScalarProperty Name="GUID" ColumnName="GUID" />
+          <ScalarProperty Name="Subs_Paid" ColumnName="Subs_Paid" />
+          <ScalarProperty Name="Subs_Balance" ColumnName="Subs_Balance" />
+          <ScalarProperty Name="Subs_End_Date" ColumnName="Subs_End_Date" />
+          <ScalarProperty Name="Booking_Date" ColumnName="Booking_Date" />
+          <ScalarProperty Name="Booking_Time" ColumnName="Booking_Time" />
+          <ScalarProperty Name="Expr2" ColumnName="Expr2" />
+          <ScalarProperty Name="VISA" ColumnName="VISA" />
+          <ScalarProperty Name="MASTER" ColumnName="MASTER" />
+          <ScalarProperty Name="unit" ColumnName="unit" />
+          <ScalarProperty Name="latin_name" ColumnName="latin_name" />
+          <ScalarProperty Name="TRAN_POS_PAY" ColumnName="TRAN_POS_PAY" />
+          <ScalarProperty Name="CUSTOMER_MOBILE1" ColumnName="CUSTOMER_MOBILE1" />
+          <ScalarProperty Name="shift_no" ColumnName="shift_no" />
+          <ScalarProperty Name="Gategory" ColumnName="Gategory" />
+          <ScalarProperty Name="CUSTOMER_PHON" ColumnName="CUSTOMER_PHON" />
+          <ScalarProperty Name="CUSTOMER_STREET" ColumnName="CUSTOMER_STREET" />
+          <ScalarProperty Name="CUSTOMER_EMAIL" ColumnName="CUSTOMER_EMAIL" />
+          <ScalarProperty Name="CUSTOMER_COMPANY" ColumnName="CUSTOMER_COMPANY" />
+          <ScalarProperty Name="CUSTOMER_MOBILE2" ColumnName="CUSTOMER_MOBILE2" />
+          <ScalarProperty Name="Expr3" ColumnName="Expr3" />
+          <ScalarProperty Name="PARENT_GUID" ColumnName="PARENT_GUID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Sales_Invoice">
+      <EntityTypeMapping TypeName="DB_ACCModel1.Sales_Invoice">
+        <MappingFragment StoreEntitySet="Sales Invoice">
+          <ScalarProperty Name="Expr1" ColumnName="Expr1" />
+          <ScalarProperty Name="Expr2" ColumnName="Expr2" />
+          <ScalarProperty Name="PARENT_GUID" ColumnName="PARENT_GUID" />
+          <ScalarProperty Name="NUMBER" ColumnName="NUMBER" />
+          <ScalarProperty Name="CUST" ColumnName="CUST" />
+          <ScalarProperty Name="STORE_GUID" ColumnName="STORE_GUID" />
+          <ScalarProperty Name="NOTE" ColumnName="NOTE" />
+          <ScalarProperty Name="DATE" ColumnName="DATE" />
+          <ScalarProperty Name="disc" ColumnName="disc" />
+          <ScalarProperty Name="EXTEA" ColumnName="EXTEA" />
+          <ScalarProperty Name="p_disc" ColumnName="p_disc" />
+          <ScalarProperty Name="p_extra" ColumnName="p_extra" />
+          <ScalarProperty Name="total" ColumnName="total" />
+          <ScalarProperty Name="type_dis" ColumnName="type_dis" />
+          <ScalarProperty Name="disc_rate" ColumnName="disc_rate" />
+          <ScalarProperty Name="type_pay" ColumnName="type_pay" />
+          <ScalarProperty Name="GUID_JOB" ColumnName="GUID_JOB" />
+          <ScalarProperty Name="GUID_CURRENCY" ColumnName="GUID_CURRENCY" />
+          <ScalarProperty Name="CURRENCY_VAL" ColumnName="CURRENCY_VAL" />
+          <ScalarProperty Name="DELETE_NUM" ColumnName="DELETE_NUM" />
+          <ScalarProperty Name="Date_Delete" ColumnName="Date_Delete" />
+          <ScalarProperty Name="guid_user" ColumnName="guid_user" />
+          <ScalarProperty Name="CUSTOMER_NAME" ColumnName="CUSTOMER_NAME" />
+          <ScalarProperty Name="CUSTOMER_MOBILE1" ColumnName="CUSTOMER_MOBILE1" />
+          <ScalarProperty Name="CUSTOMER_MOBILE2" ColumnName="CUSTOMER_MOBILE2" />
+          <ScalarProperty Name="CUSTOMER_COMPANY" ColumnName="CUSTOMER_COMPANY" />
+          <ScalarProperty Name="CUSTOMER_STREET" ColumnName="CUSTOMER_STREET" />
+          <ScalarProperty Name="CUSTOMER_PHON" ColumnName="CUSTOMER_PHON" />
+          <ScalarProperty Name="CUSTOMER_EMAIL" ColumnName="CUSTOMER_EMAIL" />
+          <ScalarProperty Name="PAY_1_PAY" ColumnName="PAY_1_PAY" />
+          <ScalarProperty Name="PAY_1_GUID" ColumnName="PAY_1_GUID" />
+          <ScalarProperty Name="TRAN_POS_GUID" ColumnName="TRAN_POS_GUID" />
+          <ScalarProperty Name="TRAN_POS_PAY" ColumnName="TRAN_POS_PAY" />
+          <ScalarProperty Name="employee_pos" ColumnName="employee_pos" />
+          <ScalarProperty Name="time_bill" ColumnName="time_bill" />
+          <ScalarProperty Name="VAT" ColumnName="VAT" />
+          <ScalarProperty Name="cash" ColumnName="cash" />
+          <ScalarProperty Name="knet" ColumnName="knet" />
+          <ScalarProperty Name="delivery_customer" ColumnName="delivery_customer" />
+          <ScalarProperty Name="delivery_mobile" ColumnName="delivery_mobile" />
+          <ScalarProperty Name="Govern" ColumnName="Govern" />
+          <ScalarProperty Name="city" ColumnName="city" />
+          <ScalarProperty Name="block" ColumnName="block" />
+          <ScalarProperty Name="street" ColumnName="street" />
+          <ScalarProperty Name="building" ColumnName="building" />
+          <ScalarProperty Name="floor" ColumnName="floor" />
+          <ScalarProperty Name="room" ColumnName="room" />
+          <ScalarProperty Name="add_Details" ColumnName="add_Details" />
+          <ScalarProperty Name="Reset" ColumnName="Reset" />
+          <ScalarProperty Name="Driver" ColumnName="Driver" />
+          <ScalarProperty Name="Driver_tele" ColumnName="Driver_tele" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="QTY" ColumnName="QTY" />
+          <ScalarProperty Name="PRICE" ColumnName="PRICE" />
+          <ScalarProperty Name="Expr3" ColumnName="Expr3" />
+          <ScalarProperty Name="Expr4" ColumnName="Expr4" />
+          <ScalarProperty Name="extra" ColumnName="extra" />
+          <ScalarProperty Name="guid_store" ColumnName="guid_store" />
+          <ScalarProperty Name="unit" ColumnName="unit" />
+          <ScalarProperty Name="qty_unit" ColumnName="qty_unit" />
+          <ScalarProperty Name="recpt" ColumnName="recpt" />
+          <ScalarProperty Name="barcode" ColumnName="barcode" />
+          <ScalarProperty Name="order_qty" ColumnName="order_qty" />
+          <ScalarProperty Name="order_n" ColumnName="order_n" />
+          <ScalarProperty Name="Expr5" ColumnName="Expr5" />
+          <ScalarProperty Name="item_id" ColumnName="item_id" />
+          <ScalarProperty Name="GUID" ColumnName="GUID" />
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="Expr6" ColumnName="Expr6" />
+          <ScalarProperty Name="Expr7" ColumnName="Expr7" />
+          <ScalarProperty Name="Expr8" ColumnName="Expr8" />
+          <ScalarProperty Name="BALANCE" ColumnName="BALANCE" />
+          <ScalarProperty Name="avg_price" ColumnName="avg_price" />
+          <ScalarProperty Name="UNIT1" ColumnName="UNIT1" />
+          <ScalarProperty Name="QTY_UNIT1" ColumnName="QTY_UNIT1" />
+          <ScalarProperty Name="BARCODE_1" ColumnName="BARCODE_1" />
+          <ScalarProperty Name="UNIT2" ColumnName="UNIT2" />
+          <ScalarProperty Name="QTY_UNIT2" ColumnName="QTY_UNIT2" />
+          <ScalarProperty Name="BARCODE_2" ColumnName="BARCODE_2" />
+          <ScalarProperty Name="UNIT3" ColumnName="UNIT3" />
+          <ScalarProperty Name="QTY_UNIT3" ColumnName="QTY_UNIT3" />
+          <ScalarProperty Name="BARCODE_3" ColumnName="BARCODE_3" />
+          <ScalarProperty Name="latin_name" ColumnName="latin_name" />
+          <ScalarProperty Name="Company" ColumnName="Company" />
+          <ScalarProperty Name="Provenance" ColumnName="Provenance" />
+          <ScalarProperty Name="Quality" ColumnName="Quality" />
+          <ScalarProperty Name="Color" ColumnName="Color" />
+          <ScalarProperty Name="Model" ColumnName="Model" />
+          <ScalarProperty Name="Dim" ColumnName="Dim" />
+          <ScalarProperty Name="Pos" ColumnName="Pos" />
+          <ScalarProperty Name="Origin" ColumnName="Origin" />
+          <ScalarProperty Name="Expr9" ColumnName="Expr9" />
+          <ScalarProperty Name="Expr10" ColumnName="Expr10" />
+          <ScalarProperty Name="Whole" ColumnName="Whole" />
+          <ScalarProperty Name="Half" ColumnName="Half" />
+          <ScalarProperty Name="Vendor" ColumnName="Vendor" />
+          <ScalarProperty Name="EndUser" ColumnName="EndUser" />
+          <ScalarProperty Name="Export" ColumnName="Export" />
+          <ScalarProperty Name="Retail" ColumnName="Retail" />
+          <ScalarProperty Name="LastPrice" ColumnName="LastPrice" />
+          <ScalarProperty Name="OrderLimit" ColumnName="OrderLimit" />
+          <ScalarProperty Name="MAX_QTY" ColumnName="MAX_QTY" />
+          <ScalarProperty Name="MIN_QTY" ColumnName="MIN_QTY" />
+          <ScalarProperty Name="Expr11" ColumnName="Expr11" />
+          <ScalarProperty Name="TYPE_ITEME" ColumnName="TYPE_ITEME" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="sales_invoice_XX">
+      <EntityTypeMapping TypeName="DB_ACCModel1.sales_invoice_XX">
+        <MappingFragment StoreEntitySet="sales_invoice XX">
+          <ScalarProperty Name="Internal_id" ColumnName="Internal_id" />
+          <ScalarProperty Name="iNVOICE_Guid" ColumnName="iNVOICE_Guid" />
+          <ScalarProperty Name="PARENT_GUID" ColumnName="PARENT_GUID" />
+          <ScalarProperty Name="Invoice_ID" ColumnName="Invoice_ID" />
+          <ScalarProperty Name="CUST" ColumnName="CUST" />
+          <ScalarProperty Name="STORE_GUID" ColumnName="STORE_GUID" />
+          <ScalarProperty Name="NOTE" ColumnName="NOTE" />
+          <ScalarProperty Name="DATE" ColumnName="DATE" />
+          <ScalarProperty Name="disc" ColumnName="disc" />
+          <ScalarProperty Name="EXTEA" ColumnName="EXTEA" />
+          <ScalarProperty Name="p_disc" ColumnName="p_disc" />
+          <ScalarProperty Name="p_extra" ColumnName="p_extra" />
+          <ScalarProperty Name="total" ColumnName="total" />
+          <ScalarProperty Name="type_dis" ColumnName="type_dis" />
+          <ScalarProperty Name="disc_rate" ColumnName="disc_rate" />
+          <ScalarProperty Name="type_pay" ColumnName="type_pay" />
+          <ScalarProperty Name="GUID_JOB" ColumnName="GUID_JOB" />
+          <ScalarProperty Name="GUID_CURRENCY" ColumnName="GUID_CURRENCY" />
+          <ScalarProperty Name="CURRENCY_VAL" ColumnName="CURRENCY_VAL" />
+          <ScalarProperty Name="DELETE_NUM" ColumnName="DELETE_NUM" />
+          <ScalarProperty Name="Date_Delete" ColumnName="Date_Delete" />
+          <ScalarProperty Name="guid_user" ColumnName="guid_user" />
+          <ScalarProperty Name="CUSTOMER_NAME" ColumnName="CUSTOMER_NAME" />
+          <ScalarProperty Name="CUSTOMER_MOBILE1" ColumnName="CUSTOMER_MOBILE1" />
+          <ScalarProperty Name="CUSTOMER_MOBILE2" ColumnName="CUSTOMER_MOBILE2" />
+          <ScalarProperty Name="CUSTOMER_COMPANY" ColumnName="CUSTOMER_COMPANY" />
+          <ScalarProperty Name="CUSTOMER_STREET" ColumnName="CUSTOMER_STREET" />
+          <ScalarProperty Name="CUSTOMER_PHON" ColumnName="CUSTOMER_PHON" />
+          <ScalarProperty Name="CUSTOMER_EMAIL" ColumnName="CUSTOMER_EMAIL" />
+          <ScalarProperty Name="PAY_1_PAY" ColumnName="PAY_1_PAY" />
+          <ScalarProperty Name="PAY_1_GUID" ColumnName="PAY_1_GUID" />
+          <ScalarProperty Name="TRAN_POS_GUID" ColumnName="TRAN_POS_GUID" />
+          <ScalarProperty Name="TRAN_POS_PAY" ColumnName="TRAN_POS_PAY" />
+          <ScalarProperty Name="employee_pos" ColumnName="employee_pos" />
+          <ScalarProperty Name="time_bill" ColumnName="time_bill" />
+          <ScalarProperty Name="VAT" ColumnName="VAT" />
+          <ScalarProperty Name="cash" ColumnName="cash" />
+          <ScalarProperty Name="knet" ColumnName="knet" />
+          <ScalarProperty Name="delivery_customer" ColumnName="delivery_customer" />
+          <ScalarProperty Name="delivery_mobile" ColumnName="delivery_mobile" />
+          <ScalarProperty Name="Govern" ColumnName="Govern" />
+          <ScalarProperty Name="city" ColumnName="city" />
+          <ScalarProperty Name="block" ColumnName="block" />
+          <ScalarProperty Name="street" ColumnName="street" />
+          <ScalarProperty Name="building" ColumnName="building" />
+          <ScalarProperty Name="floor" ColumnName="floor" />
+          <ScalarProperty Name="room" ColumnName="room" />
+          <ScalarProperty Name="add_Details" ColumnName="add_Details" />
+          <ScalarProperty Name="Reset" ColumnName="Reset" />
+          <ScalarProperty Name="Driver" ColumnName="Driver" />
+          <ScalarProperty Name="Driver_tele" ColumnName="Driver_tele" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="QTY" ColumnName="QTY" />
+          <ScalarProperty Name="PRICE" ColumnName="PRICE" />
+          <ScalarProperty Name="Notes_Line_Item" ColumnName="Notes_Line_Item" />
+          <ScalarProperty Name="Line_Disc" ColumnName="Line_Disc" />
+          <ScalarProperty Name="extra" ColumnName="extra" />
+          <ScalarProperty Name="guid_store" ColumnName="guid_store" />
+          <ScalarProperty Name="unit" ColumnName="unit" />
+          <ScalarProperty Name="qty_unit" ColumnName="qty_unit" />
+          <ScalarProperty Name="recpt" ColumnName="recpt" />
+          <ScalarProperty Name="barcode" ColumnName="barcode" />
+          <ScalarProperty Name="order_qty" ColumnName="order_qty" />
+          <ScalarProperty Name="order_n" ColumnName="order_n" />
+          <ScalarProperty Name="VAT_Line" ColumnName="VAT_Line" />
+          <ScalarProperty Name="item_id" ColumnName="item_id" />
+          <ScalarProperty Name="GUID" ColumnName="GUID" />
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="Line_ID" ColumnName="Line_ID" />
+          <ScalarProperty Name="Item_Name" ColumnName="Item_Name" />
+          <ScalarProperty Name="Item_Note" ColumnName="Item_Note" />
+          <ScalarProperty Name="BALANCE" ColumnName="BALANCE" />
+          <ScalarProperty Name="avg_price" ColumnName="avg_price" />
+          <ScalarProperty Name="UNIT1" ColumnName="UNIT1" />
+          <ScalarProperty Name="QTY_UNIT1" ColumnName="QTY_UNIT1" />
+          <ScalarProperty Name="BARCODE_1" ColumnName="BARCODE_1" />
+          <ScalarProperty Name="UNIT2" ColumnName="UNIT2" />
+          <ScalarProperty Name="QTY_UNIT2" ColumnName="QTY_UNIT2" />
+          <ScalarProperty Name="BARCODE_2" ColumnName="BARCODE_2" />
+          <ScalarProperty Name="UNIT3" ColumnName="UNIT3" />
+          <ScalarProperty Name="QTY_UNIT3" ColumnName="QTY_UNIT3" />
+          <ScalarProperty Name="BARCODE_3" ColumnName="BARCODE_3" />
+          <ScalarProperty Name="latin_name" ColumnName="latin_name" />
+          <ScalarProperty Name="Company" ColumnName="Company" />
+          <ScalarProperty Name="Provenance" ColumnName="Provenance" />
+          <ScalarProperty Name="Quality" ColumnName="Quality" />
+          <ScalarProperty Name="Color" ColumnName="Color" />
+          <ScalarProperty Name="Model" ColumnName="Model" />
+          <ScalarProperty Name="Dim" ColumnName="Dim" />
+          <ScalarProperty Name="Pos" ColumnName="Pos" />
+          <ScalarProperty Name="Origin" ColumnName="Origin" />
+          <ScalarProperty Name="Expr9" ColumnName="Expr9" />
+          <ScalarProperty Name="Expr10" ColumnName="Expr10" />
+          <ScalarProperty Name="Whole" ColumnName="Whole" />
+          <ScalarProperty Name="Half" ColumnName="Half" />
+          <ScalarProperty Name="Vendor" ColumnName="Vendor" />
+          <ScalarProperty Name="EndUser" ColumnName="EndUser" />
+          <ScalarProperty Name="Export" ColumnName="Export" />
+          <ScalarProperty Name="Retail" ColumnName="Retail" />
+          <ScalarProperty Name="LastPrice" ColumnName="LastPrice" />
+          <ScalarProperty Name="OrderLimit" ColumnName="OrderLimit" />
+          <ScalarProperty Name="MAX_QTY" ColumnName="MAX_QTY" />
+          <ScalarProperty Name="MIN_QTY" ColumnName="MIN_QTY" />
+          <ScalarProperty Name="Expr11" ColumnName="Expr11" />
+          <ScalarProperty Name="TYPE_ITEME" ColumnName="TYPE_ITEME" />
+          <ScalarProperty Name="USER_ID" ColumnName="USER_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Sales_Report">
+      <EntityTypeMapping TypeName="DB_ACCModel1.Sales_Report">
+        <MappingFragment StoreEntitySet="Sales_Report">
+          <ScalarProperty Name="NUMBER" ColumnName="NUMBER" />
+          <ScalarProperty Name="GUID" ColumnName="GUID" />
+          <ScalarProperty Name="DATE" ColumnName="DATE" />
+          <ScalarProperty Name="total" ColumnName="total" />
+          <ScalarProperty Name="PARENT_GUID" ColumnName="PARENT_GUID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Sales_report_all">
+      <EntityTypeMapping TypeName="DB_ACCModel1.Sales_report_all">
+        <MappingFragment StoreEntitySet="Sales_report_all">
+          <ScalarProperty Name="NUMBER" ColumnName="NUMBER" />
+          <ScalarProperty Name="total" ColumnName="total" />
+          <ScalarProperty Name="DATE" ColumnName="DATE" />
+          <ScalarProperty Name="time_bill" ColumnName="time_bill" />
+          <ScalarProperty Name="cash" ColumnName="cash" />
+          <ScalarProperty Name="knet" ColumnName="knet" />
+          <ScalarProperty Name="delivery_customer" ColumnName="delivery_customer" />
+          <ScalarProperty Name="delivery_mobile" ColumnName="delivery_mobile" />
+          <ScalarProperty Name="Reset" ColumnName="Reset" />
+          <ScalarProperty Name="Govern" ColumnName="Govern" />
+          <ScalarProperty Name="city" ColumnName="city" />
+          <ScalarProperty Name="block" ColumnName="block" />
+          <ScalarProperty Name="street" ColumnName="street" />
+          <ScalarProperty Name="building" ColumnName="building" />
+          <ScalarProperty Name="floor" ColumnName="floor" />
+          <ScalarProperty Name="room" ColumnName="room" />
+          <ScalarProperty Name="add_Details" ColumnName="add_Details" />
+          <ScalarProperty Name="Driver" ColumnName="Driver" />
+          <ScalarProperty Name="Driver_tele" ColumnName="Driver_tele" />
+          <ScalarProperty Name="VAT" ColumnName="VAT" />
+          <ScalarProperty Name="guid_user" ColumnName="guid_user" />
+          <ScalarProperty Name="CURRENCY_VAL" ColumnName="CURRENCY_VAL" />
+          <ScalarProperty Name="GUID_CURRENCY" ColumnName="GUID_CURRENCY" />
+          <ScalarProperty Name="GUID_JOB" ColumnName="GUID_JOB" />
+          <ScalarProperty Name="disc_rate" ColumnName="disc_rate" />
+          <ScalarProperty Name="type_pay" ColumnName="type_pay" />
+          <ScalarProperty Name="type_dis" ColumnName="type_dis" />
+          <ScalarProperty Name="p_extra" ColumnName="p_extra" />
+          <ScalarProperty Name="p_disc" ColumnName="p_disc" />
+          <ScalarProperty Name="EXTEA" ColumnName="EXTEA" />
+          <ScalarProperty Name="disc" ColumnName="disc" />
+          <ScalarProperty Name="STORE_GUID" ColumnName="STORE_GUID" />
+          <ScalarProperty Name="NOTE" ColumnName="NOTE" />
+          <ScalarProperty Name="CUST" ColumnName="CUST" />
+          <ScalarProperty Name="PARENT_GUID" ColumnName="PARENT_GUID" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Shieft_Report">
+      <EntityTypeMapping TypeName="DB_ACCModel1.Shieft_Report">
+        <MappingFragment StoreEntitySet="Shieft_Report">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="user_name" ColumnName="user_name" />
+          <ScalarProperty Name="cash" ColumnName="cash" />
+          <ScalarProperty Name="visa" ColumnName="visa" />
+          <ScalarProperty Name="total" ColumnName="total" />
+          <ScalarProperty Name="start_date" ColumnName="start_date" />
+          <ScalarProperty Name="end_date" ColumnName="end_date" />
+          <ScalarProperty Name="status" ColumnName="status" />
+          <ScalarProperty Name="pos_expenses" ColumnName="pos_expenses" />
+          <ScalarProperty Name="salesman" ColumnName="salesman" />
+          <ScalarProperty Name="R_total" ColumnName="R_total" />
+          <ScalarProperty Name="R_Cash" ColumnName="R_Cash" />
+          <ScalarProperty Name="R_Knet" ColumnName="R_Knet" />
+          <ScalarProperty Name="N_Total" ColumnName="N_Total" />
+          <ScalarProperty Name="N_Cash" ColumnName="N_Cash" />
+          <ScalarProperty Name="N_KNET" ColumnName="N_KNET" />
+          <ScalarProperty Name="Number" ColumnName="Number" />
+          <ScalarProperty Name="Master" ColumnName="Master" />
+          <ScalarProperty Name="Visa_Card" ColumnName="Visa_Card" />
+          <ScalarProperty Name="Open_Orders" ColumnName="Open_Orders" />
+          <ScalarProperty Name="Subs" ColumnName="Subs" />
+          <ScalarProperty Name="jeebly" ColumnName="jeebly" />
+          <ScalarProperty Name="deliveroo" ColumnName="deliveroo" />
+          <ScalarProperty Name="Open_Balance" ColumnName="Open_Balance" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Show_Items">
+      <EntityTypeMapping TypeName="DB_ACCModel1.Show_Items">
+        <MappingFragment StoreEntitySet="Show_Items">
+          <ScalarProperty Name="NAME" ColumnName="NAME" />
+          <ScalarProperty Name="Group" ColumnName="Group" />
+          <ScalarProperty Name="AVG_PRICE" ColumnName="AVG_PRICE" />
+          <ScalarProperty Name="latin_name" ColumnName="latin_name" />
+          <ScalarProperty Name="Company" ColumnName="Company" />
+          <ScalarProperty Name="EndUser" ColumnName="EndUser" />
+          <ScalarProperty Name="LastPrice" ColumnName="LastPrice" />
+          <ScalarProperty Name="TYPE_ITEME" ColumnName="TYPE_ITEME" />
+          <ScalarProperty Name="Is_Sales" ColumnName="Is_Sales" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="Sort" ColumnName="Sort" />
+          <ScalarProperty Name="BARCODE_1" ColumnName="BARCODE_1" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="STAFF_SALES">
+      <EntityTypeMapping TypeName="DB_ACCModel1.STAFF_SALES">
+        <MappingFragment StoreEntitySet="STAFF_SALES">
+          <ScalarProperty Name="Invoice_No" ColumnName="Invoice_No" />
+          <ScalarProperty Name="Header_Notes" ColumnName="Header_Notes" />
+          <ScalarProperty Name="DATE" ColumnName="DATE" />
+          <ScalarProperty Name="Invoice_Discount" ColumnName="Invoice_Discount" />
+          <ScalarProperty Name="Total_Invoice" ColumnName="Total_Invoice" />
+          <ScalarProperty Name="disc_rate" ColumnName="disc_rate" />
+          <ScalarProperty Name="type_dis" ColumnName="type_dis" />
+          <ScalarProperty Name="User_Name" ColumnName="User_Name" />
+          <ScalarProperty Name="User_ID" ColumnName="User_ID" />
+          <ScalarProperty Name="time_bill" ColumnName="time_bill" />
+          <ScalarProperty Name="Cash" ColumnName="Cash" />
+          <ScalarProperty Name="KNET" ColumnName="KNET" />
+          <ScalarProperty Name="delivery_customer" ColumnName="delivery_customer" />
+          <ScalarProperty Name="delivery_mobile" ColumnName="delivery_mobile" />
+          <ScalarProperty Name="Govern" ColumnName="Govern" />
+          <ScalarProperty Name="city" ColumnName="city" />
+          <ScalarProperty Name="block" ColumnName="block" />
+          <ScalarProperty Name="street" ColumnName="street" />
+          <ScalarProperty Name="building" ColumnName="building" />
+          <ScalarProperty Name="floor" ColumnName="floor" />
+          <ScalarProperty Name="room" ColumnName="room" />
+          <ScalarProperty Name="add_Details" ColumnName="add_Details" />
+          <ScalarProperty Name="Reset" ColumnName="Reset" />
+          <ScalarProperty Name="Driver" ColumnName="Driver" />
+          <ScalarProperty Name="Driver_tele" ColumnName="Driver_tele" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="QTY" ColumnName="QTY" />
+          <ScalarProperty Name="PRICE" ColumnName="PRICE" />
+          <ScalarProperty Name="NOTE" ColumnName="NOTE" />
+          <ScalarProperty Name="disc" ColumnName="disc" />
+          <ScalarProperty Name="barcode" ColumnName="barcode" />
+          <ScalarProperty Name="item_id" ColumnName="item_id" />
+          <ScalarProperty Name="NAME" ColumnName="NAME" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Item_Note" ColumnName="Item_Note" />
+          <ScalarProperty Name="Expr1" ColumnName="Expr1" />
+          <ScalarProperty Name="Sales_Man" ColumnName="Sales_Man" />
+          <ScalarProperty Name="VAT" ColumnName="VAT" />
+          <ScalarProperty Name="table_no" ColumnName="table_no" />
+          <ScalarProperty Name="SN" ColumnName="SN" />
+          <ScalarProperty Name="ORDER_TYPE" ColumnName="ORDER_TYPE" />
+          <ScalarProperty Name="GUID" ColumnName="GUID" />
+          <ScalarProperty Name="Subs_Paid" ColumnName="Subs_Paid" />
+          <ScalarProperty Name="Subs_Balance" ColumnName="Subs_Balance" />
+          <ScalarProperty Name="Subs_End_Date" ColumnName="Subs_End_Date" />
+          <ScalarProperty Name="Booking_Date" ColumnName="Booking_Date" />
+          <ScalarProperty Name="Booking_Time" ColumnName="Booking_Time" />
+          <ScalarProperty Name="SALES_MAN_2" ColumnName="SALES_MAN_2" />
+          <ScalarProperty Name="VISA" ColumnName="VISA" />
+          <ScalarProperty Name="MASTER" ColumnName="MASTER" />
+          <ScalarProperty Name="unit" ColumnName="unit" />
+          <ScalarProperty Name="latin_name" ColumnName="latin_name" />
+          <ScalarProperty Name="TRAN_POS_PAY" ColumnName="TRAN_POS_PAY" />
+          <ScalarProperty Name="CUSTOMER_MOBILE1" ColumnName="CUSTOMER_MOBILE1" />
+          <ScalarProperty Name="shift_no" ColumnName="shift_no" />
+          <ScalarProperty Name="Gategory" ColumnName="Gategory" />
+          <ScalarProperty Name="CUSTOMER_PHON" ColumnName="CUSTOMER_PHON" />
+          <ScalarProperty Name="CUSTOMER_STREET" ColumnName="CUSTOMER_STREET" />
+          <ScalarProperty Name="CUSTOMER_EMAIL" ColumnName="CUSTOMER_EMAIL" />
+          <ScalarProperty Name="CUSTOMER_COMPANY" ColumnName="CUSTOMER_COMPANY" />
+          <ScalarProperty Name="CUSTOMER_MOBILE2" ColumnName="CUSTOMER_MOBILE2" />
+          <ScalarProperty Name="Expr3" ColumnName="Expr3" />
+          <ScalarProperty Name="PARENT_GUID" ColumnName="PARENT_GUID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Subs_Report_New">
+      <EntityTypeMapping TypeName="DB_ACCModel1.Subs_Report_New">
+        <MappingFragment StoreEntitySet="Subs_Report_New">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="CUSTOMER" ColumnName="CUSTOMER" />
+          <ScalarProperty Name="TELE" ColumnName="TELE" />
+          <ScalarProperty Name="TYPE" ColumnName="TYPE" />
+          <ScalarProperty Name="VALUE" ColumnName="VALUE" />
+          <ScalarProperty Name="DISCOUNT" ColumnName="DISCOUNT" />
+          <ScalarProperty Name="START" ColumnName="START" />
+          <ScalarProperty Name="END" ColumnName="END" />
+          <ScalarProperty Name="Cash" ColumnName="Cash" />
+          <ScalarProperty Name="Knet" ColumnName="Knet" />
+          <ScalarProperty Name="count" ColumnName="count" />
+          <ScalarProperty Name="Number" ColumnName="Number" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Suppliers_Balance">
+      <EntityTypeMapping TypeName="DB_ACCModel1.Suppliers_Balance">
+        <MappingFragment StoreEntitySet="Suppliers_Balance">
+          <ScalarProperty Name="Code" ColumnName="Code" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Debit" ColumnName="Debit" />
+          <ScalarProperty Name="Credit" ColumnName="Credit" />
+          <ScalarProperty Name="Balance" ColumnName="Balance" />
+          <ScalarProperty Name="GUID" ColumnName="GUID" />
+          <ScalarProperty Name="ParentGUID" ColumnName="ParentGUID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="View_1">
+      <EntityTypeMapping TypeName="DB_ACCModel1.View_1">
+        <MappingFragment StoreEntitySet="View_1">
+          <ScalarProperty Name="CUST" ColumnName="CUST" />
+          <ScalarProperty Name="Expr1" ColumnName="Expr1" />
+          <ScalarProperty Name="STORE_GUID" ColumnName="STORE_GUID" />
+          <ScalarProperty Name="DATE" ColumnName="DATE" />
+          <ScalarProperty Name="disc" ColumnName="disc" />
+          <ScalarProperty Name="EXTEA" ColumnName="EXTEA" />
+          <ScalarProperty Name="total" ColumnName="total" />
+          <ScalarProperty Name="p_extra" ColumnName="p_extra" />
+          <ScalarProperty Name="p_disc" ColumnName="p_disc" />
+          <ScalarProperty Name="type_dis" ColumnName="type_dis" />
+          <ScalarProperty Name="disc_rate" ColumnName="disc_rate" />
+          <ScalarProperty Name="type_pay" ColumnName="type_pay" />
+          <ScalarProperty Name="GUID_JOB" ColumnName="GUID_JOB" />
+          <ScalarProperty Name="GUID_CURRENCY" ColumnName="GUID_CURRENCY" />
+          <ScalarProperty Name="CURRENCY_VAL" ColumnName="CURRENCY_VAL" />
+          <ScalarProperty Name="DELETE_NUM" ColumnName="DELETE_NUM" />
+          <ScalarProperty Name="Date_Delete" ColumnName="Date_Delete" />
+          <ScalarProperty Name="guid_user" ColumnName="guid_user" />
+          <ScalarProperty Name="CUSTOMER_NAME" ColumnName="CUSTOMER_NAME" />
+          <ScalarProperty Name="time_bill" ColumnName="time_bill" />
+          <ScalarProperty Name="GUID_ITEME" ColumnName="GUID_ITEME" />
+          <ScalarProperty Name="QTY" ColumnName="QTY" />
+          <ScalarProperty Name="PRICE" ColumnName="PRICE" />
+          <ScalarProperty Name="NOTE" ColumnName="NOTE" />
+          <ScalarProperty Name="DISC_" ColumnName="DISC_" />
+          <ScalarProperty Name="extra" ColumnName="extra" />
+          <ScalarProperty Name="guid_store" ColumnName="guid_store" />
+          <ScalarProperty Name="unit" ColumnName="unit" />
+          <ScalarProperty Name="qty_unit" ColumnName="qty_unit" />
+          <ScalarProperty Name="recpt" ColumnName="recpt" />
+          <ScalarProperty Name="INVOICE_NO" ColumnName="INVOICE NO" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="GUID" ColumnName="GUID" />
+          <ScalarProperty Name="NAME" ColumnName="NAME" />
+          <ScalarProperty Name="INVOICE_GUID" ColumnName="INVOICE_GUID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="View_DAY1">
+      <EntityTypeMapping TypeName="DB_ACCModel1.View_DAY1">
+        <MappingFragment StoreEntitySet="View_DAY1">
+          <ScalarProperty Name="GUID_DAY1" ColumnName="GUID_DAY1" />
+          <ScalarProperty Name="NUMBER_DAY1" ColumnName="NUMBER_DAY1" />
+          <ScalarProperty Name="DATE_DAY1" ColumnName="DATE_DAY1" />
+          <ScalarProperty Name="NOTE_DAY1" ColumnName="NOTE_DAY1" />
+          <ScalarProperty Name="TYPE_DAY1" ColumnName="TYPE_DAY1" />
+          <ScalarProperty Name="NOTE_DAY1_TYPE" ColumnName="NOTE_DAY1_TYPE" />
+          <ScalarProperty Name="GUID_JOB_DAY1" ColumnName="GUID_JOB_DAY1" />
+          <ScalarProperty Name="NAME_JOBE_DAY1" ColumnName="NAME_JOBE_DAY1" />
+          <ScalarProperty Name="GUID_CURRENCY_DAY1" ColumnName="GUID_CURRENCY_DAY1" />
+          <ScalarProperty Name="NAME_CURRENCY_DAY1" ColumnName="NAME_CURRENCY_DAY1" />
+          <ScalarProperty Name="CURRENCY_VAL_DAY1" ColumnName="CURRENCY_VAL_DAY1" />
+          <ScalarProperty Name="Reference" ColumnName="Reference" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="View_DAY2">
+      <EntityTypeMapping TypeName="DB_ACCModel1.View_DAY2">
+        <MappingFragment StoreEntitySet="View_DAY2">
+          <ScalarProperty Name="id_DAY2" ColumnName="id_DAY2" />
+          <ScalarProperty Name="PAENT_GUID_DAY2" ColumnName="PAENT_GUID_DAY2" />
+          <ScalarProperty Name="ACCOUNT_GUID_DAY2" ColumnName="ACCOUNT_GUID_DAY2" />
+          <ScalarProperty Name="Name_DAY2" ColumnName="Name_DAY2" />
+          <ScalarProperty Name="DEBIT_DAY2" ColumnName="DEBIT_DAY2" />
+          <ScalarProperty Name="CREDIT_DAY2" ColumnName="CREDIT_DAY2" />
+          <ScalarProperty Name="NOTE_DAY2" ColumnName="NOTE_DAY2" />
+          <ScalarProperty Name="GUID_DAY2" ColumnName="GUID_DAY2" />
+          <ScalarProperty Name="GUID_JOB_DAY2" ColumnName="GUID_JOB_DAY2" />
+          <ScalarProperty Name="NAME_JOB_DAY2" ColumnName="NAME_JOB_DAY2" />
+          <ScalarProperty Name="GUID_CURRENCY_DAY2" ColumnName="GUID_CURRENCY_DAY2" />
+          <ScalarProperty Name="NAME_CURRENCY_DAY2" ColumnName="NAME_CURRENCY_DAY2" />
+          <ScalarProperty Name="CURRENCY_VAL" ColumnName="CURRENCY_VAL" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="View_prt_allday">
+      <EntityTypeMapping TypeName="DB_ACCModel1.View_prt_allday">
+        <MappingFragment StoreEntitySet="View_prt_allday">
+          <ScalarProperty Name="GUID_DAY1" ColumnName="GUID_DAY1" />
+          <ScalarProperty Name="NUMBER_DAY1" ColumnName="NUMBER_DAY1" />
+          <ScalarProperty Name="DATE_DAY1" ColumnName="DATE_DAY1" />
+          <ScalarProperty Name="NOTE_DAY1" ColumnName="NOTE_DAY1" />
+          <ScalarProperty Name="TYPE_DAY1" ColumnName="TYPE_DAY1" />
+          <ScalarProperty Name="NOTE_DAY1_TYPE" ColumnName="NOTE_DAY1_TYPE" />
+          <ScalarProperty Name="GUID_JOB_DAY1" ColumnName="GUID_JOB_DAY1" />
+          <ScalarProperty Name="NAME_JOBE_DAY1" ColumnName="NAME_JOBE_DAY1" />
+          <ScalarProperty Name="GUID_CURRENCY_DAY1" ColumnName="GUID_CURRENCY_DAY1" />
+          <ScalarProperty Name="NAME_CURRENCY_DAY1" ColumnName="NAME_CURRENCY_DAY1" />
+          <ScalarProperty Name="CURRENCY_VAL_DAY1" ColumnName="CURRENCY_VAL_DAY1" />
+          <ScalarProperty Name="PAENT_GUID_DAY2" ColumnName="PAENT_GUID_DAY2" />
+          <ScalarProperty Name="ACCOUNT_GUID_DAY2" ColumnName="ACCOUNT_GUID_DAY2" />
+          <ScalarProperty Name="Name_DAY2" ColumnName="Name_DAY2" />
+          <ScalarProperty Name="DEBIT_DAY2" ColumnName="DEBIT_DAY2" />
+          <ScalarProperty Name="CREDIT_DAY2" ColumnName="CREDIT_DAY2" />
+          <ScalarProperty Name="NOTE_DAY2" ColumnName="NOTE_DAY2" />
+          <ScalarProperty Name="GUID_DAY2" ColumnName="GUID_DAY2" />
+          <ScalarProperty Name="GUID_JOB_DAY2" ColumnName="GUID_JOB_DAY2" />
+          <ScalarProperty Name="NAME_JOB_DAY2" ColumnName="NAME_JOB_DAY2" />
+          <ScalarProperty Name="GUID_CURRENCY_DAY2" ColumnName="GUID_CURRENCY_DAY2" />
+          <ScalarProperty Name="NAME_CURRENCY_DAY2" ColumnName="NAME_CURRENCY_DAY2" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="View_shoe_iteme">
+      <EntityTypeMapping TypeName="DB_ACCModel1.View_shoe_iteme">
+        <MappingFragment StoreEntitySet="View_shoe_iteme">
+          <ScalarProperty Name="Expr1" ColumnName="Expr1" />
+          <ScalarProperty Name="GUID" ColumnName="GUID" />
+          <ScalarProperty Name="المجموعة" ColumnName="المجموعة" />
+          <ScalarProperty Name="اسم_المادة" ColumnName="اسم المادة" />
+          <ScalarProperty Name="ملاحظات" ColumnName="ملاحظات" />
+          <ScalarProperty Name="الرصيد" ColumnName="الرصيد" />
+          <ScalarProperty Name="avg_price" ColumnName="avg_price" />
+          <ScalarProperty Name="img" ColumnName="img" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Waiters_Report">
+      <EntityTypeMapping TypeName="DB_ACCModel1.Waiters_Report">
+        <MappingFragment StoreEntitySet="Waiters_Report">
+          <ScalarProperty Name="GUID" ColumnName="GUID" />
+          <ScalarProperty Name="NAME" ColumnName="NAME" />
+          <ScalarProperty Name="PRICE" ColumnName="PRICE" />
+          <ScalarProperty Name="QTY" ColumnName="QTY" />
+          <ScalarProperty Name="Time_Punch" ColumnName="Time_Punch" />
+          <ScalarProperty Name="Expr1" ColumnName="Expr1" />
+          <ScalarProperty Name="Waiter" ColumnName="Waiter" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

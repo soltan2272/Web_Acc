@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="DB_ACCModel8.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <!--Errors Found During Generation:
+warning 6013: The table/view 'DB_ACC.dbo.Sales_Bydate' does not have a primary key defined and no valid primary key could be inferred. This table/view has been excluded. To use the entity, you will need to review your schema, add the correct keys, and uncomment it.
+        <EntityType Name="Sales_Bydate">
+          <Property Name="NAME" Type="nvarchar" MaxLength="255" />
+          <Property Name="NET_Qty" Type="float" />
+          <Property Name="total_cost" Type="float" />
+          <Property Name="total_price" Type="float" />
+          <Property Name="Net_Profit" Type="float" />
+          <Property Name="DATE" Type="date" />
+          <Property Name="Sales_Man" Type="nvarchar" MaxLength="50" />
+          <Property Name="Expr1" Type="nvarchar" MaxLength="50" />
+          <Property Name="delivery_customer" Type="nvarchar(max)" />
+          <Property Name="Group_Name" Type="nvarchar(max)" />
+          <Property Name="Item_Total_Discount" Type="float" />
+          <Property Name="disc_rate" Type="float" />
+          <Property Name="NUMBER" Type="int" />
+          <Property Name="car_plate_no" Type="nvarchar" MaxLength="50" />
+          <Property Name="car_current_counter" Type="int" />
+          <Property Name="Header_Note" Type="nvarchar(max)" />
+          <Property Name="delivery_mobile" Type="nvarchar(max)" />
+          <Property Name="city" Type="nvarchar(max)" />
+          <Property Name="block" Type="nvarchar(max)" />
+          <Property Name="street" Type="nvarchar(max)" />
+          <Property Name="building" Type="nvarchar(max)" />
+          <Property Name="floor" Type="nvarchar(max)" />
+          <Property Name="room" Type="nvarchar(max)" />
+          <Property Name="add_Details" Type="nvarchar(max)" />
+          <Property Name="Driver" Type="nvarchar(max)" />
+          <Property Name="Purchase" Type="float" />
+          <Property Name="BALANCE" Type="float" />
+          <Property Name="AVG_PRICE" Type="float" />
+          <Property Name="Item_Net_Price" Type="float" />
+          <Property Name="Total_Goods" Type="float" />
+          <Property Name="B_Inventory" Type="float" />
+          <Property Name="unit" Type="nvarchar(max)" />
+          <Property Name="TYPE_ITEME" Type="nvarchar" MaxLength="50" />
+          <Property Name="MIN_QTY" Type="float" />
+          <Property Name="EXEED" Type="float" />
+          <Property Name="shift_no" Type="int" />
+          <Property Name="latin_name" Type="nvarchar" MaxLength="255" />
+          <Property Name="Branch" Type="nvarchar" MaxLength="50" />
+          <Property Name="qty_unit" Type="float" />
+          <Property Name="BARCODE_1" Type="nvarchar" MaxLength="255" />
+          <Property Name="TypeBill" Type="nvarchar(max)" />
+          <Property Name="R_Purchase" Type="float" />
+          <Property Name="PARENT_GUID" Type="uniqueidentifier" />
+          <Property Name="Printer" Type="nvarchar" MaxLength="50" />
+          <Property Name="PurchaseValue" Type="float" />
+        </EntityType>-->
+  <EntityContainer Name="DB_ACCModel8StoreContainer" />
+</Schema>

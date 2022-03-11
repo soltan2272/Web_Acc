@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="DB_ACCModel4" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="View_5">
+    <Key>
+      <PropertyRef Name="Expr1" />
+      <PropertyRef Name="Expr2" />
+    </Key>
+    <Property Name="Expr1" Type="Int32" Nullable="false" />
+    <Property Name="Expr2" Type="Guid" Nullable="false" />
+    <Property Name="PARENT_GUID" Type="Guid" />
+    <Property Name="NUMBER" Type="Int32" />
+    <Property Name="CUST" Type="Guid" />
+    <Property Name="NOTE" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityContainer Name="DB_ACCEntities8" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="View_5" EntityType="Self.View_5" />
+  </EntityContainer>
+</Schema>

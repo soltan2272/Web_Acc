@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="DB_ACCModel10" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Sales_Bydate">
+    <Key>
+      <PropertyRef Name="GUID" />
+    </Key>
+    <Property Name="Expr2" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="NET_Qty" Type="Double" />
+    <Property Name="total_cost" Type="Double" />
+    <Property Name="total_price" Type="Double" />
+    <Property Name="Net_Profit" Type="Double" />
+    <Property Name="Expr3" Type="DateTime" Precision="0" />
+    <Property Name="Expr4" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Expr5" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Expr6" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Expr7" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Expr8" Type="Double" />
+    <Property Name="Expr9" Type="Double" />
+    <Property Name="Expr10" Type="Int32" />
+    <Property Name="Expr11" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Expr12" Type="Int32" />
+    <Property Name="Header_Note" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Expr13" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Expr14" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Expr15" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Expr16" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Expr17" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Expr18" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Expr19" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Expr20" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Expr21" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Expr22" Type="Double" />
+    <Property Name="Expr23" Type="Double" />
+    <Property Name="Expr24" Type="Double" />
+    <Property Name="Expr25" Type="Double" />
+    <Property Name="Total_Goods" Type="Double" />
+    <Property Name="Expr26" Type="Double" />
+    <Property Name="Expr27" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Expr28" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Expr29" Type="Double" />
+    <Property Name="EXEED" Type="Double" />
+    <Property Name="Expr30" Type="Int32" />
+    <Property Name="Expr31" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="Expr32" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Expr33" Type="Double" />
+    <Property Name="Expr34" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="Expr35" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Expr36" Type="Double" />
+    <Property Name="Expr37" Type="Guid" />
+    <Property Name="Expr38" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="PurchaseValue" Type="Double" />
+    <Property Name="GUID" Type="Guid" Nullable="false" />
+  </EntityType>
+  <EntityContainer Name="DB_ACCEntities14" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Sales_Bydate" EntityType="Self.Sales_Bydate" />
+  </EntityContainer>
+</Schema>

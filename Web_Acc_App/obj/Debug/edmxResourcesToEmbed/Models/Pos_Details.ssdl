@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="DB_ACCModel3.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <!--Errors Found During Generation:
+warning 6013: The table/view 'DB_ACC.dbo.POS_Bills_Details' does not have a primary key defined and no valid primary key could be inferred. This table/view has been excluded. To use the entity, you will need to review your schema, add the correct keys, and uncomment it.
+        <EntityType Name="POS_Bills_Details">
+          <Property Name="NAME" Type="nvarchar(max)" />
+          <Property Name="NUMBER" Type="int" />
+          <Property Name="NOTE" Type="nvarchar(max)" />
+          <Property Name="DATE" Type="date" />
+          <Property Name="time_bill" Type="datetime" />
+          <Property Name="p_disc" Type="float" />
+          <Property Name="disc" Type="float" />
+          <Property Name="EXTEA" Type="float" />
+          <Property Name="Total" Type="float" />
+          <Property Name="Cash" Type="float" />
+          <Property Name="KNET" Type="float" />
+          <Property Name="VISA" Type="float" />
+          <Property Name="MASTER" Type="float" />
+          <Property Name="delivery_customer" Type="nvarchar(max)" />
+          <Property Name="delivery_mobile" Type="nvarchar(max)" />
+          <Property Name="shift_no" Type="int" />
+          <Property Name="table_no" Type="nvarchar" MaxLength="50" />
+          <Property Name="Branch" Type="nvarchar" MaxLength="50" />
+        </EntityType>-->
+  <EntityContainer Name="DB_ACCModel3StoreContainer" />
+</Schema>

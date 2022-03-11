@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="DB_ACCModel7.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'DB_ACC.dbo.POS_Bills_Details' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="POS_Bills_Details">
+    <Key>
+      <PropertyRef Name="GUID" />
+      <PropertyRef Name="Expr1" />
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="NAME" Type="nvarchar(max)" />
+    <Property Name="NUMBER" Type="int" />
+    <Property Name="NOTE" Type="nvarchar(max)" />
+    <Property Name="DATE" Type="date" />
+    <Property Name="time_bill" Type="datetime" />
+    <Property Name="p_disc" Type="float" />
+    <Property Name="disc" Type="float" />
+    <Property Name="EXTEA" Type="float" />
+    <Property Name="Total" Type="float" />
+    <Property Name="Cash" Type="float" />
+    <Property Name="KNET" Type="float" />
+    <Property Name="VISA" Type="float" />
+    <Property Name="MASTER" Type="float" />
+    <Property Name="delivery_customer" Type="nvarchar(max)" />
+    <Property Name="delivery_mobile" Type="nvarchar(max)" />
+    <Property Name="shift_no" Type="int" />
+    <Property Name="table_no" Type="nvarchar" MaxLength="50" />
+    <Property Name="Branch" Type="nvarchar" MaxLength="50" />
+    <Property Name="GUID" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="Expr1" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="ID" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityContainer Name="DB_ACCModel7StoreContainer">
+    <EntitySet Name="POS_Bills_Details" EntityType="Self.POS_Bills_Details" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [POS_Bills_Details].[NAME] AS [NAME], 
+    [POS_Bills_Details].[NUMBER] AS [NUMBER], 
+    [POS_Bills_Details].[NOTE] AS [NOTE], 
+    [POS_Bills_Details].[DATE] AS [DATE], 
+    [POS_Bills_Details].[time_bill] AS [time_bill], 
+    [POS_Bills_Details].[p_disc] AS [p_disc], 
+    [POS_Bills_Details].[disc] AS [disc], 
+    [POS_Bills_Details].[EXTEA] AS [EXTEA], 
+    [POS_Bills_Details].[Total] AS [Total], 
+    [POS_Bills_Details].[Cash] AS [Cash], 
+    [POS_Bills_Details].[KNET] AS [KNET], 
+    [POS_Bills_Details].[VISA] AS [VISA], 
+    [POS_Bills_Details].[MASTER] AS [MASTER], 
+    [POS_Bills_Details].[delivery_customer] AS [delivery_customer], 
+    [POS_Bills_Details].[delivery_mobile] AS [delivery_mobile], 
+    [POS_Bills_Details].[shift_no] AS [shift_no], 
+    [POS_Bills_Details].[table_no] AS [table_no], 
+    [POS_Bills_Details].[Branch] AS [Branch], 
+    [POS_Bills_Details].[GUID] AS [GUID], 
+    [POS_Bills_Details].[Expr1] AS [Expr1], 
+    [POS_Bills_Details].[ID] AS [ID]
+    FROM [dbo].[POS_Bills_Details] AS [POS_Bills_Details]</DefiningQuery>
+    </EntitySet>
+  </EntityContainer>
+</Schema>

@@ -1,0 +1,108 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="DB_ACCModel10.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'DB_ACC.dbo.Sales_Bydate' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="Sales_Bydate">
+    <Key>
+      <PropertyRef Name="GUID" />
+    </Key>
+    <Property Name="Expr2" Type="nvarchar" MaxLength="255" />
+    <Property Name="NET_Qty" Type="float" />
+    <Property Name="total_cost" Type="float" />
+    <Property Name="total_price" Type="float" />
+    <Property Name="Net_Profit" Type="float" />
+    <Property Name="Expr3" Type="date" />
+    <Property Name="Expr4" Type="nvarchar" MaxLength="50" />
+    <Property Name="Expr5" Type="nvarchar" MaxLength="50" />
+    <Property Name="Expr6" Type="nvarchar(max)" />
+    <Property Name="Expr7" Type="nvarchar(max)" />
+    <Property Name="Expr8" Type="float" />
+    <Property Name="Expr9" Type="float" />
+    <Property Name="Expr10" Type="int" />
+    <Property Name="Expr11" Type="nvarchar" MaxLength="50" />
+    <Property Name="Expr12" Type="int" />
+    <Property Name="Header_Note" Type="nvarchar(max)" />
+    <Property Name="Expr13" Type="nvarchar(max)" />
+    <Property Name="Expr14" Type="nvarchar(max)" />
+    <Property Name="Expr15" Type="nvarchar(max)" />
+    <Property Name="Expr16" Type="nvarchar(max)" />
+    <Property Name="Expr17" Type="nvarchar(max)" />
+    <Property Name="Expr18" Type="nvarchar(max)" />
+    <Property Name="Expr19" Type="nvarchar(max)" />
+    <Property Name="Expr20" Type="nvarchar(max)" />
+    <Property Name="Expr21" Type="nvarchar(max)" />
+    <Property Name="Expr22" Type="float" />
+    <Property Name="Expr23" Type="float" />
+    <Property Name="Expr24" Type="float" />
+    <Property Name="Expr25" Type="float" />
+    <Property Name="Total_Goods" Type="float" />
+    <Property Name="Expr26" Type="float" />
+    <Property Name="Expr27" Type="nvarchar(max)" />
+    <Property Name="Expr28" Type="nvarchar" MaxLength="50" />
+    <Property Name="Expr29" Type="float" />
+    <Property Name="EXEED" Type="float" />
+    <Property Name="Expr30" Type="int" />
+    <Property Name="Expr31" Type="nvarchar" MaxLength="255" />
+    <Property Name="Expr32" Type="nvarchar" MaxLength="50" />
+    <Property Name="Expr33" Type="float" />
+    <Property Name="Expr34" Type="nvarchar" MaxLength="255" />
+    <Property Name="Expr35" Type="nvarchar(max)" />
+    <Property Name="Expr36" Type="float" />
+    <Property Name="Expr37" Type="uniqueidentifier" />
+    <Property Name="Expr38" Type="nvarchar" MaxLength="50" />
+    <Property Name="PurchaseValue" Type="float" />
+    <Property Name="GUID" Type="uniqueidentifier" Nullable="false" />
+  </EntityType>
+  <EntityContainer Name="DB_ACCModel10StoreContainer">
+    <EntitySet Name="Sales_Bydate" EntityType="Self.Sales_Bydate" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [Sales_Bydate].[Expr2] AS [Expr2], 
+    [Sales_Bydate].[NET_Qty] AS [NET_Qty], 
+    [Sales_Bydate].[total_cost] AS [total_cost], 
+    [Sales_Bydate].[total_price] AS [total_price], 
+    [Sales_Bydate].[Net_Profit] AS [Net_Profit], 
+    [Sales_Bydate].[Expr3] AS [Expr3], 
+    [Sales_Bydate].[Expr4] AS [Expr4], 
+    [Sales_Bydate].[Expr5] AS [Expr5], 
+    [Sales_Bydate].[Expr6] AS [Expr6], 
+    [Sales_Bydate].[Expr7] AS [Expr7], 
+    [Sales_Bydate].[Expr8] AS [Expr8], 
+    [Sales_Bydate].[Expr9] AS [Expr9], 
+    [Sales_Bydate].[Expr10] AS [Expr10], 
+    [Sales_Bydate].[Expr11] AS [Expr11], 
+    [Sales_Bydate].[Expr12] AS [Expr12], 
+    [Sales_Bydate].[Header_Note] AS [Header_Note], 
+    [Sales_Bydate].[Expr13] AS [Expr13], 
+    [Sales_Bydate].[Expr14] AS [Expr14], 
+    [Sales_Bydate].[Expr15] AS [Expr15], 
+    [Sales_Bydate].[Expr16] AS [Expr16], 
+    [Sales_Bydate].[Expr17] AS [Expr17], 
+    [Sales_Bydate].[Expr18] AS [Expr18], 
+    [Sales_Bydate].[Expr19] AS [Expr19], 
+    [Sales_Bydate].[Expr20] AS [Expr20], 
+    [Sales_Bydate].[Expr21] AS [Expr21], 
+    [Sales_Bydate].[Expr22] AS [Expr22], 
+    [Sales_Bydate].[Expr23] AS [Expr23], 
+    [Sales_Bydate].[Expr24] AS [Expr24], 
+    [Sales_Bydate].[Expr25] AS [Expr25], 
+    [Sales_Bydate].[Total_Goods] AS [Total_Goods], 
+    [Sales_Bydate].[Expr26] AS [Expr26], 
+    [Sales_Bydate].[Expr27] AS [Expr27], 
+    [Sales_Bydate].[Expr28] AS [Expr28], 
+    [Sales_Bydate].[Expr29] AS [Expr29], 
+    [Sales_Bydate].[EXEED] AS [EXEED], 
+    [Sales_Bydate].[Expr30] AS [Expr30], 
+    [Sales_Bydate].[Expr31] AS [Expr31], 
+    [Sales_Bydate].[Expr32] AS [Expr32], 
+    [Sales_Bydate].[Expr33] AS [Expr33], 
+    [Sales_Bydate].[Expr34] AS [Expr34], 
+    [Sales_Bydate].[Expr35] AS [Expr35], 
+    [Sales_Bydate].[Expr36] AS [Expr36], 
+    [Sales_Bydate].[Expr37] AS [Expr37], 
+    [Sales_Bydate].[Expr38] AS [Expr38], 
+    [Sales_Bydate].[PurchaseValue] AS [PurchaseValue], 
+    [Sales_Bydate].[GUID] AS [GUID]
+    FROM [dbo].[Sales_Bydate] AS [Sales_Bydate]</DefiningQuery>
+    </EntitySet>
+  </EntityContainer>
+</Schema>

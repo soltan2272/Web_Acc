@@ -1,0 +1,70 @@
+﻿@using Web_Acc_App.Models
+@model List<POS_Shieft>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/shared/_MyLayoutPage.cshtml";
+}
+
+
+
+<br />
+<br />
+
+<div style="overflow-x:auto;">
+    <table>
+        <tr>
+           
+
+        </tr>
+      
+    </table>
+</div>
+
+
+
+<div class="container">
+    <table class="table table-hover table-dark" id="dataTable" width="100%" cellspacing="0">
+        <thead>
+            <tr>
+                <th style="text-align:center">رقم الوردية</th>
+                <th style="text-align:center">تاريخ البداية</th>
+                <th style="text-align:center">تاريخ الانتهاء</th>
+                <th style="text-align:center">الاسم</th>
+                <th style="text-align:center">الرصيد الافتتاحى</th>
+                <th style="text-align:center">الفرع</th>
+                <th style="text-align:center">المصاريف اليومية</th>
+                <th style="text-align:center">الطلبات المفتوحة</th>
+                <th style="text-align:center"> صافى الوردية</th>
+                <th style="text-align:center"> كى نت</th>
+                <th style="text-align:center"> Credit Card</th>
+                <th style="text-align:center"> الرابط</th>
+
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var itm in Model)
+            {
+            <tr>
+                <td style="text-align:center">@itm.Number</td>
+                <td style="text-align:center">@itm.start_date</td>
+                <td style="text-align:center">@itm.end_date</td>
+                <td style="text-align:center">@itm.user_name</td>
+                <td style="text-align:center">@itm.Open_Balance</td>
+
+                <td style="text-align:center">@itm.branch</td>
+
+                <td style="text-align:center">@itm.pos_expenses</td>
+                <td style="text-align:center">@itm.Open_Orders</td>
+                <td style="text-align:center">@itm.N_Total</td>
+                <td style="text-align:center">@itm.N_KNET</td>
+                <td style="text-align:center">@itm.Master</td>
+                <td style="text-align:center">@itm.Visa_Card</td>
+            </tr>
+            }
+
+        </tbody>
+    </table>
+</div>
+
+
+        </main>

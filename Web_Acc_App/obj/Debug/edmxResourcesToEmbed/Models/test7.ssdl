@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="DB_ACCModel6.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'DB_ACC.dbo.View_7' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="View_7">
+    <Key>
+      <PropertyRef Name="GUID" />
+    </Key>
+    <Property Name="BARCODE_1" Type="nvarchar" MaxLength="255" />
+    <Property Name="NAME" Type="nvarchar" MaxLength="255" />
+    <Property Name="Expr1" Type="float" />
+    <Property Name="GUID" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="Store" Type="nvarchar(max)" />
+    <Property Name="Group_Name" Type="nvarchar(max)" />
+    <Property Name="TYPE_ITEME" Type="nvarchar" MaxLength="50" />
+    <Property Name="AVG_PRICE" Type="float" />
+    <Property Name="EndUser" Type="float" />
+    <Property Name="UNIT2" Type="nvarchar" MaxLength="255" />
+    <Property Name="QTY_UNIT2" Type="float" />
+    <Property Name="Qty2" Type="float" />
+    <Property Name="latin_name" Type="nvarchar" MaxLength="255" />
+    <Property Name="Company" Type="nvarchar" MaxLength="255" />
+    <Property Name="MIN_QTY" Type="float" />
+  </EntityType>
+  <EntityContainer Name="DB_ACCModel6StoreContainer">
+    <EntitySet Name="View_7" EntityType="Self.View_7" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [View_7].[BARCODE_1] AS [BARCODE_1], 
+    [View_7].[NAME] AS [NAME], 
+    [View_7].[Expr1] AS [Expr1], 
+    [View_7].[GUID] AS [GUID], 
+    [View_7].[Store] AS [Store], 
+    [View_7].[Group_Name] AS [Group_Name], 
+    [View_7].[TYPE_ITEME] AS [TYPE_ITEME], 
+    [View_7].[AVG_PRICE] AS [AVG_PRICE], 
+    [View_7].[EndUser] AS [EndUser], 
+    [View_7].[UNIT2] AS [UNIT2], 
+    [View_7].[QTY_UNIT2] AS [QTY_UNIT2], 
+    [View_7].[Qty2] AS [Qty2], 
+    [View_7].[latin_name] AS [latin_name], 
+    [View_7].[Company] AS [Company], 
+    [View_7].[MIN_QTY] AS [MIN_QTY]
+    FROM [dbo].[View_7] AS [View_7]</DefiningQuery>
+    </EntitySet>
+  </EntityContainer>
+</Schema>
