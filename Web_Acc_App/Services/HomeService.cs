@@ -55,6 +55,14 @@ namespace Web_Acc_App.Services
                 result = pos_Bills.POS_Bills_Details.Where(i => i.DATE <= from && i.DATE >= to).ToList();
 
             }
+            else if (to != null)
+            {
+                result = pos_Bills.POS_Bills_Details.Where(i=>i.DATE <= to).ToList();
+            }
+            else if (from != null)
+            {
+                result = pos_Bills.POS_Bills_Details.Where(i => i.DATE >= from).ToList();
+            }
             else
             {
                 result = pos_Bills.POS_Bills_Details.ToList();

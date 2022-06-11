@@ -138,16 +138,24 @@ namespace Web_Acc_App.Controllers
 
             }
 
-            if (to != null && from != null )
+            if (to != null && to!="" && from != null && from!="" )
             {
                 tosearch = DateTime.Parse(to);
                 fromsearch = DateTime.Parse(from);
 
             }
-          
+            else if(to != null && to != "")
+            {
+                tosearch = DateTime.Parse(to);
+            }
+            else if (from != null && from != "")
+            {
+                fromsearch = DateTime.Parse(from);
+            }
 
 
-            if (to == null && from == null)
+
+                if (to == null && from == null)
             {
                  Pos_Bills = service.GetPosBillsDetails(shftnum, tosearch, fromsearch);
             }

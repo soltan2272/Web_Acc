@@ -9,144 +9,163 @@
 <br />
 <br />
 
-<span style="float:right">
-    البحث ب
-
-    <select id="type" onchange="change()">
-        <option value="date"> By Date </option>
-        <option value="shn"> By Shift Number</option>
-    </select>
-
-</span>
-<br />
-<br />
-
-<form style="float:right" method="post" action="@Url.Action("PosBillDetails", "Home")">
-   
-    <span id="byshiftnum" style="display:none">
-
-
-        رقم الشيفت
-        <select name="shiftnum">
-            <option value="0">الكل</option>
-            @foreach (int itm in (dynamic)(ViewData["UniqueShifts"]))
-            {
-                <option value="@itm">@itm</option>
-            }
-        </select>
-
-
-
-
-
-        <input type="submit" value="بحث" />
-    </span>
-</form>
-
-<form style="float:right" method="post" action="@Url.Action("PosBillDetails", "Home")">
-
-    <span id="bydate">
-
-        اسم المجموعة
-        <select name="groupname">
-            <option value="null">الكل</option>
-            @foreach (string itm in (dynamic)(ViewData["UniqueGroups"]))
-            {
-                <option value="@itm">@itm</option>
-            }
-        </select>
-
-
-
-
-
-
-
-        من
-        <select name="to">
-            @foreach (DateTime itm in (dynamic)(ViewData["UniqueDates"]))
-            {
-                <option value="@itm">@itm</option>
-            }
-        </select>
-        الى
-        <select name="from">
-            @foreach (DateTime itm in (dynamic)(ViewData["UniqueDates"]))
-            {
-                <option value="@itm">@itm</option>
-            }
-        </select>
-
-
-
-
-        <input type="submit" value="بحث" />
-    </span>
-</form>
 
 
 
 
 
 <div class="container ">
-    <table class="table table-hover table-dark" id="dataTable" width="100%" cellspacing="0">
-        <thead>
-            <tr>
+    <div class="row">
+        <div class="col col-lg-12">
+            <div style="float:right">
+                <label style="float:right" class="form-label">البحث ب </label>
+                    <br />
 
-                <th style="text-align:center">رقم الفاتورة</th>
-                <th style="text-align:center">التاريخ</th>
-                <th style="text-align:center">العميل </th>
-                <th style="text-align:center">تليفون العميل</th>
-                <th style="text-align:center">الخصم</th>
-                <th style="text-align:center"> مصاريف التوصيل</th>
-                <th style="text-align:center">نقدى</th>
-                <th style="text-align:center">كى نت</th>
-                <th style="text-align:center">رابط</th>
-                <th style="text-align:center">كريدت كارد</th>
-                <th style="text-align:center">رقم الوردية</th>
 
-                <th style="text-align:center">معلقة</th>
+                    <select id="type" onchange="change()" ؤ style="padding: 6px">
+                        <option value="date"> By Date </option>
+                        <option value="shn"> By Shift Number</option>
+                    </select>
 
-            </tr>
-        </thead>
-        <tbody>
-            @foreach (var itm in Model)
-            {
-                <tr>
-                    <td style="text-align:center">@itm.NUMBER</td>
-                    <td style="text-align:center">@itm.time_bill</td>
-                    <td style="text-align:center">@itm.delivery_customer</td>
-                    <td style="text-align:center">@itm.delivery_mobile</td>
-                    <td style="text-align:center">@itm.disc</td>
-                    <td style="text-align:center">@itm.EXTEA</td>
-                    <td style="text-align:center">@itm.Cash</td>
-                    <td style="text-align:center">@itm.KNET</td>
-                    <td style="text-align:center">@itm.VISA</td>
-                    <td style="text-align:center">@itm.MASTER</td>
-                    <td style="text-align:center">@itm.shift_no</td>
-                    <td style="text-align:center">@itm.Park</td>
-                </tr>
-            }
+            </div>
+            <br />
+            <br />
+            <form style="float:right;width:100%" method="post" action="@Url.Action("PosBillDetails", "Home")">
+               
+                <div id="byshiftnum" style="display:none">
+                    <div class="row">
+                        <div class="col col-lg-3">
+                            <br />
+                            <label style="float:right" class="form-label">   رقم الشيفت </label>
+                            <br />
+                            <select name="shiftnum" style="padding:6px;float:right;width:200px">
+                                <option value="0">الكل</option>
+                                @foreach (int itm in (dynamic)(ViewData["UniqueShifts"]))
+                                {
+                                    <option value="@itm">@itm</option>
+                                }
+                            </select>
+                            </div>
 
-        </tbody>
-    </table>
+                            <div class="col col-lg-3">
+                                <br />
+
+
+                                <input style="float:right" class="mt-4 btn btn-primary" type="submit" value="بحث" />
+                            </div>
+
+                      
+                        </div>
+                        </div>
+</form>
+
+
+            <form style="float:right;width:100%" method="post" action="@Url.Action("PosBillDetails", "Home")">
+
+                <div id="bydate">
+                    <div class="row">
+                        <div class="col col-lg-3">
+                            <label style="float:right" class="form-label">   اسم المجموعة </label>
+                            <br />
+                            <select name="groupname" size="lg" style="width:100%;padding:6px">
+                                <option value="null">الكل</option>
+                                @foreach (string itm in (dynamic)(ViewData["UniqueGroups"]))
+                                {
+                                    <option value="@itm">@itm</option>
+                                }
+                            </select>
+                        </div>
+                        <div class="col col-lg-3">
+
+
+                            <label style="float:right" class="form-label">  من </label>
+
+                            <input id="from" name="from" type="date" class="form-control"
+                                   placeholder="Date From">
+
+                        </div>
+                        <div class="col col-lg-3">
+
+                            <label style="float:right" class="form-label"> الى </label>
+                            <input id="to" name="to" type="date" class="form-control"
+                                   placeholder="Date To">
+                        </div>
+                        <div class="col col-lg-3">
+                            <br />
+
+
+                            <input style="float:right" class="mt-2 btn btn-primary"  type="submit" value="بحث" />
+                        </div>
+
+                    </div>
+                    </div>
+</div>
+            </form>
+        </div>
+
+        <div class="col col-lg-12">
+            <div style="overflow:auto">
+            <table class="table table-hover table-dark" id="dataTable" width="100%" cellspacing="0">
+                <thead>
+                    <tr>
+
+                        <th style="text-align:center">رقم الفاتورة</th>
+                        <th style="text-align:center">التاريخ</th>
+                        <th style="text-align:center">العميل </th>
+                        <th style="text-align:center">تليفون العميل</th>
+                        <th style="text-align:center">الخصم</th>
+                        <th style="text-align:center"> مصاريف التوصيل</th>
+                        <th style="text-align:center">نقدى</th>
+                        <th style="text-align:center">كى نت</th>
+                        <th style="text-align:center">رابط</th>
+                        <th style="text-align:center">كريدت كارد</th>
+                        <th style="text-align:center">رقم الوردية</th>
+
+                        <th style="text-align:center">معلقة</th>
+
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var itm in Model)
+                    {
+                        <tr>
+                            <td style="text-align:center">@itm.NUMBER</td>
+                            <td style="text-align:center">@itm.time_bill</td>
+                            <td style="text-align:center">@itm.delivery_customer</td>
+                            <td style="text-align:center">@itm.delivery_mobile</td>
+                            <td style="text-align:center">@itm.disc</td>
+                            <td style="text-align:center">@itm.EXTEA</td>
+                            <td style="text-align:center">@itm.Cash</td>
+                            <td style="text-align:center">@itm.KNET</td>
+                            <td style="text-align:center">@itm.VISA</td>
+                            <td style="text-align:center">@itm.MASTER</td>
+                            <td style="text-align:center">@itm.shift_no</td>
+                            <td style="text-align:center">@itm.Park</td>
+                        </tr>
+                    }
+
+                </tbody>
+            </table>
+                </div>
+        </div>
+    </div>
 </div>
 
 
     </main>
 
 
-<script>
+    <script>
 
-    function change() {
+        function change() {
 
-        if (document.getElementById("type").value == "shn") {
-            document.getElementById("byshiftnum").style.display = "inline";
-            document.getElementById("bydate").style.display = "none";
+            if (document.getElementById("type").value == "shn") {
+                document.getElementById("byshiftnum").style.display = "inline";
+                document.getElementById("bydate").style.display = "none";
+            }
+            else if (document.getElementById("type").value == "date") {
+                document.getElementById("byshiftnum").style.display = "none";
+                document.getElementById("bydate").style.display = "inline";
+            }
         }
-        else if (document.getElementById("type").value == "date") {
-            document.getElementById("byshiftnum").style.display = "none";
-            document.getElementById("bydate").style.display = "inline";
-        }
-    }
-</script>
+    </script>
