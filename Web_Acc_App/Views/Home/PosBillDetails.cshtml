@@ -102,9 +102,8 @@
 </div>
             </form>
         </div>
-
-        <div class="col col-lg-12">
-            <div style="overflow:auto">
+    <div class="col col-lg-12">
+        <div style="overflow:auto">
             <table class="table table-hover table-dark" id="dataTable" width="100%" cellspacing="0">
                 <thead>
                     <tr>
@@ -126,28 +125,48 @@
                     </tr>
                 </thead>
                 <tbody>
+                    @{ double? extraSum = 0;
+                       double? cashSum = 0;
+                       double? knetSum = 0;
+                     }
+                   
                     @foreach (var itm in Model)
                     {
-                        <tr>
-                            <td style="text-align:center">@itm.NUMBER</td>
-                            <td style="text-align:center">@itm.time_bill</td>
-                            <td style="text-align:center">@itm.delivery_customer</td>
-                            <td style="text-align:center">@itm.delivery_mobile</td>
-                            <td style="text-align:center">@itm.disc</td>
-                            <td style="text-align:center">@itm.EXTEA</td>
-                            <td style="text-align:center">@itm.Cash</td>
-                            <td style="text-align:center">@itm.KNET</td>
-                            <td style="text-align:center">@itm.VISA</td>
-                            <td style="text-align:center">@itm.MASTER</td>
-                            <td style="text-align:center">@itm.shift_no</td>
-                            <td style="text-align:center">@itm.Park</td>
-                        </tr>
-                    }
+        <tr>
+            <td style="text-align:center">@itm.NUMBER</td>
+            <td style="text-align:center">@itm.time_bill</td>
+            <td style="text-align:center">@itm.delivery_customer</td>
+            <td style="text-align:center">@itm.delivery_mobile</td>
+            <td style="text-align:center">@itm.disc</td>
+            <td style="text-align:center">@itm.EXTEA</td>
+            <td style="text-align:center">@itm.Cash</td>
+            <td style="text-align:center">@itm.KNET</td>
+            <td style="text-align:center">@itm.VISA</td>
+            <td style="text-align:center">@itm.MASTER</td>
+            <td style="text-align:center">@itm.shift_no</td>
+            <td style="text-align:center">@itm.Park</td>
+        </tr>
+                        @{ extraSum += double.Parse(@itm.EXTEA.ToString());  cashSum += double.Parse(@itm.Cash.ToString()); knetSum += double.Parse(@itm.KNET.ToString()); }
+               }
+                    <tr>
+                        <td style="display:none"></td>
+                        <td style="display:none"></td>
+                        <td style="display:none"></td>
+                        <td style="display:none"></td>
+                        <td style="display:none"></td>
+                        <td style="text-align:center">@extraSum</td>
+                        <td style="text-align:center">@cashSum</td>
+                        <td style="text-align:center">@knetSum</td>
+                        <td style="display:none"></td>
+                        <td style="display:none"></td>
+                        <td style="display:none"></td>
+                        <td style="display:none"></td>
+                    </tr>
 
                 </tbody>
             </table>
-                </div>
         </div>
+    </div>
     </div>
 </div>
 
