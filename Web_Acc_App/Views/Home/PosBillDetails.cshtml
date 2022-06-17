@@ -126,8 +126,9 @@
                 </thead>
                 <tbody>
                     @{ double? extraSum = 0;
-                       double? cashSum = 0;
-                       double? knetSum = 0;
+                        double? cashSum = 0;
+                        double? knetSum = 0;
+                        double? discountSum = 0;
                      }
                    
                     @foreach (var itm in Model)
@@ -146,22 +147,25 @@
             <td style="text-align:center">@itm.shift_no</td>
             <td style="text-align:center">@itm.Park</td>
         </tr>
-                        @{ extraSum += double.Parse(@itm.EXTEA.ToString());  cashSum += double.Parse(@itm.Cash.ToString()); knetSum += double.Parse(@itm.KNET.ToString()); }
-               }
-                    <tr>
-                        <td style="display:none"></td>
-                        <td style="display:none"></td>
-                        <td style="display:none"></td>
-                        <td style="display:none"></td>
-                        <td style="display:none"></td>
-                        <td style="text-align:center">@extraSum</td>
-                        <td style="text-align:center">@cashSum</td>
-                        <td style="text-align:center">@knetSum</td>
-                        <td style="display:none"></td>
-                        <td style="display:none"></td>
-                        <td style="display:none"></td>
-                        <td style="display:none"></td>
-                    </tr>
+                        extraSum += double.Parse(@itm.EXTEA.ToString());
+                        cashSum += double.Parse(@itm.Cash.ToString());
+                        knetSum += double.Parse(@itm.KNET.ToString());
+                        discountSum+= double.Parse(@itm.disc.ToString());
+                    }
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td style="text-align:center">@discountSum</td>
+                    <td style="text-align:center">@extraSum</td>
+                    <td style="text-align:center">@cashSum</td>
+                    <td style="text-align:center">@knetSum</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+
+                </tr>
 
                 </tbody>
             </table>
